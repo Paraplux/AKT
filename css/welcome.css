@@ -21,7 +21,7 @@ body {
     opacity: 0;
 }
 #a {
-    left: 30%;
+    left: 29%;
     animation-name: opacity;
     animation-duration: 1s;
     animation-fill-mode: forwards;
