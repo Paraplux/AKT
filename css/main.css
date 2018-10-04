@@ -10,6 +10,7 @@ body {
   font-size: 1rem;
   font-family: 'Raleway';
   font-weight: 300;
+  color: #fff;
 }
 
 /*Navigation*/
@@ -123,3 +124,35 @@ body {
   margin: auto;
   margin-right: 50px;
 }
+
+
+/* BLOG  */
+
+.news-container {
+
+}
+
+.news-blog {
+
+}
+
+.news-blog-thumb {
+
+}
+
+.news-blog-content {
+
+}
+
+.news-press {
+
+}
+
+.news-press-thumb {
+
+}
+
+.news-press-content {
+  
+}
+/* /BLOG  */
