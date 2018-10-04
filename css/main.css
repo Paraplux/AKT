@@ -8,15 +8,23 @@ body {
   height: 100vh;
   
   font-size: 1rem;
+<<<<<<< Updated upstream
   font-family: 'Raleway';
   font-weight: 300;
+<<<<<<< HEAD
   color: #fff;
+=======
+=======
+  font-family: 'Montserrat';
+  color: #ffffff;
+>>>>>>> Stashed changes
+>>>>>>> master
 }
 
 /*Navigation*/
 
 .nav-fix {
-  height: 5vh;
+  height: 15vh;
 }
 
 #navigation {
@@ -85,7 +93,34 @@ body {
   transform: skew(25deg) scale(0.95);
 }
 
-/*Corpus*/
+/*HOME PAGE*/
+
+.presentation {
+  display: flex;
+}
+
+.flagship {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.flagship-title{
+  width: 100%;
+  text-align: center;
+}
+
+.flagship-item
+{
+  width: 25%;
+}
+.flagship-item img {
+  width: 100%;
+
+}
+
+/* /HOME PAGE*/
+
+/*Corpus Type*/
 
 .intro {
   font-style: italic;
@@ -125,6 +160,7 @@ body {
   margin-right: 50px;
 }
 
+<<<<<<< HEAD
 
 /* BLOG  */
 
@@ -156,3 +192,5 @@ body {
   
 }
 /* /BLOG  */
+=======
+>>>>>>> master
