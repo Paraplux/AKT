@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400, 700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300');
 
 body {
   background-color: #303030; 
@@ -7,7 +8,8 @@ body {
   height: 100vh;
   
   font-size: 1rem;
-  font-family: 'Montserrat';
+  font-family: 'Raleway';
+  font-weight: 300;
 }
 
 /*Navigation*/
@@ -25,6 +27,8 @@ body {
   display: flex;
   align-items: center;
   
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   text-align: center;
   font-size: 1.2rem;
   color:white;
@@ -82,16 +86,6 @@ body {
 
 /*Corpus*/
 
-.preface {
-  width: 80%;
-  margin: auto;
-
-  font-style: italic;
-  font-weight: 100;
-  color: white;
-  text-indent: 50px;
-}
-
 .intro {
   font-style: italic;
   color: rgba(240, 240, 240, 0.8);
@@ -101,19 +95,23 @@ body {
   text-align: justify;
   width: 80%;
   margin-top: 50px;
-  margin-left: 50px;
+  padding-left: 50px;
 
   display: flex;
   justify-content: space-around;
 
-  font-weight: 100;
+  font-weight: 200;
   color: white;
   
   text-indent: 30px;
 }
 
 .article h2 {
-  font-weight: 200;
+  font-weight: 300;
+}
+
+.content {
+  width: 60%;
 }
 
 .thumb-right {
