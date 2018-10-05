@@ -9,5 +9,6 @@
         crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400" rel="stylesheet">
         <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/flickity.css">
     </head>
     <body>

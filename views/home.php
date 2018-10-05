@@ -18,22 +18,28 @@ include '../components/navbar.php';
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est rerum tenetur consequuntur dolor consectetur sed laborum facilis voluptatem architecto deserunt ipsa magnam repellendus, reiciendis officia quibusdam harum doloribus eum velit!</p>
     </div>
     <div class="presentation-thumb"> 
-            <img src="../images/Francois-Ghys.jpg" alt=""> 
+        <img src="../images/Francois-Ghys.jpg" alt="">
     </div>
 </div>
 
 <div class="flagship welcomeHide">
     <h2 class="flagship-title">Les plus vendus</h2>
-
-
-    <div class="flagship-item"><img src="../images/Francois-Ghys.jpg" alt=""></div>
-    <div class="flagship-item"><img src="../images/Francois-Ghys.jpg" alt=""></div>
-    <div class="flagship-item"><img src="../images/Francois-Ghys.jpg" alt=""></div>
+    
+    <div class="main-gallery js-flickity"
+  data-flickity-options='{ "cellAlign": "left", "contain": true }'">
+        <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
+    </div>
 
 </div>
 
 
 <script src="../js/welcome.js"></script>
+<script src="../js/flickity.js"></script>
 <?php
 include '../components/footer.php';
 ?>
