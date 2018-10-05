@@ -10,6 +10,8 @@ body {
   font-size: 1rem;
   font-family: 'Raleway';
   font-weight: 300;
+
+  color: white;
 }
 
 /*Navigation*/
@@ -88,6 +90,18 @@ body {
 
 .presentation {
   display: flex;
+  justify-content: space-evenly;
+}
+.presentation-content {
+  width: 50%;
+
+  font-size: 1rem;
+}
+.presentation-thumb {
+  width: 22%;
+}
+.presentation-thumb img {
+  width: 100%;
 }
 
 .flagship {

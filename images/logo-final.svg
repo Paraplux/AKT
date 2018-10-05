@@ -16,7 +16,10 @@
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="logo-final.svg"
-   style="shape-rendering:geometricPrecision">
+   style="shape-rendering:geometricPrecision"
+   inkscape:export-filename="C:\Users\Marc\Documents\Webdev\Laragon\www\AKT\images\logo-final.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -27,7 +30,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="34.574716"
+     inkscape:cx="27.431859"
      inkscape:cy="64.910922"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -50,7 +53,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -108,6 +111,6 @@
          id="tspan1506"
          x="-86.275269"
          y="77.389153"
-         style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Ultra-Light';stroke-width:0.096977;fill:#ffffff;fill-opacity:1;">JEWELS</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Light';stroke-width:0.096977;fill:#ffffff;fill-opacity:1">JEWELS</tspan></text>
   </g>
 </svg>

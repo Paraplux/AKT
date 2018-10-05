@@ -5,11 +5,11 @@
     </div>
     <div id="nav-separator"></div>
     <div class="right-nav">
-        <span><a href="#">HOME</a></span>
-        <span><a href="#">CRAFTMANSHIP</a></span>
-        <span><a href="#">COLLECTION</a></span>
-        <span><a href="#">NEWS</a></span>
-        <span><a href="#" id="purple">STORE</a></span>
-        <span><a href="#">ABOUT</a></span>
+        <span><a href="../views/home.php">HOME</a></span>
+        <span><a href="../views/craft.html">CRAFTMANSHIP</a></span>
+        <span><a href="../views/collection.php">COLLECTION</a></span>
+        <span><a href="../views/news.php">NEWS</a></span>
+        <span><a href="../views/store.php" id="purple">STORE</a></span>
+        <span><a href="../views/about.php">ABOUT</a></span>
     </div>
 </div>
