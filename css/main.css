@@ -8,10 +8,13 @@ body {
   height: 100vh;
   
   font-size: 1rem;
+<<<<<<< Updated upstream
   font-family: 'Raleway';
   font-weight: 300;
-
-  color: white;
+=======
+  font-family: 'Montserrat';
+  color: #ffffff;
+>>>>>>> Stashed changes
 }
 
 /*Navigation*/
@@ -90,18 +93,6 @@ body {
 
 .presentation {
   display: flex;
-  justify-content: space-evenly;
-}
-.presentation-content {
-  width: 50%;
-
-  font-size: 1rem;
-}
-.presentation-thumb {
-  width: 22%;
-}
-.presentation-thumb img {
-  width: 100%;
 }
 
 .flagship {
@@ -122,6 +113,15 @@ body {
   width: 100%;
 
 }
+
+mosaic {
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+
+/* /HOME PAGE*/
 
 /*Corpus Type*/
 
@@ -163,34 +163,3 @@ body {
   margin-right: 50px;
 }
 
-
-/* BLOG  */
-
-.news-container {
-
-}
-
-.news-blog {
-
-}
-
-.news-blog-thumb {
-
-}
-
-.news-blog-content {
-
-}
-
-.news-press {
-
-}
-
-.news-press-thumb {
-
-}
-
-.news-press-content {
-  
-}
-/* /BLOG  */
