@@ -13,7 +13,7 @@ include '../components/navbar.php';
     <span id="jewels">JEWELS</span>
 </div>
 
-<div class="presentation">
+<div class="presentation welcomeHide">
     <div class="presentation-content">
         <h1>titre</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est rerum tenetur consequuntur dolor consectetur sed laborum facilis voluptatem architecto deserunt ipsa magnam repellendus, reiciendis officia quibusdam harum doloribus eum velit!</p>
@@ -27,7 +27,7 @@ include '../components/navbar.php';
     </div>
 </div>
 
-<div class="flagship">
+<div class="flagship welcomeHide">
     <h2 class="flagship-title">Les plus vendus</h2>
 
 

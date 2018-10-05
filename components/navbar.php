@@ -1,7 +1,7 @@
 <div class='nav-fix'></div>
-<div id="navigation">
+<div id="navigation" class="welcomeHide">
     <div class="left-nav">
-        <img class="logo" src="../images/logo-final.svg" alt="">
+        <img class="logo" src="../images/logo-final.png" alt="">
     </div>
     <div id="nav-separator"></div>
     <div class="right-nav">

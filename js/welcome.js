@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    $('#navigation').hide();
+    $('.welcomeHide').hide();
+    $('.welcomeHide').fadeOut();
     $('#navigation').slideUp();
     function hideAKT() {
         $('#animation').hide();
@@ -7,6 +8,12 @@ $(document).ready(function () {
     function showMENU() {
         $('#navigation').slideDown();
     }
+    function showPage() {
+        $('.welcomeHide').fadeIn(500);
+
+    }
     setTimeout(hideAKT, 2000);
     setTimeout(showMENU, 2000);
+    setTimeout(showPage, 2500);
+
 });
