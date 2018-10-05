@@ -26,7 +26,17 @@ include '../components/navbar.php';
     <h2 class="flagship-title">Les plus vendus</h2>
     
     <div class="main-gallery js-flickity"
-  data-flickity-options='{ "cellAlign": "left", "contain": true }'">
+            data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+        <div class="gallery-cell"><img src="../images/thumb-ammo.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/thumb-military.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/thumb-forge.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/thumb-statue.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
+        <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
         <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
         <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
         <div class="gallery-cell"><img src="../images/Francois-Ghys.jpg" alt=""></div>
