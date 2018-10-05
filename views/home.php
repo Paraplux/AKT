@@ -3,7 +3,6 @@ include '../components/header.php';
 include '../components/navbar.php';
 ?>
 <link rel="stylesheet" href="../css/welcome.css">
-<script src="js/home.js"></script>
 
 
 <div id="animation">
@@ -19,11 +18,7 @@ include '../components/navbar.php';
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est rerum tenetur consequuntur dolor consectetur sed laborum facilis voluptatem architecto deserunt ipsa magnam repellendus, reiciendis officia quibusdam harum doloribus eum velit!</p>
     </div>
     <div class="presentation-thumb"> 
-        <body onload="randomImg()">
-            <img src="../images/Francois-Ghys.jpg" alt="">
-            <img src="../Images/GIF/Not sure.gif" alt="">
-            <img src="../Images/GIF/nice.gif" alt="">
-        </body> 
+            <img src="../images/Francois-Ghys.jpg" alt=""> 
     </div>
 </div>
 

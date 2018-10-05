@@ -11,6 +11,7 @@ $(document).ready(function () {
     function showPage() {
         $('.welcomeHide').fadeIn(500);
 
+
     }
     setTimeout(hideAKT, 2000);
     setTimeout(showMENU, 2000);
