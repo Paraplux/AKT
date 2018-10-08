@@ -192,3 +192,57 @@ p {
   margin-right: 50px;
 }
 
+/*Page news*/
+
+.news{
+  display: flex;
+  justify-content:flex-start;
+  align-items:stretch;
+}  
+.blog{
+  width:50%;
+  padding: 25px;
+} 
+.press{
+  width:50%;
+  padding: 25px;
+}
+
+
+.accordion {
+
+background-color: dimgray;
+color: white;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+}
+
+.active, .accordion:hover {
+background-color: #ccc; 
+}
+
+.panel {
+padding: 0 18px;
+display: none;
+background-color: gray;
+overflow: hidden;
+max-width: 100%;
+}
+.accordion:after {
+content: '\02795'; /* Unicode character for "plus" sign (+) */
+font-size: 9px;
+color: #777;
+float: right;
+margin-left: 5px;
+}
+
+.active:after {
+content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/*page news*/
