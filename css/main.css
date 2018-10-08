@@ -89,8 +89,6 @@ body {
 .home-page {
 margin-right: 3.7%;
 margin-left: 3.7%;
-font-family: 'Montserrat', sans-serif;
-font-weight: 400;
 color: #ffffff;
 margin-top: -25px;
 }
@@ -100,30 +98,14 @@ margin-top: -25px;
   display: flex;
 }
 
-/*.flagship {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.flagship-title{
-  width: 100%;
-  text-align: center;
-}
 
-.flagship-item
-{
-  width: 25%;
-}
-.flagship-item img {
-  width: 100%;
-
-}*/
 .home-h1 {
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .home-h2 {
   text-decoration: underline;
+  font-weight: 300;
 }
 .presentation-thumb {
   height: 250px;
