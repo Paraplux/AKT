@@ -86,6 +86,16 @@ body {
 
 /*HOME PAGE*/
 
+.home-page {
+margin-right: 3.7%;
+margin-left: 3.7%;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+color: #ffffff;
+margin-top: -25px;
+}
+
+
 .presentation {
   display: flex;
 }
@@ -108,6 +118,25 @@ body {
   width: 100%;
 
 }*/
+.home-h1 {
+  font-weight: bold;
+}
+
+.home-h2 {
+  text-decoration: underline;
+}
+.presentation-thumb {
+  height: 250px;
+}
+.main-picture{
+  width: 450px;
+}
+
+p {
+  text-align: justify;
+  padding-right: 25px;
+}
+
 
 .gallery-cell {
   width: 25%;
@@ -120,6 +149,7 @@ body {
 .gallery-cell img {
   width: 100%;
   height: 200px;
+  object-fit: cover;
 }
 
 /*Corpus Type*/
