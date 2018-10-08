@@ -17,19 +17,20 @@ include '../components/navbar.php';
         <div class="presentation welcomeHide">
             <div class="presentation-content">
                 <h1 class="home-h1">François Ghys</h1>
-                <p class="title-page">UN REVE D'ENFANT<br>
-        « J’ai toujours rêvé de fabriquer de beaux objets. Des objets au design affirmé, que l’on aime et que l’on garde. Des objets qui ont une histoire et qui expriment des valeurs.<br>
-        Il y a 2 ans, j’ai décidé de transformer ce rêve en réalité : c’est ainsi que l’aventure AKT a commencé »<br>
-        
-        François Ghys, fondateur de AKT Jewels.</p>
+                <p class="home-intro">
+                    UN REVE D'ENFANT<br>
+                    « J’ai toujours rêvé de fabriquer de beaux objets. Des objets au design affirmé, que l’on aime et que l’on garde. Des objets qui ont une histoire et qui expriment des valeurs.<br>
+                    Il y a 2 ans, j’ai décidé de transformer ce rêve en réalité : c’est ainsi que l’aventure AKT a commencé »<br>
+                    François Ghys, fondateur de AKT Jewels.
+                </p>
             </div>
             <div class="presentation-thumb"> 
-                <img class="main-picture" src="../images/Francois-Ghys.jpg" alt="">
+                
             </div>
         </div>
 
     <div class="flagship welcomeHide">
-    <h2 class="home-h2">Les plus vendus</h2>
+    <h2 class="home-h2"><div>BEST SALES</div></h2>
     
     <div class="main-gallery js-flickity"
             data-flickity-options='{ "cellAlign": "left", "contain": true }'>
@@ -61,6 +62,7 @@ include '../components/navbar.php';
 
 
 <script src="../js/welcome.js"></script>
+<script src="../js/home.js"></script>
 <script src="../js/flickity.js"></script>
 <?php
 include '../components/footer.php';
