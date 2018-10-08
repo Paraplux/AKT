@@ -11,6 +11,7 @@ body {
   font-family: 'Raleway';
   font-weight: 300;
   overflow-X: hidden;
+  color: #fff;
 }
 
 /*Navigation*/
@@ -202,24 +203,35 @@ margin-top: 0px;
 
 /*Page news*/
 
+.main-news{
+  float: left;
+  padding-right: 5%;
+  margin-top: -5px;
+}
+.main-news img {
+  height: 250px;
+  padding-left: 0%;
+  display: inline-block;
+}
 .news{
   display: flex;
   justify-content:flex-start;
   align-items:stretch;
 }  
-.blog{
-  width:50%;
-  padding: 25px;
-} 
 .press{
-  width:50%;
+  width:70%;
   padding: 25px;
 }
+.blog{
+  margin-top: 3%;
+  width:30%;
+  padding: 25px;
+} 
 
 
 .accordion {
 
-background-color: dimgray;
+background-color: #303030;
 color: white;
 cursor: pointer;
 padding: 18px;
@@ -232,13 +244,13 @@ transition: 0.4s;
 }
 
 .active, .accordion:hover {
-background-color: #ccc; 
+background-color: #282828; 
 }
 
 .panel {
 padding: 0 18px;
 display: none;
-background-color: gray;
+background-color: #303030;
 overflow: hidden;
 max-width: 100%;
 }

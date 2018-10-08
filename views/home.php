@@ -14,7 +14,7 @@ include '../components/navbar.php';
 
 <div class="home-page">
     <div class="defil-container welcomeHide"><div class="defil">La Comté - FRANCOIS - FRANCOIS - FRANCOIS - FRANCOIS - FRANCOIS</div></div>
-        <div class="presentation welcomeHide">
+        <div class="presentation welcomeHide">  
             <div class="presentation-content">
                 <h1 class="home-h1">François Ghys</h1>
                 <p class="title-page">UN REVE D'ENFANT<br>
