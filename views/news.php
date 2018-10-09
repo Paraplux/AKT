@@ -2,75 +2,61 @@
 include'../components/header.php';
 include'../components/navbar.php';
  ?>
+<link rel="stylesheet" href="../css/news.css">
 
+<div class="news-page">
+    <section class="blog-section">
+        <article class="main-blog">
+            <h1 class="main-blog-title">AKT se déplace à Berlin !</h1>
+            <p class="main-blog-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam, exercitationem officiis et dignissimos sequi accusantium, eos consequatur, vel tenetur ut sed fugit beatae non cumque quaerat ipsam. Voluptatum, non?</p>
+            <h3 class="main-blog-subtitle">Lorem Ipsum</h3>
+            <p class="main-blog-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad eligendi atque perferendis exercitationem numquam quae laboriosam perspiciatis, minima vel natus voluptate iste praesentium? Tempora quia veritatis deleniti ratione minima ea? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi facilis culpa molestias natus excepturi quas corporis exercitationem, quo impedit error provident deleniti magni fugiat eveniet explicabo recusandae laboriosam odit totam?</p>
+            <div class="main-blog-thumb"><img src="../images/Tendance-et-dEcoration-Akt-Jewels-1.jpg" alt="Nouveau !" /></div>
+            <h3 class="main-blog-subtitle">Lorem Ipsum</h3>
+            <div class="main-blog-thumb"><img src="../images/Tendance-et-dEcoration-Akt-Jewels-1.jpg" alt="Nouveau !" /></div>
+            <p class="main-blog-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad eligendi atque perferendis exercitationem numquam quae laboriosam perspiciatis, minima vel natus voluptate iste praesentium? Tempora quia veritatis deleniti ratione minima ea? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi facilis culpa molestias natus excepturi quas corporis exercitationem, quo impedit error provident deleniti magni fugiat eveniet explicabo recusandae laboriosam odit totam?</p>
+            <h3 class="main-blog-subtitle">Lorem Ipsum</h3>
+            <p class="main-blog-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam, exercitationem officiis et dignissimos sequi accusantium, eos consequatur, vel tenetur ut sed fugit beatae non cumque quaerat ipsam. Voluptatum, non?</p>
+        </article>
 
-<div class="news">
-
-    <section class="press">
-            <h1>Rien que des nouveautés</h1>
-            <p class="main-news"><img src="../images/Tendance-et-dEcoration-Akt-Jewels-1.jpg" alt="Nouveau !" /></p>
-            <p class="ma">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad eligendi atque perferendis exercitationem numquam quae laboriosam perspiciatis, minima vel natus voluptate iste praesentium? Tempora quia veritatis deleniti ratione minima ea? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi facilis culpa molestias natus excepturi quas corporis exercitationem, quo impedit error provident deleniti magni fugiat eveniet explicabo recusandae laboriosam odit totam?</p>
-
-        <button class="accordion">Title press</button>
+        <!-- Accordion -->
+        <button class="accordion">Article précédent</button>
         <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
-        <button class="accordion">Title press</button>
+        <button class="accordion">Article précédent</button>
         <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
-        <button class="accordion">Title press</button>
+        <button class="accordion">Article précédent</button>
         <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
     </section>
 
-    <section class="blog">
+    <section class="press-section">
+        <article class="press-article">
+            <h3 class="press-title">Critique press 1</h3>
+            <p class="press-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </article>
 
+        <article class="press-article">
+            <h3 class="press-title">Critique press 1</h3>
+            <p class="press-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </article>
 
-        <article><span class="title">Article 1</span><br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Laborum culpa quos, accusamus et quaerat suscipit, hic qui dolore adipisci veritatis magni tenetur ullam
-            quia in doloribus eveniet voluptatem ab delectus.</article>
-
-        <article><span class="title">Article 2</span><br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Quam incidunt obcaecati asperiores voluptate eos deserunt distinctio numquam accusamus sunt illo molestiae
-            aspernatur beatae minima possimus dolores, ducimus ex, aperiam vel.</article>
-
-        <article><span class="title">Article 3</span><br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Possimus, quas tenetur dolorum voluptatibus et, alias odit maiores aliquam. Molestias ipsa dolores, commodi
-            tempora quis dolore omnis! Temporibus possimus impedit blanditiis.</article>
-
+        <article class="press-article">
+            <h3 class="press-title">Critique press 1</h3>
+            <p class="press-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </article>
 
     </section>
 
 </div>
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-</script>
-
-
-
+<script src="../js/news.js"></script>
 
 <?php include'../components/footer.php'; ?>

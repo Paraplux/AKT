@@ -2,7 +2,9 @@
 include '../components/header.php';
 include '../components/navbar.php';
 ?>
-<link rel="stylesheet" href="../css/welcome.css">
+
+<link rel="stylesheet" href="../css/anim-home.css">
+<link rel="stylesheet" href="../css/home.css">
 
 
 <div id="animation">
