@@ -63,9 +63,9 @@ include '../components/navbar.php';
 </div>
 
 
+<script src="../js/flickity.js"></script>
 <script src="../js/welcome.js"></script>
 <script src="../js/home.js"></script>
-<script src="../js/flickity.js"></script>
 <?php
 include '../components/footer.php';
 ?>

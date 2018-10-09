@@ -1,0 +1,82 @@
+.collection-container {
+    height: 100vh;
+}
+
+.filter-blur-opacity {
+    opacity: 0.4;
+    filter: blur(2px);
+}
+.toggle-carousel-main {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+    color: white;
+    font-size: 2rem;
+}
+.carousel-main {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+
+    z-index: 10;
+}
+
+.carousel-sec {
+    position: absolute;
+    top: 14vh;
+    left:0;
+    right:0;
+}
+.flickity-page-dots {
+    display: none;
+}
+.object img {
+    width: 640px;
+    height: 480px;
+}
+.object-main img {
+    width: 240px;
+    height: 160px;
+}
+.object img, .object-main img {
+    filter: grayscale(100%) blur(1px);
+    transform: scale(0.95);
+    transition-duration: 600ms;
+    opacity: 0.9;
+}
+.object.is-selected img,
+.object-main.is-selected img {
+    filter: grayscale(0%) blur(0px);
+    transform: scale(1);
+    transition-duration: 600ms;
+    opacity: 1;
+}
+
+.static-banner {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: 1;
+
+    padding: 5px 15px;
+
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: #303030;
+    
+    transform: translateX(10%);
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 12px black;
+    border-radius: 2px;
+}
+
+.fa-arrow-up:hover {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%);
+    cursor: pointer;
+}

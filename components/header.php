@@ -7,7 +7,8 @@
         <title>AKT-Jewels</title>
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/navbar.css">
         <link rel="stylesheet" href="../css/flickity.css">
