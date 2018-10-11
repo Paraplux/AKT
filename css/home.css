@@ -87,7 +87,7 @@
     width: 33%;
     height: 200px;
     margin-right: 10px;
-    background: #8C8;
+    background: #303030;
     counter-increment: gallery-cell;
 
     position: relative;
