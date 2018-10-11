@@ -4,9 +4,11 @@
     margin-right: 3.7%;
     margin-left: 3.7%;
     color: #ffffff;
+    overflow: hidden;
 }
 
     .presentation {
+        margin-top: 2vh;
         display: flex;
     }
 
@@ -17,7 +19,7 @@
 
         .presentation-thumb {
             width: 30%;
-            height: 40vh;
+            height: 35vh;
 
             background-image: url('../images/thumb-ammo.jpg');
             animation-name: home-diaporama;
@@ -42,7 +44,7 @@
 
             text-align: center;
             background: #ffffff;
-            border-left: 2px solid #d218e2;
+            border-left: 3px solid #d218e2;
 
             font-family: 'Montserrat', sans-serif;
             font-size: 1.2rem;
@@ -61,8 +63,9 @@
             }
 
 /*CSS du carousel*/
+
 .gallery-cell { 
-    width: 25%;
+    width: 33%;
     height: 200px;
     margin-right: 10px;
     background: #8C8;
@@ -75,6 +78,10 @@
     object-fit: cover;
 }
 
+.gallery-cell:hover {
+    transition-delay: 1s;
+    opacity: 0.5;
+}
 
 /*Animation*/
 

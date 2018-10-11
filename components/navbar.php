@@ -11,5 +11,6 @@
         <span><a href="../views/news.php">NEWS</a></span>
         <span><a href="../views/store.php" id="purple">STORE</a></span>
         <span><a href="../views/about.php">ABOUT</a></span>
+        <span><i class="fab fa-instagram"></i><i class="fab fa-pinterest-p"></i></span>
     </div>
 </div>
