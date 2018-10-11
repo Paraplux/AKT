@@ -6,13 +6,13 @@ include '../components/navbar.php';
 <link rel="stylesheet" href="../css/anim-home.css">
 <link rel="stylesheet" href="../css/home.css">
 
-
 <div id="animation">
     <span id="a">A</span>
     <span id="k">K</span>
     <span id="t">T</span>
     <span id="jewels">JEWELS</span>
 </div>
+
 
 <div class="home-page">
     <div class="defil-container welcomeHide"><div class="defil">La Comté - FRANCOIS - FRANCOIS - FRANCOIS - FRANCOIS - FRANCOIS</div></div>
@@ -69,4 +69,3 @@ include '../components/navbar.php';
 <?php
 include '../components/footer.php';
 ?>
-<div>

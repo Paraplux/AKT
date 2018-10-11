@@ -8,14 +8,17 @@
     font-weight: 100;
 }
 
-#a, #k, #t {
+#a,
+#k,
+#t {
     position: fixed;
     top: 50%;
     transform: translate(-50%, -50%);
-    
+
     font-size: 21rem;
     opacity: 0;
 }
+
 #a {
     left: 30%;
     animation-name: opacity;
@@ -23,6 +26,7 @@
     animation-fill-mode: forwards;
     animation-delay: .5s;
 }
+
 #k {
     left: 45%;
     animation-name: opacity;
@@ -30,6 +34,7 @@
     animation-fill-mode: forwards;
     animation-delay: 0.6s;
 }
+
 #t {
     left: 60%;
     animation-name: opacity;
@@ -43,7 +48,7 @@
     top: 45.5%;
     left: 62%;
     transform: rotate(-90deg) scale(0);
-    
+
     font-size: 3rem;
     letter-spacing: 0.5rem;
     opacity: 0;
@@ -58,6 +63,7 @@
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -65,10 +71,11 @@
 
 @keyframes scale {
     from {
-        transform:rotate(-90deg) scale(0);
+        transform: rotate(-90deg) scale(0);
     }
+
     to {
-        transform:rotate(-90deg) scale(1);
+        transform: rotate(-90deg) scale(1);
     }
 }
 
@@ -76,6 +83,7 @@
     from {
         display: inline;
     }
+
     to {
         display: none;
     }
