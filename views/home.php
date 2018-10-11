@@ -20,13 +20,16 @@ include '../components/navbar.php';
         </div>
         <div class="presentation welcomeHide">  
             <div class="presentation-content">
-                <h1 class="home-h1">François Ghys</h1>
-                <p class="home-intro">
-                    UN REVE D'ENFANT<br>
-                    « J’ai toujours rêvé de fabriquer de beaux objets. Des objets au design affirmé, que l’on aime et que l’on garde. Des objets qui ont une histoire et qui expriment des valeurs.<br>
-                    Il y a 2 ans, j’ai décidé de transformer ce rêve en réalité : c’est ainsi que l’aventure AKT a commencé »<br>
-                    François Ghys, fondateur de AKT Jewels.
-                </p>
+                <h1 class="home-h1">Une histoire</h1>
+                <div class="home-intro">
+                    <p>
+                        J’ai créé <strong>AKT Jewels</strong> début 2012 par amour des beaux objets. Pour moi, un bel objet est un objet qui a un intérêt esthétique mais aussi une <strong>histoire</strong>. L’histoire que je voulais que mes objets racontent est une histoire de <strong>paix et de liberté</strong>.
+                    </p>
+                    <p>
+                        C’est pourquoi j’ai choisi symboliquement d’utiliser des matériaux symbolisant la violence et la mort, de les <strong>détruire</strong> et de les refaire vivre à travers des créations qui incarnent <strong>la paix et la liberté</strong>.
+                    </p>
+                    <p class="intro-signature">Francois Ghys</p>
+                </div>
             </div>
             <div class="presentation-thumb"> 
                 
@@ -38,10 +41,22 @@ include '../components/navbar.php';
     
     <div class="main-gallery js-flickity"
             data-flickity-options='{"cellAlign": "center", "contain": true, "wrapAround": true }'>
-        <div class="gallery-cell"><img src="../images/jewelry/brace-1.jpg" alt=""></div>
-        <div class="gallery-cell"><img src="../images/jewelry/brace-2.jpg" alt=""></div>
-        <div class="gallery-cell"><img src="../images/jewelry/brace-3.jpg" alt=""></div>
-        <div class="gallery-cell"><img src="../images/jewelry/brace-4.jpg" alt=""></div>
+        <div class="gallery-cell">
+            <img class="gallery-cell-thumb" src="../images/jewelry/brace-1.jpg" alt="">
+            <div class="gallery-cell-body">PRIX : 500$</div>
+        </div>
+        <div class="gallery-cell">
+            <img class="gallery-cell-thumb" src="../images/jewelry/brace-2.jpg" alt="">
+            <div class="gallery-cell-body">PRIX : 500$</div>
+    </div>
+        <div class="gallery-cell">
+            <img class="gallery-cell-thumb" src="../images/jewelry/brace-3.jpg" alt="">
+            <div class="gallery-cell-body">PRIX : 500$</div>
+    </div>
+        <div class="gallery-cell">
+            <img class="gallery-cell-thumb" src="../images/jewelry/brace-4.jpg" alt="">
+            <div class="gallery-cell-body">PRIX : 500$</div>
+    </div>
     </div>
 
 </div>

@@ -52,7 +52,7 @@
     font-size: 3rem;
     letter-spacing: 0.5rem;
     opacity: 0;
-    animation: opacity 1s linear 0.7s forwards, scale 0.5s linear 0.7s forwards, hidethis 1s linear 0.7s forwards;
+    animation: opacity 1s linear 0.7s forwards, scale 0.5s linear 0.7s forwards;
 }
 
 @keyframes opacity {
@@ -76,16 +76,6 @@
 
     to {
         transform: rotate(-90deg) scale(1);
-    }
-}
-
-@keyframes hidethis {
-    from {
-        display: inline;
-    }
-
-    to {
-        display: none;
     }
 }
 
