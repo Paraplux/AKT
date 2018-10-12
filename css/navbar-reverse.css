@@ -1,93 +1,12 @@
-/*CSS for the navigation part*/
-
-.nav-fix {
-    height: 10vh; /*Fix pour compenser la hauteur de la nav-bar qui est en fix*/
+.right-nav {
+    background-color: #303030;
 }
-
-#navigation {
-    position: fixed;
-    top: 0;
-    height: 10vh;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #303030;
-
+    .right-nav a {
+        color: #dcdcdc;
+    }
+    .fab {
+        color: #dcdcdc;
+    }
+.left-nav {
     background-color: #ededed;
-
-    transform: skew(-25deg) scale(1.05); /*Donne l'effet penché au menu*/
 }
-
-    #navigation span {
-        transform: skew(25deg) scale(0.95); /*On inverse l'effet penché pour que le texte reste droit*/
-    }
-
-    .right-nav,
-    .left-nav {
-        height: 100%;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .right-nav {
-        width: 80%;
-
-        color: #ededed;
-        background-color: #303030;
-    }
-
-        .right-nav a {
-            text-decoration: none;
-            color: #ededed;
-        }
-
-        .right-nav a:hover {
-            font-weight: 700;
-        }
-
-        #purple {
-            font-weight: 700;
-        }
-        
-        #purple:hover {
-            color: #d218e2;
-        }
-        
-        .fab {
-            font-size: 1.8rem;
-            color: #ededed;
-            margin-right: 1vw;
-        }
-        .fa-pinterest-p:hover,
-        .fa-instagram:hover {
-            cursor:pointer;
-        }
-        .fa-pinterest-p {
-            margin-left: 1vw;
-        }
-        .fa-pinterest-p:hover {
-            color: rgb(158, 27, 27);
-        }
-
-        .fa-instagram:hover {
-            color: #b4455d;
-        }
-
-    .left-nav {
-        width: 20%;
-        background-color: #ededed;
-        border-right: 4px solid #d218e2;
-    }
-
-        .logo {
-            width: 40%;
-            transform: skew(25deg) scale(0.95); /*On inverse l'effet penché pour que le texte reste droit*/
-        }

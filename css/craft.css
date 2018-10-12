@@ -14,7 +14,8 @@
     display: flex;
     justify-content: space-around;
 
-    font-weight: 200;
+    font-family: 'Raleway Light';
+    font-weight: 300;
     color: white;
 
     text-indent: 30px;
@@ -27,8 +28,6 @@
 
     background: #ffffff;
     border-left: 2px solid #d218e2;
-
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     color: #303030;
 

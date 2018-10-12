@@ -1,11 +1,3 @@
-@font-face {
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'feathericons';
-    src: url('../fonts/feathericons/feathericons.eot?-8is7zf');
-    src: url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'), url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'), url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'), url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg')
-}
-
 *,
 *:after,
 *:before {
@@ -89,7 +81,7 @@
 }
 
 .grid figure p {
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     font-size: 68.5%
 }
 
@@ -104,8 +96,33 @@
 
 /* css APOLLO */
 
-figure.effect-apollo {
-    background: #ff0000
+.effect-apollo {
+    font-family: 'Montserrat';
+    box-shadow: 0 0 10px #808080;
+}
+figure.effect-apollo.blue-apollo p {
+border-right: 4px solid rgba(0, 0, 255, 1);
+}
+figure.effect-apollo.purple-apollo p {
+border-right: 4px solid rgba(255, 0, 255, 1);
+}
+figure.effect-apollo.orange-apollo p {
+border-right: 4px solid rgba(230, 100, 0, 1);
+}
+figure.effect-apollo.red-apollo p {
+border-right: 4px solid rgba(255, 0, 0, 1);
+}
+figure.effect-apollo.blue-apollo {
+    background: rgba(0, 0, 255, 0.2);
+}
+figure.effect-apollo.purple-apollo {
+    background: rgba(255, 0, 255, 0.2);
+}
+figure.effect-apollo.orange-apollo {
+    background: rgba(230, 100, 0, 0.2);
+}
+figure.effect-apollo.red-apollo {
+    background: rgba(255, 0, 0, 0.2);
 }
 
 figure.effect-apollo img {
@@ -137,15 +154,18 @@ figure.effect-apollo p {
     margin: 3em;
     padding: 0 1em;
     max-width: 150px;
-    border-right: 4px solid #d218e2;
     text-align: right;
     opacity: 0;
     -webkit-transition: opacity .35s;
     transition: opacity .35s
 }
 
-figure.effect-apollo h2 {
-    text-align: left
+figure.effect-apollo h2,
+figure.effect-apollo p {
+    text-align: left;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 figure.effect-apollo:hover img {

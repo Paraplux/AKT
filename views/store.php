@@ -8,40 +8,40 @@ include '../components/navbar-reverse.php';
 
 <style>
 body{
-    background-color : #ededed
+    background-color : #eeeedc;
 }
 </style>
 
 <div class="grid">
-                    <figure class="effect-apollo">
+                    <figure class="effect-apollo blue-apollo">
                         <img src="../images/jewelry/brace-1.jpg" alt="img18"/>
                         <figcaption>
-                            <h2>Bracelet <span>Of DOOM</span></h2>
-                            <p>Le bracelet de l'apocalypse</p>
+                            <h2>Check out our bracelets...</h2>
+                            <p>Lorem ipsum dolor sit.</p>
                             <a href="#">View more</a>
                         </figcaption>            
                     </figure>
-                <figure class="effect-apollo">
-                        <img src="../images/jewelry/brace-2.jpg" alt="img18"/>
-                        <figcaption>
-                            <h2>Bracelet <span>Of DOOM</span></h2>
-                            <p>Le bracelet de l'apocalypse</p>
-                            <a href="#">View more</a>
-                        </figcaption>            
-                    </figure>
-                <figure class="effect-apollo">
+                <figure class="effect-apollo purple-apollo">
                         <img src="../images/jewelry/brace-3.jpg" alt="img18"/>
                         <figcaption>
-                            <h2>Bracelet <span>Of DOOM</span></h2>
-                            <p>Le bracelet de l'apocalypse</p>
+                            <h2>Check out our necklaces...</h2>
+                            <p>Lorem ipsum dolor sit.</p>
                             <a href="#">View more</a>
                         </figcaption>            
                     </figure>
-                <figure class="effect-apollo">
+                <figure class="effect-apollo orange-apollo">
                         <img src="../images/jewelry/brace-4.jpg" alt="img18"/>
                         <figcaption>
-                            <h2>Bracelet <span>Of DOOM</span></h2>
-                            <p>Le bracelet de l'apocalypse</p>
+                            <h2>Check out our rings...</h2>
+                            <p>Lorem ipsum dolor sit.</p>
+                            <a href="#">View more</a>
+                        </figcaption>            
+                    </figure>
+                <figure class="effect-apollo red-apollo">
+                        <img src="../images/jewelry/brace-2.jpg" alt="img18"/>
+                        <figcaption>
+                            <h2>More objects from us...</h2>
+                            <p>Lorem ipsum dolor sit.</p>
                             <a href="#">View more</a>
                         </figcaption>            
                     </figure>

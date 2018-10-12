@@ -4,8 +4,7 @@
 
 #animation {
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    font-family: 'Montserrat Thin';
 }
 
 #a,
@@ -98,6 +97,7 @@
 }
 
 .defil {
+    font-family: 'Raleway';
     padding-top: 1vh;
     font-size: 1.2rem;
     position: absolute;
