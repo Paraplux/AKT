@@ -65,7 +65,7 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot1145"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.23999999px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:thin;font-size:40px;line-height:1.25;font-family:'Montserrat Thin';letter-spacing:-0.23999999px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        transform="matrix(0.26458333,0,0,0.26458333,40.884927,79.797869)"><flowRegion
          id="flowRegion1147"
          style="fill:#000000;fill-opacity:1"><rect
@@ -78,7 +78,7 @@
          id="flowPara1151" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot1153"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.23999999px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-weight:thin;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.23999999px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        transform="matrix(0.26458333,0,0,0.26458333,40.884927,79.797869)"><flowRegion
          id="flowRegion1155"
          style="fill:#000000;fill-opacity:1"><rect
@@ -90,7 +90,7 @@
            style="fill:#000000;fill-opacity:1" /></flowRegion><flowPara
          id="flowPara1159" /></flowRoot>    <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.94122887px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Ultra-Light';letter-spacing:-0.76736224px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.47353071;"
+       style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:18.94122887px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Extra Light';letter-spacing:-0.76736224px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.47353071;"
        x="43.735203"
        y="80.815025"
        id="text1504"
