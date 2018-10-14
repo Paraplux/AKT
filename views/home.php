@@ -13,7 +13,6 @@ include '../components/navbar.php';
     <span id="jewels">JEWELS</span>
 </div>
 
-
     <div class="home-page">
         <div class="defil-container welcomeHide">
             <div class="defil">AKT JEWELS se déplace à Berlin ! Suivez nous sur les réseaux sociaux !</div>
@@ -64,7 +63,6 @@ include '../components/navbar.php';
 
 <script src="../js/flickity.js"></script>
 <script src="../js/welcome.js"></script>
-<script src="../js/home.js"></script>
 <?php
 include '../components/footer.php';
 ?>

@@ -1,37 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
+include '../components/header.php';
+include '../components/navbar.php';
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Craftmanship</title>
-    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/anim-craft.css">
     <link rel="stylesheet" href="../css/craft.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-</head>
 
-<body>
     <div class="container">
-        <div class='nav-fix'> </div>
-        <div id="navigation">
-            <div class="left-nav">
-                <img class="logo" src="../images/logo-white.png" alt="Logo AKT Jewels">
-            </div>
-            <div id="nav-separator"></div>
-            <div class="right-nav">
-                <span><a href="../views/home.php">HOME</a></span>
-                <span><a href="../views/craft.php">CRAFTMANSHIP</a></span>
-                <span><a href="../views/collection.php">COLLECTION</a></span>
-                <span><a href="../views/news.php">NEWS</a></span>
-                <span><a href="../views/store.php" id="purple">STORE</a></span>
-                <span><a href="../views/about.php">ABOUT</a></span>
-            </div>
-        </div>
         <nav class="sidebar">
             <span class="svg">
-                <? xml version = "1.0" encoding = "UTF-8" standalone = "no" ?>
                 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
                 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -104,7 +81,6 @@
 
             </span>
             <span class="svg">
-                <? xml version = "1.0" encoding = "UTF-8" standalone = "no" ?>
                 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
                 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -181,31 +157,13 @@
                 <div class="content">
                     <h2><div>Idea</div></h2>
                     <p class="intro">
-                        Stage iam Marc onerosus bonis omnibus Caesar nullum post h bronze modum orientis latera cunct
-                        vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum temporibus eius amet, quos assumenda officiis quidem qui reprehenderit quia commodi! Non, quisquam similique!
                     </p>
                     <p>
-                        Hae duae provinciae bello quondam piratico catervis mixtae praedonum a Servilio pro toudulon
-                        missae sub iugum factae
-                        sunt vectigales. et hae quidem regiones velut in bite herpes lingua positae ob orbe eoo monte
-                        Amano
-                        disparantur. Latius iam disseminata licentia lapi bonis dation Caesar nullum post h adhibens
-                        modum orientis Bryan cunct
-                        vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
                     </p>
                     <p>
-                        Hanc tetra plaie gique peter invadere parans dux ante edictus per solitudines Aboraeque Audrey
-                        herbidas
-                        ripas, suorum indicio proditus, qui admissi flagitii metu griffin ad antoine croisade descivere
-                        Romana. absque ullo
-                        egressus
-                        effectu deinde diabete immobilis.Hanc regionem praestitutis celebritati diebus invadere parans
-                        dux ante edictus per solitudines Aboraeque amnis
-                        herbidas
-                        ripas, suorum indicio proditus, qui admissi flagitii metu vulve ad praesidia descivere Romana.
-                        absque ullo
-                        grosse
-                        effectu deinde tabescebat immobilis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
                     </p>
                 </div>
                 <div class="thumb-right thumbs">
@@ -219,32 +177,13 @@
                 <div class="content">
                     <h2><div>Collect</div></h2>
                     <p class="intro">
-                        Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum
-                        orientis latera
-                        cuncta
-                        vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum temporibus eius amet, quos assumenda officiis quidem qui reprehenderit quia commodi! Non, quisquam similique!
                     </p>
                     <p>
-                        Hae duae provinciae bello quondam piratico catervis mixtae praedonum a Servilio pro consule
-                        missae sub iugum factae
-                        sunt vectigales. et hae quidem regiones velut in prominenti terrarum lingua positae ob orbe eoo
-                        monte Amano
-                        disparantur.Hanc regionem praestitutis celebritati diebus invadere parans dux ante edictus per
-                        solitudines Aboraeque amnis
-                        herbidas
-                        ripas, suorum indicio proditus, qui admissi flagitii metu exagitati ad praesidia descivere
-                        Romana. absque ullo
-                        egressus
-                        effectu deinde tabescebat immobilis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
                     </p>
                     <p>
-                        Hanc regionem praestitutis celebritati diebus invadere parans dux ante edictus per solitudines
-                        Aboraeque amnis
-                        herbidas
-                        ripas, suorum indicio proditus, qui admissi flagitii metu exagitati ad praesidia descivere
-                        Romana. absque ullo
-                        egressus
-                        effectu deinde tabescebat immobilis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
                     </p>
                 </div>
             </article>
@@ -252,32 +191,13 @@
                 <div class="content">
                     <h2><div>Craft</div></h2>
                     <p class="intro">
-                        Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum
-                        orientis latera
-                        cuncta
-                        vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum temporibus eius amet, quos assumenda officiis quidem qui reprehenderit quia commodi! Non, quisquam similique!
                     </p>
                     <p>
-                        Hae duae provinciae bello quondam piratico catervis mixtae praedonum a Servilio pro consule
-                        missae sub iugum factae
-                        sunt vectigales. et hae quidem regiones velut in prominenti terrarum lingua positae ob orbe eoo
-                        monte Amano
-                        disparantur.Hanc regionem praestitutis celebritati diebus invadere parans dux ante edictus per
-                        solitudines Aboraeque amnis
-                        herbidas
-                        ripas, suorum indicio proditus, qui admissi flagitii metu exagitati ad praesidia descivere
-                        Romana. absque ullo
-                        egressus
-                        effectu deinde tabescebat immobilis.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
                     </p>
                     <p>
-                        Hanc regionem praestitutis celebritati diebus invadere parans dux ante edictus per solitudines
-                        Aboraeque amnis
-                        herbidas
-                        ripas, suorum indicio proditus, qui admissi flagitii metu exagitati ad praesidia descivere
-                        Romana. absque ullo
-                        egressus
-                        effectu deinde tabescebat immobilis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
                     </p>
                 </div>
                 <div class="thumb-right thumbs">
@@ -291,37 +211,19 @@
                 <div class="content">
                     <h2><div>Final</div></h2>
                     <p class="intro">
-                        Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum
-                        orientis latera cuncta
-                        vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum temporibus eius amet, quos assumenda officiis quidem qui reprehenderit quia commodi! Non, quisquam similique!
                     </p>
                     <p>
-                        Hae duae provinciae bello quondam piratico catervis mixtae praedonum a Servilio pro consule
-                        missae sub iugum factae
-                        sunt vectigales. et hae quidem regiones velut in prominenti terrarum lingua positae ob orbe eoo
-                        monte Amano
-                        disparantur.Hanc regionem praestitutis celebritati diebus invadere parans dux ante edictus per
-                        solitudines Aboraeque amnis
-                        herbidas
-                        ripas, suorum indicio proditus, qui admissi flagitii metu exagitati ad praesidia descivere
-                        Romana. absque ullo
-                        egressus
-                        effectu deinde tabescebat immobilis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
                     </p>
                     <p>
-                        Hanc regionem praestitutis celebritati diebus invadere parans dux ante edictus per solitudines
-                        Aboraeque amnis herbidas
-                        ripas, suorum indicio proditus, qui admissi flagitii metu exagitati ad praesidia descivere
-                        Romana. absque ullo egressus
-                        effectu deinde tabescebat immobilis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
                     </p>
                 </div>
             </article>
         </section>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-    <script src="../js/craft.js"></script>
-</body>
 
-</html>
+    <script src="../js/craft.js"></script>
+
+<?php include '../components/footer.php'; ?>

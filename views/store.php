@@ -6,12 +6,6 @@ include '../components/navbar-reverse.php';
 <link rel="stylesheet" href="../css/navbar-reverse.css">
 <link rel="stylesheet" href="../css/store.css">
 
-<style>
-body{
-    background-color : #eeeedc;
-}
-</style>
-
 <div class="grid">
                     <figure class="effect-apollo blue-apollo">
                         <img src="../images/jewelry/brace-1.jpg" alt="img18"/>
