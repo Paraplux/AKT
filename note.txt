@@ -1,0 +1,20 @@
+Ce que François pourra changer :
+
+    - Les photos de la collection et gérer les anciennes
+    - Ecrire des articles de blogs
+    - Ajouter des critiques de presse
+    - Ajouter des objets à vendre et gérer les anciens (pouvoir les catégoriser)
+    - Gérer les prix
+    - Recevoir les commentaires via le formulaire
+    - Texte défilant
+
+
+Ce qui changera automatiquement :
+
+    - Les objets de la page home (ce sera les plus consultés)
+    - Le stock
+
+Ce qui ne changera pas : 
+
+    - Les textes de la page home, craft et about
+    - Le thème global du site et la disposition des articles et divers composants
