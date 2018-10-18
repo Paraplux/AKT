@@ -41,3 +41,8 @@ body {
   overflow-X: hidden;
   color: #ededed;
 }
+
+.container {
+  width: 90%;
+  margin: auto;
+}

@@ -6,16 +6,14 @@ include '../components/navbar.php';
 <link rel="stylesheet" href="../css/anim-home.css">
 <link rel="stylesheet" href="../css/home.css">
 
-<div id="animation">
-    <span id="a">A</span>
-    <span id="k">K</span>
-    <span id="t">T</span>
-    <span id="jewels">JEWELS</span>
-</div>
 
+
+<div class="container">
     <div class="home-page">
         <div class="defil-container welcomeHide">
-            <div class="defil">AKT JEWELS se déplace à Berlin ! Suivez nous sur les réseaux sociaux !</div>
+            <div class="defil">
+                AKT JEWELS se déplace à Berlin ! Suivez nous sur les réseaux sociaux !
+            </div>
         </div>
         <div class="presentation welcomeHide">  
             <div class="presentation-content">
@@ -31,38 +29,39 @@ include '../components/navbar.php';
                 </div>
             </div>
             <div class="presentation-thumb"> 
-                
+                    
             </div>
         </div>
-
-    <div class="flagship welcomeHide">
-    <h2 class="home-h2"><div>BEST SALES</div></h2>
     
-    <div class="main-gallery js-flickity"
-            data-flickity-options='{"cellAlign": "center", "contain": true, "wrapAround": true }'>
-        <div class="gallery-cell">
-            <img class="gallery-cell-thumb" src="../images/jewelry/brace-1.jpg" alt="">
-            <div class="gallery-cell-body">PRIX : 500$</div>
+        <div class="flagship welcomeHide">
+        <h2 class="home-h2"><div>BEST SALES</div></h2>
+            <div class="main-gallery js-flickity"
+                    data-flickity-options='{"cellAlign": "center", "wrapAround": true }'>
+                <div class="gallery-cell">
+                    <img class="gallery-cell-thumb" src="../images/jewelry/brace-1.jpg" alt="">
+                    <div class="gallery-cell-body">PRIX : 500$</div>
+                </div>
+                <div class="gallery-cell">
+                    <img class="gallery-cell-thumb" src="../images/jewelry/brace-1.jpg" alt="">
+                    <div class="gallery-cell-body">PRIX : 500$</div>
+                </div>
+                <div class="gallery-cell">
+                    <img class="gallery-cell-thumb" src="../images/jewelry/brace-2.jpg" alt="">
+                    <div class="gallery-cell-body">PRIX : 500$</div>
+                </div>
+                <div class="gallery-cell">
+                    <img class="gallery-cell-thumb" src="../images/jewelry/brace-3.jpg" alt="">
+                    <div class="gallery-cell-body">PRIX : 500$</div>
+                </div>
+                <div class="gallery-cell">
+                    <img class="gallery-cell-thumb" src="../images/jewelry/brace-4.jpg" alt="">
+                    <div class="gallery-cell-body">PRIX : 500$</div>
+                </div>
+            </div>
+            
         </div>
-        <div class="gallery-cell">
-            <img class="gallery-cell-thumb" src="../images/jewelry/brace-2.jpg" alt="">
-            <div class="gallery-cell-body">PRIX : 500$</div>
+    
     </div>
-        <div class="gallery-cell">
-            <img class="gallery-cell-thumb" src="../images/jewelry/brace-3.jpg" alt="">
-            <div class="gallery-cell-body">PRIX : 500$</div>
-    </div>
-        <div class="gallery-cell">
-            <img class="gallery-cell-thumb" src="../images/jewelry/brace-4.jpg" alt="">
-            <div class="gallery-cell-body">PRIX : 500$</div>
-    </div>
-    </div>
-
 </div>
 
-
-<script src="../js/flickity.js"></script>
-<script src="../js/welcome.js"></script>
-<?php
-include '../components/footer.php';
-?>
+<?php include '../components/footer.php'; ?>

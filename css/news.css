@@ -15,7 +15,8 @@
             justify-content: space-evenly;
             flex-wrap: wrap;
 
-            border-bottom: 1px solid white;
+            border: 1px solid white;
+
         }
         .main-blog-title {
             font-size: 1.5rem;

@@ -1,82 +1,56 @@
-.collection-container {
-    height: 100vh;
+.collection-head {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid white;
 }
+.collection-head-thumb {
+    width: 100%;
+    opacity: 0.8;
+    filter: blur(1px) grayscale(60%);
 
-.filter-blur-opacity {
-    opacity: 0.4;
-    filter: blur(2px);
 }
-.toggle-carousel-main {
+.collection-head-title {
     position: absolute;
-    bottom: 0;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
+    
+    padding: 3rem 2.5rem;
 
-    color: white;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: 'Montserrat Extra Light';
+    font-weight: 200;
+    
+    border: 1px solid white;
 }
-.carousel-main {
-    position: absolute;
-    bottom: 0;
-    left:0;
-    right:0;
 
-    z-index: 10;
+.collection-head-title span {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem 1.5rem;
+}
+
+.collection-carousels {
+    position: relative;
+    height: 85vh;
+}
+.collection-carousels img {
+    padding: 0 5px;
+}
+.carousel-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    height: 20vh;
+}
+.carousel-nav img {
+    height: 20vh;
 }
 
 .carousel-sec {
-    position: absolute;
-    top: 14vh;
-    left:0;
-    right:0;
+    height: 63vh;
 }
-.flickity-page-dots {
-    display: none;
-}
-.object img {
-    width: 640px;
-    height: 480px;
-}
-.object-main img {
-    width: 240px;
-    height: 160px;
-}
-.object img, .object-main img {
-    filter: grayscale(100%) blur(1px);
-    transform: scale(0.95);
-    transition-duration: 600ms;
-    opacity: 0.9;
-}
-.object.is-selected img,
-.object-main.is-selected img {
-    filter: grayscale(0%) blur(0px);
-    transform: scale(1);
-    transition-duration: 600ms;
-    opacity: 1;
-}
-
-.static-banner {
-    position: absolute;
-    top: -10px;
-    left: 0;
-    z-index: 1;
-
-    padding: 5px 15px;
-
-    font-size: 2rem;
-    font-family: sans-serif;
-    color: #303030;
-    
-    transform: translateX(10%);
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 0 12px black;
-    border-radius: 2px;
-}
-
-.fa-arrow-up:hover {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    transform: translateX(-50%);
-    cursor: pointer;
+.carousel-sec img {
+    height: 63vh;
 }

@@ -1,109 +1,33 @@
 /*CSS for the Home page animations*/
 
-/*Animation d'entrée*/
 
-#animation {
-    color: white;
-    font-family: 'Montserrat Thin';
-}
-
-#a,
-#k,
-#t {
-    position: fixed;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    font-size: 21rem;
-    opacity: 0;
-}
-
-#a {
-    left: 30%;
-    animation-name: opacity;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: .5s;
-}
-
-#k {
-    left: 45%;
-    animation-name: opacity;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.6s;
-}
-
-#t {
-    left: 60%;
-    animation-name: opacity;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.7s;
-}
-
-#jewels {
-    position: fixed;
-    top: 45.5%;
-    left: 62%;
-    transform: rotate(-90deg) scale(0);
-
-    font-size: 3rem;
-    letter-spacing: 0.5rem;
-    opacity: 0;
-    animation: opacity 1s linear 0.7s forwards, scale 0.5s linear 0.7s forwards;
-}
-
-@keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes scale {
-    from {
-        transform: rotate(-90deg) scale(0);
-    }
-
-    to {
-        transform: rotate(-90deg) scale(1);
-    }
-}
 
 /*Texte défilant*/
 
 .defil-container {
-    top: 10vh;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 4vh;
+    top: 8vh;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 3vh;
     position: fixed;
+    overflow: hidden;
 
     background-color: #303030;
 }
 
 .nav-fix {
-    height: 14vh;
+    height: 11vh;
     /*Fix pour compenser la hauteur de la nav-bar qui est en fix + ajoute de 4vh pour compenser le texte défilant !*/
 }
 
 .defil {
     font-family: 'Raleway';
-    padding-top: 1vh;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     display: inline-block;
     animation-name: marquee;
-    animation-duration: 15s;
+    animation-duration: 25s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-fill-mode: backwards;
