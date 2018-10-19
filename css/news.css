@@ -41,7 +41,7 @@
             text-align: left;
         }
         .accordion {
-            background-color: #303030;
+            background-color: #202020;
             color: white;
             cursor: pointer;
             padding: 18px;
@@ -61,7 +61,7 @@
         .panel {
             padding: 0 18px;
             display: none;
-            background-color: #303030;
+            background-color: #202020;
             overflow: hidden;
             max-width: 100%;
         }

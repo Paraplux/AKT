@@ -7,5 +7,14 @@ $(document).ready(function () {
         $('.carousel-sec').hide(0);
         $('.' + carouselToToggle).show(0);
     });
-})
 
+    function monParallax() {
+        var positionScroll = $(window).scrollTop();
+        $('.collection-head-thumb').css('backgroundPosition', "50% " + -(positionScroll / 6) + "px");
+        $('.collection-head-title').css('top', (318 + (positionScroll / 2.5)) + "px");
+    }
+
+    $(window).on('scroll', function () {
+        monParallax();
+    });
+})

@@ -45,7 +45,7 @@
             border-left: 3px solid #d218e2;
 
             font-size: 1.2rem;
-            color: #303030;
+            color: #202020;
         
             transform: skew(-25deg);
         }
@@ -82,7 +82,7 @@
     width: 33%;
     height: 200px;
     margin-right: 10px;
-    background: #303030;
+    background: #202020;
     counter-increment: gallery-cell;
 
     position: relative;
@@ -100,7 +100,7 @@
 .gallery-cell-body{
     text-align: right;
     background-color: white;
-    color: #303030;
+    color: #202020;
     font-weight: 700;
     font-size: 1.2rem;
     height: 50px;

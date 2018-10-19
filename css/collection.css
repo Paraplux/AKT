@@ -1,12 +1,16 @@
 .collection-head {
-    margin-bottom: 50px;
     padding-bottom: 50px;
     border-bottom: 1px solid white;
 }
 .collection-head-thumb {
     width: 100%;
+    height: 90vh;
     opacity: 0.8;
     filter: blur(1px) grayscale(60%);
+
+    background-image: url('../images/collection_thumbs/collection-head-para.jpg');
+    background-position: 50% 0px;
+    background-size: cover;
 
 }
 .collection-head-title {
@@ -16,7 +20,7 @@
     transform: translate(-50%, -50%);
     
     padding: 3rem 2.5rem;
-
+     
     font-size: 3rem;
     font-family: 'Montserrat Extra Light';
     font-weight: 200;
@@ -25,11 +29,11 @@
 }
 
 .collection-head-title span {
-    background-color: rgba(0, 0, 0, 0.4);
     padding: 1rem 1.5rem;
 }
 
 .collection-carousels {
+    padding-top: 50px;
     position: relative;
     height: 85vh;
 }

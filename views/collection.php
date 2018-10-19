@@ -7,7 +7,7 @@ include '../components/navbar.php';
 
 <div class="container">
     <div class="collection-head">
-        <img class="collection-head-thumb" src="../images/collection_thumbs/collection-head.jpg" alt="">
+        <div class="collection-head-thumb"></div>
         <span class="collection-head-title"><span>COLLECTION</span></span>
     </div>
     <div class="collection-carousels">
