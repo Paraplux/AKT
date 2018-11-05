@@ -123,3 +123,19 @@
     transition-duration: 800ms;
     transition-delay: 200ms;
 }
+
+@media all and (max-width: 780px) {
+
+    .presentation {
+        display: block;
+    }
+    .presentation-content {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .presentation-thumb {
+        display: block;
+        width: 100%;
+    }
+}
