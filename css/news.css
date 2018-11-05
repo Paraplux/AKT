@@ -2,12 +2,11 @@
 
 .news-page {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
     .blog-section {
-        width: 70%;
-        padding: 25px;
+        width: 65%;
     }
 
         .main-blog {
@@ -78,8 +77,7 @@
 
 
     .press-section {
-        width: 30%;
-        margin: 15px;
+        width: 25%;
         padding: 25px;
         border-left: 1px solid white;
     }
