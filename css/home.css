@@ -138,4 +138,9 @@
         display: block;
         width: 100%;
     }
+    .gallery-cell{
+        display: block;
+        width: 100%;
+    }
+    
 }

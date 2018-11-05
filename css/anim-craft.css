@@ -14,3 +14,8 @@
   stroke-dasharray: 1600;
   stroke-dashoffset: 1600 ;
 }
+@media all and (max-width: 780px){
+  .sidebar{
+    display: none;
+  }
+}
