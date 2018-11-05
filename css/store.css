@@ -147,8 +147,9 @@ figure.effect-apollo figcaption::before {
     content: '';
     -webkit-transition: -webkit-transform .6s;
     transition: transform .6s;
-    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
-    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, -7
+    deg) translate3d(0, -100%, 0);
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, -70deg) translate3d(0, -100%, 0);
 }
 
 figure.effect-apollo p {
@@ -180,8 +181,8 @@ figure.effect-apollo:hover img {
 }
 
 figure.effect-apollo:hover figcaption::before {
-    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
-    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0) perspective(1px);
+    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, -70deg) translate3d(0, 100%, 0);
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, -70deg) translate3d(0, 100%, 0) perspective(1px);
 }
 
 figure.effect-apollo:hover p {
