@@ -1,0 +1,93 @@
+/*CSS for the navigation part*/
+
+.nav-fix {
+    height: 10vh; /*Fix pour compenser la hauteur de la nav-bar qui est en fix*/
+}
+
+#navigation {
+    position: fixed;
+    top: 0;
+    height: 7vh;
+    width: 100%;
+    z-index: 10000;
+    
+    display: flex;
+    align-items: center;
+    
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    color: #ededed;
+    
+    background-color: #202020;
+    
+    transform: skew(-25deg) scale(1.05); /*Donne l'effet penché au menu*/
+}
+
+#navigation span {
+    transform: skew(25deg) scale(0.95); /*On inverse l'effet penché pour que le texte reste droit*/
+}
+
+.right-nav,
+.left-nav {
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+    .left-nav {
+        width: 20%;
+        background-color: #202020;
+        border-right: 4px solid #d218e2;
+    }
+
+        .logo {
+            width: 30%;
+            margin-top: 10px;
+        }
+
+    .right-nav {
+            width: 80%;
+
+            color: #202020;
+            background-color: #ededed;
+        }
+
+            .right-nav a {
+                text-decoration: none;
+                color: #202020;
+            }
+
+            .right-nav a:hover {
+                font-weight: 700;
+            }
+
+            #purple {
+                font-weight: 700;
+            }
+            
+            #purple:hover {
+                color: #d218e2;
+            }
+            
+            .fab {
+                font-size: 1.8rem;
+                color: #202020;
+                margin-right: 1vw;
+            }
+            .fa-pinterest-p:hover,
+            .fa-instagram:hover {
+                cursor:pointer;
+            }
+            .fa-pinterest-p {
+                margin-left: 1vw;
+            }
+            .fa-pinterest-p:hover {
+                color: rgb(167, 43, 43);
+            }
+
+            .fa-instagram:hover {
+                color: #d6617b;
+            }

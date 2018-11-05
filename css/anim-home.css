@@ -1,0 +1,42 @@
+/*CSS for the Home page animations*/
+
+
+
+/*Texte défilant*/
+
+.defil-container {
+    top: 8vh;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 3vh;
+    position: fixed;
+    overflow: hidden;
+
+    background-color: #202020;
+}
+
+.nav-fix {
+    height: 11vh;
+    /*Fix pour compenser la hauteur de la nav-bar qui est en fix + ajoute de 4vh pour compenser le texte défilant !*/
+}
+
+.defil {
+    font-family: 'Raleway';
+    font-size: 1rem;
+    position: absolute;
+    display: inline-block;
+    animation-name: marquee;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    white-space: nowrap;
+    transform: translateX(100vw);
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(-110%);
+    }
+}
