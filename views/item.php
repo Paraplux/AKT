@@ -12,23 +12,25 @@ include '../components/navbar-reverse.php';
             <img src="../images/jewelry/brace-3.jpg" alt="">
         </div>
         <div class="product-cart">
-            <div class="product-title">
-                <h1>Bracelet</h1>
-                <h1>99€</h1>
-            </div>
-            <div class="product-variation">
-                <select>
-                    <option>Bleu</option> 
-                    <option>Marron</option>
-                    <option>Beige</option>
-                </select>
-            </div>
-            <div class="product-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae voluptate itaque hic modi perferendis quo est, ipsa sit repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae voluptate itaque hic modi perferendis quo est, ipsa sit repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae voluptate itaque hic modi perferendis quo est, ipsa sit repudiandae.
-            </div>
-            <div class="product-buy">
-                <h2>Add to cart</h2>
-            </div>
+            <form action="" method="">
+                <div class="product-title">
+                    <h1>Bracelet</h1>
+                    <h1>99€</h1>
+                </div>
+                <div class="product-variation">
+                    <select>
+                        <option>Bleu</option> 
+                        <option>Marron</option>
+                        <option>Beige</option>
+                    </select>
+                </div>
+                <div class="product-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae voluptate itaque hic modi perferendis quo est, ipsa sit repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae voluptate itaque hic modi perferendis quo est, ipsa sit repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae voluptate itaque hic modi perferendis quo est, ipsa sit repudiandae.
+                </div>
+                <div class="product-buy">
+                    <button class="product-buy-button" type="submit">Add to cart</button>
+                </div>
+        </form>
         </div>
     </div>
 </div>
