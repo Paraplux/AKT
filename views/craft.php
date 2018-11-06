@@ -34,7 +34,7 @@ include '../components/navbar.php';
                     </metadata>
                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-54.634814,2992.8914)">
                         <g id="g20" transform="translate(-1145.8462,-3455.2129)" style="stroke-width:0.8;stroke-miterlimit:4;stroke:#555;stroke-opacity:1">
-                            <g id="g1970" style="stroke-width:1;stroke-miterlimit:4;stroke:#555;stroke-opacity:1">
+                            <g id="g1970" style="stroke-width:1;stroke-miterlimit:4;stroke:#555;stroke-opacity:0.5">
                                 <g id="g2095">
                                     <path class="fill-contain" sodipodi:nodetypes="cscccccccccscscssccssscscsscccccsscssssscszssccccscsccccccsccccccccssccccccccccccccccccccccccccssccscccscccccc"
                                         inkscape:connector-curvature="0" id="path2092" d="m 1200.9642,1023.3197 45.6459,-0.3289 -22.6078,25.3312 -10.012,-24.8929 2.3627,-9.7632 12.9754,-0.038 2.7365,9.4358
@@ -105,8 +105,8 @@ include '../components/navbar.php';
                         </rdf:RDF>
                     </metadata>
                     <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1" transform="translate(-54.634814,2992.8914)">
-                        <g id="g20" transform="translate(-1145.8462,-3455.2129)" style="stroke-width:10;stroke-miterlimit:4;stroke:#fff;stroke-opacity:1">
-                            <g id="g1970" style="stroke-width:1;stroke-miterlimit:4;stroke:#fff;stroke-opacity:1">
+                        <g id="g20" transform="translate(-1145.8462,-3455.2129)" style="stroke-width:10;stroke-miterlimit:4;stroke:#FFF;stroke-opacity:0.8">
+                            <g id="g1970" style="stroke-width:1;stroke-miterlimit:4;stroke:#FFF;stroke-opacity:0.8">
                                 <g id="g2095">
                                     <path class="filling" sodipodi:nodetypes="cscccccccccscscssccssscscsscccccsscssssscszssccccscsccccccsccccccccssccccccccccccccccccccccccccssccscccscccccc"
                                         inkscape:connector-curvature="0" id="path2092" d="m 1200.9642,1023.3197 45.6459,-0.3289 -22.6078,25.3312 -10.012,-24.8929 2.3627,-9.7632 12.9754,-0.038 2.7365,9.4358

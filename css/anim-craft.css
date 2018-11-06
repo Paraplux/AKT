@@ -9,6 +9,8 @@
   position: fixed;
   width: 80%;
   margin: auto;
+
+  opacity: 0.8;
 }
 .filling {
   stroke-dasharray: 1600;
