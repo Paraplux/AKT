@@ -40,6 +40,7 @@ body {
   font-family: 'Raleway';
   overflow-X: hidden;
   color: #ededed;
+  line-height: 1.5rem;
 }
 
 .container {
