@@ -9,6 +9,27 @@
 
 <?php include '../components/navbar.php'; ?>
 
+<?php 
+
+if (!empty($_POST)) {
+    $errors = array();
+
+    if (empty($_POST['home-defil'])) {
+        $errors['password'] = "Le champ est vide";
+    }
+
+    if (empty($errors)) {
+        include '../core/db.php';
+        $req = $pdo->prepare('UPDATE akt_admin SET home_defile = ?');
+        $req->execute([$_POST['home-defil']]);
+        $req->closeCursor();
+        header('Location: ./home.php');
+        exit();
+    }
+}
+
+?>
+
 <fieldset class="admin-container">
     <legend>Page d'aministration</legend>
     <div class="admin-defil">

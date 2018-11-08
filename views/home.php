@@ -29,7 +29,7 @@ include '../components/navbar.php';
                 </div>
             </div>
             <div class="presentation-thumb"> 
-                <img src="../images/home/Francois-Ghys.jpg" alt="">
+                    
             </div>
         </div>
     
