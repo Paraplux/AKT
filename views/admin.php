@@ -14,16 +14,16 @@
 if (!empty($_POST)) {
     $errors = array();
 
-    if (empty($_POST['home-defil'])) {
-        $errors['password'] = "Le champ est vide";
+    if (empty($_POST['home_defil'])) {
+        $errors['home_defil'] = "Le champ est vide";
     }
 
     if (empty($errors)) {
-        include '../core/db.php';
-        $req = $pdo->prepare('UPDATE akt_admin SET home_defile = ?');
-        $req->execute([$_POST['home-defil']]);
+        include '../components/db.php';
+        $req = $pdo->prepare('UPDATE akt_admin SET home_defil = ? WHERE id=1');
+        $req->execute([$_POST['home_defil']]);
         $req->closeCursor();
-        header('Location: ./home.php');
+        header('Location: admin.php');
         exit();
     }
 }
@@ -34,7 +34,10 @@ if (!empty($_POST)) {
     <legend>Page d'aministration</legend>
     <div class="admin-defil">
         <h3>Changer le texte défilant de la page d'accueil : </h3>
-        <input name="admin-defil" type="text" placeholder="Tapez le texte ici...">
+        <form action="#" method="POST" >
+            <input name="home_defil" type="text" placeholder="Tapez le texte ici...">
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
     <hr>

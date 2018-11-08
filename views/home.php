@@ -6,13 +6,18 @@ include '../components/navbar.php';
 <link rel="stylesheet" href="../css/anim-home.css">
 <link rel="stylesheet" href="../css/home.css">
 
-
+<?php 
+include '../components/db.php';
+$req = $pdo->query('SELECT home_defil FROM akt_admin');
+$message = $req->fetch();
+$req->closeCursor();
+?>
 
 <div class="container">
     <div class="home-page">
         <div class="defil-container welcomeHide">
             <div class="defil">
-                AKT JEWELS se déplace à Berlin ! Suivez nous sur les réseaux sociaux !
+                <?= $message[0] ?>
             </div>
         </div>
         <div class="presentation welcomeHide">  
