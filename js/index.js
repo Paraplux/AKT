@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    var cpt = 4;
+    var cpt = 5;
     setInterval( function() {
-        if (cpt > 1) {
+        if (cpt > 0) {
             cpt--;
         } else {
             window.location.replace("../views/home.php");

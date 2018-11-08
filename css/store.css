@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #e6e6e6;
+    background-color: #f6f6f6;
 }
 
 .store-tiles {
@@ -102,7 +102,7 @@ body {
 
 .effect-apollo {
     font-family: 'Montserrat';
-    box-shadow: 0 0 5px #999;
+    box-shadow: 0 0 10px #808080;
 }
 figure.effect-apollo.blue-apollo p {
     border-right: 4px solid rgba(0, 0, 255, 1);
