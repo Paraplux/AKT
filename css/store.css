@@ -190,3 +190,37 @@ figure.effect-apollo:hover p {
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
 }
+
+/*Page Bracelet*/
+
+.item-cat-navigation{
+    display: flex;
+    justify-content: space-around;
+}
+.main-bracelet{
+    width: 400px;
+}
+
+.bracelet{
+    width: 200px;
+}
+
+.item-cat-mosaic{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;  
+}
+
+.item-tile{
+    margin: 1.5rem ;
+}
+
+body{
+    /* background-color: #000000; */
+}
+ 
+
+
+.bracelet:hover{
+ 
+}
