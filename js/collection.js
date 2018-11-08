@@ -8,13 +8,24 @@ $(document).ready(function () {
         $('.' + carouselToToggle).show(0);
     });
 
-    function monParallax() {
+    function myParallax() {
         var positionScroll = $(window).scrollTop();
-        $('.collection-head-thumb').css('backgroundPosition', "50% " + -(positionScroll / 6) + "px");
         $('.collection-head-title').css('top', (318 + (positionScroll / 2.5)) + "px");
     }
+    function myRespParallax() {
+        var positionScroll = $(window).scrollTop();
+        $('.collection-head-title').css('top', (159 + (positionScroll / 2.5)) + "px");
+    }
 
-    $(window).on('scroll', function () {
-        monParallax();
-    });
+    screenWidth = $(window).width();
+
+    if (screenWidth < 780) {
+        $(window).on('scroll', function () {
+            myRespParallax();
+        });
+    } else {
+        $(window).on('scroll', function () {
+            myParallax();
+        });
+    }
 })

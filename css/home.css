@@ -9,14 +9,10 @@
 
         .presentation-content {
             width: 70%;
-            height: 40vh;
         }
 
         .presentation-thumb {
             width: 30%;
-            height: 35vh;
-
-            background-image: url('../images/home/Francois-Ghys.jpg');
             
             animation-duration: 30s;
             animation-timing-function: linear;
@@ -25,6 +21,10 @@
 
             background-size: cover;
             opacity: 0.8;
+        }
+
+        .presentation-thumb img {
+            width: 100%;
         }
 
         .home-h1, .home-h2 {
@@ -124,12 +124,23 @@
     transition-delay: 200ms;
 }
 
-@media all and (max-width: 780px) {
+@media all and (max-width: 1200px) {
+    .presentation-content {
+        width: 50%;
+    }
+    .presentation-thumb {
+        width: 50%;
+    }
+}
 
+
+@media all and (max-width: 780px){
+    
     .presentation {
         display: block;
     }
     .presentation-content {
+        margin-bottom: 30px;
         width: 100%;
         height: auto;
         display: block;
@@ -139,8 +150,19 @@
         width: 100%;
     }
     .gallery-cell{
-        display: block;
         width: 100%;
     }
     
+    .home-h2 {
+        width: 30%;
+        margin: 30px auto;
+    }
+    
+}
+
+@media all and (max-width: 480px) {
+    .home-h2 {
+        width: 50%;
+        margin: 30px auto;
+    }
 }

@@ -5,11 +5,11 @@
 /*Texte défilant*/
 
 .defil-container {
-    top: 8vh;
+    top: 42px;
     left: 5%;
     right: 5%;
     width: 90%;
-    height: 3vh;
+    height: 25px;
     position: fixed;
     overflow: hidden;
 
@@ -17,13 +17,14 @@
 }
 
 .nav-fix {
-    height: 11vh;
+    height: 67px;
     /*Fix pour compenser la hauteur de la nav-bar qui est en fix + ajoute de 4vh pour compenser le texte défilant !*/
 }
 
 .defil {
     font-family: 'Raleway';
     font-size: 1rem;
+    line-height: 25px;
     position: absolute;
     display: inline-block;
     animation-name: marquee;

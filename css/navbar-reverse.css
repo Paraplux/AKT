@@ -1,12 +1,15 @@
 #navigation {
     box-shadow: 0 0 10px #808080;
 }
-.right-nav {
+.right-nav,
+.resp-nav {
     background-color: #202020;
 }
-    .right-nav a {
+    .right-nav a,
+    .resp-nav a {
         color: #dcdcdc;
     }
+    .fab, 
     .fab {
         color: #dcdcdc;
     }
