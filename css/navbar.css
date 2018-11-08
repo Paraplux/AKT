@@ -1,13 +1,13 @@
 /*CSS for the navigation part*/
 
 .nav-fix {
-    height: 10vh; /*Fix pour compenser la hauteur de la nav-bar qui est en fix*/
+    height: 42px; /*Fix pour compenser la hauteur de la nav-bar qui est en fix*/
 }
 
 #navigation {
     position: fixed;
     top: 0;
-    height: 7vh;
+    height: 42px;
     width: 100%;
     z-index: 10000;
     
@@ -24,27 +24,42 @@
     transform: skew(-25deg) scale(1.05); /*Donne l'effet penché au menu*/
 }
 
-#navigation span {
+.left-nav span,
+.right-nav span,
+.resp-nav span {
     transform: skew(25deg) scale(0.95); /*On inverse l'effet penché pour que le texte reste droit*/
 }
 
 .right-nav,
-.left-nav {
+.left-nav,
+.resp-nav {
     height: 100%;
     
     display: flex;
     align-items: center;
+    
+}
+
+.right-nav, 
+.left-nav {
     justify-content: space-evenly;
 }
 
+.resp-nav {
+    justify-content: end;
+    text-align: right;
+}
+
     .left-nav {
+        display: flex;
+        justify-content: center;
         width: 20%;
         background-color: #202020;
         border-right: 4px solid #d218e2;
     }
 
         .logo {
-            width: 30%;
+            width: 90px;
             margin-top: 10px;
         }
 
@@ -91,3 +106,63 @@
             .fa-instagram:hover {
                 color: #d6617b;
             }
+
+
+.resp-nav {
+    display: none;
+    width: 80%;
+
+    color: #202020;
+    background-color: #ededed;
+}
+
+    .resp-nav a {
+        text-decoration: none;
+        color: #202020;
+        
+    }
+
+    .resp-nav a i {
+        font-size: 1.7rem;
+        line-height: 42px;
+    }
+
+.logo-resp {
+    display: none;
+}
+
+@media all and (max-width: 780px) {
+    .logo-resp {
+        display: block;
+        width: 90px;
+        margin-top: 10px;
+    }
+    .logo {
+        display: none;
+    }
+    .resp-nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .resp-nav span {
+        display: block;
+    }
+    .left-nav{
+        width: 30%;
+    }
+    .right-nav {
+        display: none;
+    }
+    .resp-nav {
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    #navigation {
+        font-size: 0.7rem;
+    }
+    .logo-resp {
+        width: 70px;
+    }
+}

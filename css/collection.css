@@ -38,6 +38,7 @@
     height: 85vh;
 }
 .collection-carousels img {
+    height: 100%;
     padding: 0 5px;
 }
 .carousel-nav {
@@ -57,4 +58,15 @@
 }
 .carousel-sec img {
     height: 63vh;
+}
+
+@media all and (max-width: 780px) {
+    .collection-head-title {
+        top: 28%;
+        font-size: 2rem;
+        padding: 2rem 1.5rem;
+    }
+    .collection-head-thumb {
+        height: 80vw;
+    }
 }
