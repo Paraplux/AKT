@@ -39,6 +39,7 @@ body {
   font-size: 1rem;
   font-family: 'Raleway';
   overflow-X: hidden;
+  overflow-y: scroll;
   color: #ededed;
   line-height: 1.5rem;
 }

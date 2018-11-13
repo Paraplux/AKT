@@ -13,13 +13,14 @@ $message = $req->fetch();
 $req->closeCursor();
 ?>
 
+<div class="defil-container welcomeHide">
+    <div class="defil">
+        <?= $message[0] ?>
+    </div>
+</div>
+
 <div class="container">
     <div class="home-page">
-        <div class="defil-container welcomeHide">
-            <div class="defil">
-                <?= $message[0] ?>
-            </div>
-        </div>
         <div class="presentation welcomeHide">  
             <div class="presentation-content">
                 <h1 class="home-h1">Une histoire</h1>
@@ -34,7 +35,7 @@ $req->closeCursor();
                 </div>
             </div>
             <div class="presentation-thumb"> 
-                    
+                <img src="../images/home/Francois-Ghys.jpg" alt="">
             </div>
         </div>
     
