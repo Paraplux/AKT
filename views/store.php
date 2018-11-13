@@ -13,7 +13,7 @@ include '../components/navbar-reverse.php';
             <figcaption>
                 <h2>Check out our bracelets...</h2>
                 <p>Lorem ipsum dolor sit.</p>
-                <a href="#">View more</a>
+                <a href="./bracelet.php">View more</a>
             </figcaption>
         </figure>
         <figure class="effect-apollo purple-apollo">
@@ -21,7 +21,7 @@ include '../components/navbar-reverse.php';
             <figcaption>
                 <h2>Check out our necklaces...</h2>
                 <p>Lorem ipsum dolor sit.</p>
-                <a href="#">View more</a>
+                <a href="./necklace.php">View more</a>
             </figcaption>
         </figure>
         <figure class="effect-apollo orange-apollo">
@@ -29,7 +29,7 @@ include '../components/navbar-reverse.php';
             <figcaption>
                 <h2>Check out our rings...</h2>
                 <p>Lorem ipsum dolor sit.</p>
-                <a href="#">View more</a>
+                <a href="./ring.php">View more</a>
             </figcaption>
         </figure>
         <figure class="effect-apollo red-apollo">
@@ -37,7 +37,7 @@ include '../components/navbar-reverse.php';
             <figcaption>
                 <h2>More objects from us...</h2>
                 <p>Lorem ipsum dolor sit.</p>
-                <a href="#">View more</a>
+                <a href="./object.php">View more</a>
             </figcaption>
         </figure>
     </div>
