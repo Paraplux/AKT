@@ -69,6 +69,7 @@ if ($big->uploaded) {
     if ($big->processed) {
         echo 'REUSSI !';
         $tiny->Clean();
+        $small->Clean();
         $med->Clean();
         $big->Clean();
     } else {
