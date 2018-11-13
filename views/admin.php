@@ -64,12 +64,17 @@
         <h3>Gérer les critiques presse</h3>
         <p>Lister ici les critiques</p>
         <h4>Ajouter une critique : </h4>
+        <form action="../actions/action-press.php" method="POST">
         <h4>Titre : </h4>
-        <input name="admin-press-title" type="text">
+        <input name="admin_press_title" type="text">
         <h4>Critque : </h4>
-        <textarea name="admin-press-content" type="text" cols=70 rows=10></textarea>
+        <textarea name="admin_press_content" type="text" cols=70 rows=10></textarea>
         <h4>Lien : </h4>
-        <input name="admin-press-link" type="text">
+        <input name="admin_press_link" type="text">
+        <h4>Signature :</h4>
+        <input name="admin_press_signature" type="text">
+        <button type="submit">Valider</button>
+        </form>
     </div>
 </fieldset>
 
