@@ -13,14 +13,6 @@
 
         .presentation-thumb {
             width: 30%;
-            
-            animation-duration: 30s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            animation-direction: normal;
-
-            background-size: cover;
-            opacity: 0.8;
         }
 
         .presentation-thumb img {
@@ -37,7 +29,7 @@
         
         .home-h2 {
             width: 15%;
-            margin: 10px auto;
+            margin: 50px auto 20px auto;
             padding: 6px;
 
             text-align: center;

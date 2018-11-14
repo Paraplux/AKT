@@ -9,26 +9,21 @@ include '../components/navbar.php';
         <section class="blog-section">
             <article class="main-blog">
                 <h1 class="main-blog-title">AKT se déplace à Berlin !</h1>
-                <div class="main-blog-intro">
-                    <div class="main-blog-intro-date">
-                        <div class="main-blog-intro-date-day">12</div>
-                        <div class="main-blog-intro-date-month">Décembre</div>
-                        <div class="main-blog-intro-date-year">2018</div>
-                    </div>
-                    <p class="main-blog-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam, exercitationem officiis et dignissimos sequi accusantium, eos consequatur, vel tenetur ut sed fugit beatae non cumque quaerat ipsam. Voluptatum, non?</p>
+                <div class="main-blog-date">11-12-2018</div><br>
+                <img class="main-blog-thumb" src="../images/collection_thumbs/Francois-Ghys.jpg" alt="">
+                <div class="main-blog-content">
+                        <p class="main-blog-intro">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ad sunt tenetur vero ipsam officiis autem! Exercitationem obcaecati incidunt facere laboriosam molestias placeat alias, autem, architecto rerum perferendis, sed non suscipit laborum quam iste maiores commodi reprehenderit quidem vitae reiciendis.
+                    </p>
+                    <h2 class="main-blog-subtitle">Lorem Ipsum</h2>
+                    <p class="main-blog-corpus">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem recusandae autem commodi corporis similique magni dolore et placeat sapiente minus harum ex sed, itaque suscipit. Odit nemo deserunt tempore, a repudiandae dolor quod, laudantium quis fuga corrupti soluta enim nisi facilis iure quidem itaque id debitis qui ipsum ullam delectus. Rem quo reiciendis asperiores, quibusdam maxime a perferendis consequuntur vel accusantium nobis vero deleniti ea ipsa earum facere laudantium rerum tenetur dolorum cupiditate dolores non odio qui! Dolorum, et impedit?
+                    </p>
+                    <h2 class="main-blog-subtitle">Lorem Ipsum</h2>
+                    <p class="main-blog-corpus">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem recusandae autem commodi corporis similique magni dolore et placeat sapiente minus harum ex sed, itaque suscipit. Odit nemo deserunt tempore, a repudiandae dolor quod, laudantium quis fuga corrupti soluta enim nisi facilis iure quidem itaque id debitis qui ipsum ullam delectus. Rem quo reiciendis asperiores, quibusdam maxime a perferendis consequuntur vel accusantium nobis vero deleniti ea ipsa earum facere laudantium rerum tenetur dolorum cupiditate dolores non odio qui! Dolorum, et impedit?
+                    </p>
                 </div>
-                <div class="main-blog-subtitle-container"><h3 class="main-blog-subtitle"><div>Lorem Ipsum</div></h3></div>
-                <p class="main-blog-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad eligendi atque perferendis exercitationem numquam quae laboriosam perspiciatis, minima vel natus voluptate iste praesentium? Tempora quia veritatis deleniti ratione minima ea? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi facilis culpa molestias natus excepturi quas corporis exercitationem, quo impedit error provident deleniti magni fugiat eveniet explicabo recusandae laboriosam odit totam?</p>
-                <div class="main-blog-thumb"><img src="../images/Tendance-et-dEcoration-Akt-Jewels-1.jpg" alt="Nouveau !" /></div>
-
-                <div class="main-blog-subtitle-container"><h3 class="main-blog-subtitle"><div>Lorem Ipsum</div></h3></div>
-                <p class="main-blog-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad eligendi atque perferendis exercitationem numquam quae laboriosam perspiciatis, minima vel natus voluptate iste praesentium? Tempora quia veritatis deleniti ratione minima ea? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi facilis culpa molestias natus excepturi quas corporis exercitationem, quo impedit error provident deleniti magni fugiat eveniet explicabo recusandae laboriosam odit totam?</p>
-                <div class="main-blog-thumb"><img src="../images/Tendance-et-dEcoration-Akt-Jewels-1.jpg" alt="Nouveau !" /></div>
-
-                <p class="main-blog-conclude">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam, exercitationem officiis et dignissimos sequi accusantium, eos consequatur, vel tenetur ut sed fugit beatae non cumque quaerat ipsam. Voluptatum, non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quibusdam, exercitationem officiis et dignissimos sequi accusantium, eos consequatur, vel tenetur ut sed fugit beatae non cumque quaerat ipsam. Voluptatum, non?</p>
-                <p class="main-blog-end">
-                    <span class="main-blog-end-date">- 12/12/2018 -</span>
-                </p>
             </article>
     
             <!-- Accordion -->
