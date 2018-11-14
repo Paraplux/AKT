@@ -17,8 +17,8 @@ class GetterRequest extends PDO
         }
     }
 
-    function getCol($table, $col) {
-        $sql = "SELECT * FROM ".$table;
+    function getCol($table, $col, $order = 'DESC') {
+        $sql = "SELECT * FROM $table ORDER BY id $order";
         $req = $this->pdo->prepare($sql);
         $req->execute();
         $reqArray = array();
@@ -29,9 +29,9 @@ class GetterRequest extends PDO
         return $reqArray;
     }
 
-    function getAll($table)
+    function getAll($table, $order = 'DESC')
     {
-        $sql = "SELECT * FROM " . $table;
+        $sql = "SELECT * FROM $table ORDER BY id $order";
         $req = $this->pdo->prepare($sql);
         $req->execute();
         $reqArray = $req->fetchAll();
