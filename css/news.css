@@ -11,102 +11,48 @@
     }
 
         .main-blog {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: start;
-            flex-wrap: wrap;
             text-indent: 2rem;
             text-align: justify;
         }
         .main-blog-title {
-            font-family: 'Montserrat Light';
+            margin-bottom: 15px;
+            text-align: center;
+            font-family: 'Montserrat Thin';
             font-weight: 300;
             font-size: 2rem;
         }
 
-        .main-blog-intro {
-            margin: 1.5rem 0;
-            display: flex;
-            justify-content: space-between;
-        }
-            .main-blog-intro-date {
-                width: 25%;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-
-                text-align: center;
-
-                border-right: 1px solid white;
-            }
-
-                .main-blog-intro-date div {
-                    width: 100%;
-                }
-
-                    .main-blog-intro-date-day {
-                        font-size: 2.8rem;
-                    }
-                    .main-blog-intro-date-month {
-                        font-size: 0.9rem;
-                    }
-                    .main-blog-intro-date-year {
-                        font-size: 1.8rem;
-                    }
-
-            .main-blog-small {
-                width: 70%;
-                margin: 3rem 0;
-                font-size: 0.9rem;
-                font-style: italic;
-                font-weight: 200;
-            }
-        .main-blog-content {
-            width: 60%;
-        }
-        .main-blog-thumb {
-            width: 35%;
-        }
-        .main-blog-thumb img {
-            width: 100%;
-        }
-        .main-blog-subtitle-container {
-            width: 100%;
-        }
-        .main-blog-subtitle {
-            width: 30%;
-            margin: 20px;
-            padding: 6px;
-
+        .main-blog-date {
+            padding-bottom: 20px;
             text-align: center;
-            background-color: #ededed;
-            border-left: 3px solid #d218e2;
+            font-family: 'Montserrat Light';
+            font-size: 0.9rem;
 
-            font-size: 1.2rem;
-            color: #202020;
-
-            transform: skew(-25deg);
+            border-bottom: 1px solid #ededed;
         }
-            .main-blog-subtitle div {   
-                transform: skew(25deg);
-            }
-            .main-blog-conclude {
-                margin: 3rem 0;
-                font-size: 0.9rem;
-                font-style: italic;
-                font-weight: 200;
-            }
-            .main-blog-end {
-                width: 100%;
-                font-size: 0.9rem;
-                font-weight: 200;
-                text-align: center;
-                padding-bottom: 3rem;
 
-                border-bottom: 1px solid white;
-            }
+        .main-blog-thumb {
+            display: block;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+
+        .main-blog-small {
+            font-family: "Raleway Extra Light";
+            font-style: italic;
+        }
+
+        .main-blog-subtitle {
+            font-family: 'Montserrat Extra Light';
+            font-weight: 300;
+            font-size: 2rem;
+        }
+
+        .main-blog-content {
+            font-family: "Raleway Extra Light";
+        }
+
         .old-blog-title {
             background-color: #202020;
             color: white;

@@ -1,21 +1,21 @@
 <?php 
 include '../components/header.php';
 include '../components/navbar.php';
+
+/*CALLING CONTROLLER*/
+include '../components/controller.php';
+$textDefil = new GetterRequest;
 ?>
 
 <link rel="stylesheet" href="../css/anim-home.css">
 <link rel="stylesheet" href="../css/home.css">
 
 <?php 
-include '../components/db.php';
-$req = $pdo->query('SELECT home_defil FROM akt_admin');
-$message = $req->fetch();
-$req->closeCursor();
 ?>
 
 <div class="defil-container welcomeHide">
     <div class="defil">
-        <?= $message[0] ?>
+        <?= $textDefil->getCol('akt_admin', 'home_defil')[0]; ?>
     </div>
 </div>
 

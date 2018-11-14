@@ -1,0 +1,103 @@
+body {
+    background-color: #ededed;
+    color: #202020;
+}
+
+.admin-container {
+    margin: 2%;
+    padding: 2%;
+}
+
+.small-error-success ul,
+.small-error-fail ul {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.small-error-success li,
+.small-error-fail li {
+    font-weight: normal;
+}
+
+.small-error-success,
+.small-error-fail {
+    position: relative;
+    margin: 20px 0;
+    display: block;
+    width: 70%;
+    padding: 2px;
+    font-size: 0.7rem;
+
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.small-error-success {
+    background-color: rgba(0, 255, 0, 0.3);
+    color: rgba(0, 100, 0, 0.7);
+}
+
+.small-error-fail {
+    background-color: rgba(255, 0, 0, 0.3);
+    color: rgba(100, 0, 0, 0.7);
+}
+
+.flash-message-dismiss {
+    position: absolute;
+    right:10px;
+    top:8px;
+    font-size: 1.2rem;
+}
+
+.flash-message-dismiss:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/*INPUT*/
+
+.input-title-style {
+    width: 50%;
+    font-family: 'Montserrat Light';
+    font-size: 1.5rem;
+    background: #ededed;
+    border: none;
+    border-bottom: 1px solid #404040;
+}
+
+.admin-title-style,
+.admin-subtitle-style {
+    text-transform: uppercase;
+    font-family: 'Montserrat Light';
+    font-weight: 500;
+}
+.admin-title-style {
+    font-size: 2rem;
+    text-align: center;
+
+    
+}
+
+.admin-subtitle-style {
+    font-size: 1.3rem;
+
+}
+
+.admin-blog {
+    padding: 10px;
+}
+
+.admin-button-style {
+    padding: 10px;
+    border: 1px solid #404040;
+    background-color: #ededed;
+}
+
+.admin-button-style:hover {
+    cursor: pointer;
+    background-color: #404040;
+    color: #ededed;
+}
