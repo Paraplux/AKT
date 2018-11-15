@@ -1,3 +1,10 @@
+.btn-unstyle {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: #ededed;
     color: #202020;
@@ -10,7 +17,7 @@ body {
 
 .small-error-success ul,
 .small-error-fail ul {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -21,25 +28,26 @@ body {
 
 .small-error-success,
 .small-error-fail {
-    position: relative;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
     margin: 20px 0;
     display: block;
     width: 70%;
     padding: 2px;
-    font-size: 0.7rem;
 
     border-radius: 5px;
     border: 1px solid;
 }
 
 .small-error-success {
-    background-color: rgba(0, 255, 0, 0.3);
-    color: rgba(0, 100, 0, 0.7);
+    background-color: rgba(140, 255, 140, 0.9);
+    color: rgba(0, 50, 0, 0.7);
 }
 
 .small-error-fail {
-    background-color: rgba(255, 0, 0, 0.3);
-    color: rgba(100, 0, 0, 0.7);
+    background-color: rgba(255, 140, 140, 0.9);
+    color: rgba(50, 0, 0, 0.7);
 }
 
 .flash-message-dismiss {
@@ -113,10 +121,14 @@ body {
     right: 10vw;
     padding: 20px;
     background: #ededed;
-    box-shadow: 0 0 20px #404040;
+    box-shadow: 0 0 5px #404040;
     border-radius: 5px;
     z-index: 1000000;
+
+    overflow-y: scroll;
 }
+
+
 
 .collection-modal-cat-mozaic {
     display: flex;
@@ -128,10 +140,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
+    width: 100px;
 }
 
 .collection-modal-cat-thumb img {
     width: 100%;
+    height: 94px;
 }
 
 .collection-modal-cat-thumb form {
@@ -139,15 +153,16 @@ body {
     width: 50%;
     text-align: center;
 }
-.collection-modal-cat-fav,
-.collection-modal-cat-trash {
+
+.fa-trash-alt,
+.fa-star {
     font-size: 1.2rem;
 }
-.collection-modal-cat-fav:hover {
+.fa-star:hover {
     color: rgb(195, 197, 62);
 }
 
-.collection-modal-cat-trash:hover {
+.fa-trash-alt:hover {
     color: red; 
 }
 
@@ -155,11 +170,11 @@ body {
     cursor: pointer;
 }
 
-.is-thumb-selected-TRUE {
+.is-thumb-selected-true {
     border: 3px solid yellow;
 }
 
-.is-thumb-selected-FALSE {
+.is-thumb-selected-false {
     border: 3px solid #0000;
 }
 

@@ -36,13 +36,17 @@ include '../components/db.php';
             $catsBis = $reqBis->fetchAll();
             foreach($catsBis as $catBis):
             ?>
-            <div class="collection-cat-item">
+            <div class="collection-cat-item" target="<?= $catBis['id']; ?>">
                 <img src="<?= $catBis['square_link']; ?>" alt="">
+            </div>
+            <div class="collection-fullscreen" target="<?= $catBis['id']; ?>">
+                <img src="<?= $catBis['med_link'] ;?>" alt="">
             </div>
             <?php endforeach; ?>            
         </div>
         <?php endforeach; ?>
-        <!-- au click on affiche la med -->
+        <div class="fullscreen-brightness"></div>
+        <span class="fullscreen-brightness-remove"><i class="fas fa-times"></i></span>
     </div>
 
 <script src="../js/collection.js"></script>

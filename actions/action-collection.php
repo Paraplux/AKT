@@ -28,7 +28,7 @@ if(isset($_POST)) {
             $tiny->file_new_name_body = $tinysha1;
             $tiny->image_resize = true;
             $tiny->image_x = 75;
-            $tiny->image_x = 75;
+            $tiny->image_y = 75;
             $tiny->image_convert = 'jpg';
             $square->image_ratio_crop = true;
             $tiny->Process('../images/collection/tiny');
@@ -104,10 +104,10 @@ if(isset($_POST)) {
         ));
         $req->closeCursor();
         $_SESSION['flash']['success']['admin_collection'] = "Image ajoutée!";
-        header('Location: ../views/admin.php');
+        header('Location: ../views/admin.php#anchor-collection');
         exit();
     } else {
-        header('Location: ../views/admin.php');
+        header('Location: ../views/admin.php#anchor-collection');
         exit();
     }
 }

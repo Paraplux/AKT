@@ -11,8 +11,9 @@
 #navigation {
     position: fixed;
     top: 0;
+    left: -5%;
     height: 42px;
-    width: 100%;
+    width: 110%;
     z-index: 1000;
     
     display: flex;

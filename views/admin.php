@@ -97,7 +97,7 @@ $textDefil = new GetterRequest;
 
     <hr>
 
-    <div class="admin-collection">
+    <div class="admin-collection" id="anchor-collection">
         <h1 class="admin-title-style">Collection</h1><br>
         <h2 class="admin-subtitle-style">Ajouter une photo à la collection :</h2>
         <form action="../actions/action-collection.php" method="POST" enctype="multipart/form-data">
@@ -105,46 +105,13 @@ $textDefil = new GetterRequest;
             <input  class="input-title-style" type="text" name="admin_collection_cat" placeholder="Choisir une catégorie"><br><br>
             <button class="admin-button-style"  type="submit">Ajouter une photo à la collection</button>
         </form>
-        <div class="collection-modal">
-            <div id="hide-collection-modal"><i class="fas fa-times"></i></div>
-            <h2 class="admin-subtitle-style">Gestion de la collection</h2>
-            <?php 
-            $req = $pdo->prepare("SELECT * FROM akt_collection WHERE is_thumb = 'true'");
-            $req->execute();
-            $cats = $req->fetchAll();
-            if($cats == null) {
-                echo "Vous n'avez pas de photos dans votre collection ! Ajoutez en !";
-            }
-            foreach ($cats as $cat) :
-            ?>
-        <div><?= $cat['cat']; ?></div>
-        <div class="collection-modal-cat-mozaic">
-            <?php 
-            $reqBis = $pdo->prepare("SELECT * FROM akt_collection WHERE cat_format = :cat_format");
-            $reqBis->execute(array(
-                ':cat_format' => $cat['cat_format'],
-            ));
-            $catsBis = $reqBis->fetchAll();
-            foreach ($catsBis as $catBis) :
-            ?>
-            <div class="collection-modal-cat-thumb">
-                <img class="is-thumb-selected-<?= $catBis['is_thumb']; ?>" src="<?= $catBis['tiny_link']; ?>" alt="">
-                <form class="collection-modal-cat-fav" action="../actions/action-collection-fav.php">
-                    <input type="hidden" value="<?= $catBis['id'] ?>">
-                    <i class="fas fa-star"></i>
-                </form>
-                <form class="collection-modal-cat-trash" action="../actions/action-collection-delete.php">
-                    <input type="hidden" value="<?= $catBis['id'] ?>">  
-                    <i class="fas fa-trash-alt"></i>
-                </form>
-            </div>
-            <?php endforeach; ?>            
-        </div>
-        <?php endforeach; ?>
-        </div>
         <br>
         <button class="admin-button-style admin-subtitle-style" id="show-collection-modal">Gérer la collection<i class="fas fa-images"></i></button>
     </div>
+    <div class="collection-modal">
+        <?php include '../components/admin-collection-modal.php'; ?>
+    </div>
+    <div class="fullscreen-brightness"></div>
     
     <hr>
     
@@ -222,17 +189,34 @@ $textDefil = new GetterRequest;
 <script>
     $(document).ready(function(){
         $('#show-collection-modal').on('click', function(){
+            $('.fullscreen-brightness').css('display', 'block');
             $('.collection-modal').fadeIn();
+
+        });
+        $('.fullscreen-brightness').on('click', function(){
+            $('.fullscreen-brightness').css('display', 'none');
+            $('.collection-modal').fadeOut();
         });
         $('#hide-collection-modal').on('click', function(){
+            $('.fullscreen-brightness').css('display', 'none');
             $('.collection-modal').fadeOut();
         });
         $('.flash-message-dismiss').on('click', function() {
         $('.flash-message').fadeOut();
         });
-        $('.collection-modal-cat-thumb img').on('click', function() {
-        $('.collection-modal-cat-thumb img').removeClass('is-thumb-selected-TRUE');
-        $(this).toggleClass('is-thumb-selected-TRUE');
+
+
+        /*TEST*/
+        $(document).on('submit', '#collection-modal-cat-fav', function(e) {
+            $.ajax({
+                type: 'post',
+                url: '../actions/action-collection-fav.php',
+                data: $(this).serialize(),
+                success: function () {
+                    $('.collection-modal').load('../components/admin-collection-modal.php');
+                }
+            });
+            e.preventDefault();
         });
     });
 </script>

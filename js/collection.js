@@ -11,6 +11,27 @@ $(document).ready(function () {
         $('.collection-cat-thumb img').height($b / 2.5);
     });
 
+
+
+    $('.collection-cat-item').on('click', function () {
+        $target = $(this).attr('target');
+        $('.fullscreen-brightness-remove').css('display', 'block');
+        $('.fullscreen-brightness').css('display', 'block');
+        $('[target="'+ $target + '"]').fadeIn();
+
+    });
+
+
+    $('.fullscreen-brightness').on('click', function () {
+        $('.fullscreen-brightness').css('display', 'none');
+        $('.fullscreen-brightness-remove').css('display', 'none');
+        $('.collection-fullscreen').fadeOut();
+    });
+    $('.fullscreen-brightness-remove').on('click', function () {
+        $('.fullscreen-brightness-remove').css('display', 'none');
+        $('.fullscreen-brightness').css('display', 'none');
+        $('.collection-fullscreen').fadeOut();
+    });
     // function monParallax() {
     //     var positionScroll = $(window).scrollTop();
     //     $('.collection-head-thumb').css('backgroundPosition', "50% " + -(positionScroll / 6) + "px");
