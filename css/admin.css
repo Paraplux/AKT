@@ -101,3 +101,84 @@ body {
     background-color: #404040;
     color: #ededed;
 }
+
+
+.collection-modal {
+    display: none;
+
+    position: fixed;
+    top:15vh;
+    bottom: 10vh;
+    left: 10vw;
+    right: 10vw;
+    padding: 20px;
+    background: #ededed;
+    box-shadow: 0 0 20px #404040;
+    border-radius: 5px;
+    z-index: 1000000;
+}
+
+.collection-modal-cat-mozaic {
+    display: flex;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 10px;
+}
+
+.collection-modal-cat-thumb {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.collection-modal-cat-thumb img {
+    width: 100%;
+}
+
+.collection-modal-cat-thumb form {
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+}
+.collection-modal-cat-fav,
+.collection-modal-cat-trash {
+    font-size: 1.2rem;
+}
+.collection-modal-cat-fav:hover {
+    color: rgb(195, 197, 62);
+}
+
+.collection-modal-cat-trash:hover {
+    color: red; 
+}
+
+.collection-modal-cat-thumb i:hover {
+    cursor: pointer;
+}
+
+.is-thumb-selected-TRUE {
+    border: 3px solid yellow;
+}
+
+.is-thumb-selected-FALSE {
+    border: 3px solid #0000;
+}
+
+#show-collection-modal {
+    cursor: pointer;
+}
+
+#hide-collection-modal {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    font-size: 2rem;
+}
+
+#hide-collection-modal:hover {
+    cursor: pointer;
+}
+
+#show-collection-modal .fa-images {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}

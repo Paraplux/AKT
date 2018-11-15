@@ -55,14 +55,15 @@
         }
 
         .main-blog-small {
+            font-size: 1rem;
             font-family: "Raleway Extra Light";
             font-style: italic;
         }
 
         .main-blog-subtitle {
-            font-family: 'Montserrat Extra Light';
+            font-family: 'Montserrat Thin';
             font-weight: 300;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         .main-blog-content {

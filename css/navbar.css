@@ -1,3 +1,7 @@
+* {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
 /*CSS for the navigation part*/
 
 .nav-fix {
@@ -21,14 +25,19 @@
     
     background-color: #202020;
     
-    transform: skew(-25deg) scale(1.05); /*Donne l'effet penché au menu*/
+    /*Donne l'effet penché au menu*/
+    -webkit-transform: skew(-25deg);
+    transform: skew(-25deg);
 }
 
 .left-nav span,
 .right-nav span,
 .resp-nav span {
-    transform: skew(25deg) scale(0.95); /*On inverse l'effet penché pour que le texte reste droit*/
+    transform: skew(25deg);
+    -webkit-transform: skew(25deg);
+    /*On inverse l'effet penché pour que le texte reste droit*/
 }
+
 
 .right-nav,
 .left-nav,

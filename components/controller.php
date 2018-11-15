@@ -5,10 +5,20 @@ class GetterRequest extends PDO
     var $pdo;
     function __construct()
     {
+        /*VERSION TEST*/
         $host = "localhost";
         $bd = "akt";
         $user = "root";
         $password = "";
+
+
+        /*VERSION LIVE*/
+        // $host = "marcboucvd0632.mysql.db";
+        // $bd = "marcboucvd0632";
+        // $user = "marcboucvd0632";
+        // $password = "Kmle0632";
+
+        
         $this->reqFetch = array();
         try {
             $this->pdo = new PDO("mysql:host=$host;dbname=$bd", $user, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
@@ -17,8 +27,8 @@ class GetterRequest extends PDO
         }
     }
 
-    function getCol($table, $col, $order = 'DESC') {
-        $sql = "SELECT * FROM $table ORDER BY id $order";
+    function getCol($table, $col, $order = 'DESC', $where = '') {
+        $sql = "SELECT * FROM $table ORDER BY id $order $where";
         $req = $this->pdo->prepare($sql);
         $req->execute();
         $reqArray = array();
@@ -29,9 +39,9 @@ class GetterRequest extends PDO
         return $reqArray;
     }
 
-    function getAll($table, $order = 'DESC')
+    function getAll($table, $order = 'DESC', $where = '')
     {
-        $sql = "SELECT * FROM $table ORDER BY id $order";
+        $sql = "SELECT * FROM $table ORDER BY id $order $where";
         $req = $this->pdo->prepare($sql);
         $req->execute();
         $reqArray = $req->fetchAll();

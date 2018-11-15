@@ -5,6 +5,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 require_once('../components/class.upload.php');
+include '../components/functions.php';
 
 
 
@@ -14,7 +15,7 @@ if(isset($_POST)) {
         $_SESSION['flash']['fail']['admin_collection_cat'] = "Vous n'avez pas choisi de catégorie";
     }
 
-    if(empty($_POST['admin_collection_upload'])) {
+    if(!isset($_FILES['admin_collection_upload'])) {
         $_SESSION['flash']['fail']['admin_collection_upload'] = "Vous n'avez pas selectionné de photo";
     }
     
@@ -26,11 +27,12 @@ if(isset($_POST)) {
             $tinysha1 = 'tiny_' . sha1(base64_encode(openssl_random_pseudo_bytes(30)));
             $tiny->file_new_name_body = $tinysha1;
             $tiny->image_resize = true;
-            $tiny->image_x = 50;
+            $tiny->image_x = 75;
+            $tiny->image_x = 75;
             $tiny->image_convert = 'jpg';
-            $tiny->image_ratio_y = true;
-            $tiny->Process('../images/test');
-            $tinylink = '../images/test/' . $tinysha1 . '.jpg';
+            $square->image_ratio_crop = true;
+            $tiny->Process('../images/collection/tiny');
+            $tinylink = '../images/collection/tiny/' . $tinysha1 . '.jpg';
         }
 
         $small = new Upload($_FILES['admin_collection_upload']);
@@ -42,8 +44,8 @@ if(isset($_POST)) {
             $small->image_x = 400;
             $small->image_convert = 'jpg';
             $small->image_ratio_y = true;
-            $small->Process('../images/test');
-            $smalllink = '../images/test/' . $smallsha1 . '.jpg';
+            $small->Process('../images/collection/small');
+            $smalllink = '../images/collection/small/' . $smallsha1 . '.jpg';
         }
 
         $med = new Upload($_FILES['admin_collection_upload']);
@@ -55,38 +57,50 @@ if(isset($_POST)) {
             $med->image_x = 1000;
             $med->image_convert = 'jpg';
             $med->image_ratio_y = true;
-            $med->Process('../images/test');
-            $medlink = '../images/test/' . $medsha1 . '.jpg';
+            $med->Process('../images/collection/med');
+            $medlink = '../images/collection/med/' . $medsha1 . '.jpg';
         }
-        $big = new Upload($_FILES['admin_collection_upload']);
-        if ($big->uploaded) {
+        $square = new Upload($_FILES['admin_collection_upload']);
+        if ($square->uploaded) {
    // resized to 1920px wide
-            $bigsha1 = 'big_' . sha1(base64_encode(openssl_random_pseudo_bytes(30)));
-            $big->file_new_name_body = $bigsha1;
-            $big->image_resize = true;
-            $big->image_x = 1920;
-            $big->image_convert = 'jpg';
-            $big->image_ratio_y = true;
-            $big->Process('../images/test');
-            $biglink = '../images/test/' . $bigsha1 . '.jpg';
-            if ($big->processed) {
+            $squaresha1 = 'square_' . sha1(base64_encode(openssl_random_pseudo_bytes(30)));
+            $square->file_new_name_body = $squaresha1;
+            $square->image_resize = true;
+            $square->image_x = 500;
+            $square->image_y = 500;
+            $square->image_convert = 'jpg';
+            $square->image_ratio_crop = true;
+            $square->Process('../images/collection/square');
+            $squarelink = '../images/collection/square/' . $squaresha1 . '.jpg';
+            if ($square->processed) {
                 $tiny->Clean();
                 $small->Clean();
                 $med->Clean();
-                $big->Clean();
+                $square->Clean();
             }
         } 
 
 
         include '../components/db.php';
-        $req = $pdo->prepare('INSERT INTO akt_collection SET tiny_link = :tiny_link, small_link = :small_link, med_link = :med_link, big_link = :big_link, cat = :cat');
+
         $cat = $_POST['admin_collection_cat'];
+        $cat_format = cleanString($_POST['admin_collection_cat']);
+
+        $req = $pdo->prepare('UPDATE akt_collection SET is_thumb = "false" WHERE cat_format = :cat_format');
+        $req->execute(array(
+            ':cat_format' => $cat_format,
+        ));
+        $req->closeCursor();
+
+        $req = $pdo->prepare('INSERT INTO akt_collection SET tiny_link = :tiny_link, small_link = :small_link, med_link = :med_link, square_link = :square_link, cat = :cat, cat_format = :cat_format, is_thumb = :is_thumb');
         $req->execute(array(
             ':tiny_link' => $tinylink,
             ':small_link' => $smalllink,
             ':med_link' => $medlink,
-            ':big_link' => $biglink,
+            ':square_link' => $squarelink,
             ':cat' => $cat,
+            ':cat_format' => $cat_format,
+            ':is_thumb' => 'true',
         ));
         $req->closeCursor();
         $_SESSION['flash']['success']['admin_collection'] = "Image ajoutée!";

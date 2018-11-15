@@ -1,21 +1,17 @@
 .collection-head {
-    padding-bottom: 50px;
-    border-bottom: 1px solid white;
+    position: relative;
 }
 .collection-head-thumb {
     width: 100%;
-    height: 90vh;
     opacity: 0.8;
-    filter: grayscale(40%);
-
-    background-image: url('../images/collection_thumbs/collection-head-para.jpg');
-    background-position: 50% 0px;
-    background-size: cover;
-
 }
+    .collection-head-thumb img {
+        width: 100%;
+    }
+
 .collection-head-title {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     
@@ -32,41 +28,92 @@
     padding: 1rem 1.5rem;
 }
 
-.collection-carousels {
-    padding-top: 50px;
-    position: relative;
-    height: 85vh;
-}
-.collection-carousels img {
-    height: 100%;
-    padding: 0 5px;
-}
-.carousel-nav {
-    position: absolute;
-    left: 0;
-    right: 0;
+.collection-cat-head {
     width: 100%;
-    bottom: 0;
-    height: 20vh;
-}
-.carousel-nav img {
-    height: 20vh;
-}
-
-.carousel-sec {
-    height: 63vh;
-}
-.carousel-sec img {
-    height: 63vh;
+    position: relative;
+    padding: 25px 0;
+    margin: 25px 0;
+    border-top: 1px solid #ededed;
 }
 
-@media all and (max-width: 780px) {
-    .collection-head-title {
-        top: 28%;
-        font-size: 2rem;
-        padding: 2rem 1.5rem;
+.collection-cat-thumb {
+    opacity: 0.3;
+    filter: grayscale(80);
+    width: 40%;
+    margin: auto;
+}
+
+.collection-cat-thumb img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.collection-cat-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 1.5rem 1.25rem;
+
+    font-size: 2rem;
+    font-family: 'Montserrat Extra Light';
+    font-weight: 200;
+
+    border: 1px solid white;
+}
+
+.collection-mozaic {
+    padding-top: 50px;
+}
+
+.collection-cat-mozaic {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.collection-cat-item {
+    width: 25%;
+    overflow: hidden;
+    z-index: 2;
+}
+.collection-cat-item img {
+    transition-duration: 500ms;
+}
+.collection-cat-item img:hover {
+    transition-duration: 500ms;
+    transform: scale(1.07);
+    z-index: 1;
+    overflow: hidden;
+}
+@media all and (max-width: 1000px) {
+    .collection-cat-mozaic {
+        width: 80%;
     }
-    .collection-head-thumb {
-        height: 80vw;
+
+    .collection-cat-item {
+        width: 50%;
+    }
+
+    .collection-cat-thumb {
+        width: 60%;
+    }
+}
+
+
+@media all and (max-width: 680px) {
+    .collection-cat-mozaic {
+        width: 100%;
+    }
+
+    .collection-cat-item {
+        width: 100%;
+    }
+    .collection-cat-thumb {
+        width: 80%;
     }
 }
