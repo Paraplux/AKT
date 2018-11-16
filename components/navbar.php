@@ -25,6 +25,6 @@
     <a href="../views/craft.php">CRAFTMANSHIP</a>
     <a href="../views/collection.php">COLLECTION</a>
     <a href="../views/about.php">ABOUT</a>
-    <a href=""><i class="fab fa-instagram"></i>INSTAGRAM</a>
-    <a href=""><i class="fab fa-pinterest-p"></i>PINTEREST</a>
+    <a href="https://www.instagram.com/aktjewels/"><i class="fab fa-instagram"></i>INSTAGRAM</a>
+    <a href="https://www.pinterest.fr/AKTjewels/destroyed-weapons-jewelry/"><i class="fab fa-pinterest-p"></i>PINTEREST</a>
 </div>

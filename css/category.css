@@ -1,0 +1,333 @@
+body{
+    background-color: #fafafa;
+    color: #000000
+}
+
+.item-cat-links a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.item-cat-links a:hover{
+    color: rgba(255, 0, 255, 1);
+}
+
+
+.item-cat-presentation{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.item-cat-presentation-thumb{
+    width: 65%;
+}
+
+.main-bracelet{
+    width: 100%;
+}
+
+.item-cat-presentation-content{
+    width: 35%;
+}
+
+.item-cat-presentation-text{
+    font-size: 1.3em;
+}
+
+.item-cat-navigation{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+
+.item-cat-mosaic{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+}
+
+.item-cat-container{
+    width: 33%;
+    height: 20rem;
+    justify-content: space-around;
+}
+
+/* BRACELET */
+
+
+.item-cat-title-bracelet::after {
+    content: '';
+    position: relative;
+    width: 15%;
+    display: block;
+    height: 5px;
+    background-color: rgba(0, 0, 255, 1);
+    opacity: 0.7;
+    bottom: -10px;
+    border-radius: 10px;
+}
+
+
+figure.effect-sarah-bracelet img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+}
+
+figure.effect-sarah-bracelet figcaption {
+	text-align: left;
+}
+
+figure.effect-sarah-bracelet h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+
+figure.effect-sarah-bracelet h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+    background: rgba(0, 0, 255, 1);
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect-sarah-bracelet:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah-bracelet p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect-sarah-bracelet:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/* RING */
+
+.item-cat-title-ring::after {
+    content: '';
+    position: relative;
+    width: 15%;
+    display: block;
+    height: 5px;
+    background-color: rgba(230, 100, 0, 1);
+    opacity: 0.8;
+    bottom: -10px;
+    border-radius: 10px;
+}
+
+figure.effect-sarah-ring img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+}
+
+figure.effect-sarah-ring figcaption {
+	text-align: left;
+}
+
+figure.effect-sarah-ring h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+
+figure.effect-sarah-ring h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: rgba(230, 100, 0, 1);
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect-sarah-ring:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah-ring p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect-sarah-ring:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+/* OBJECT */
+
+.item-cat-title-object::after {
+    content: '';
+    position: relative;
+    width: 15%;
+    display: block;
+    height: 5px;
+    background-color: rgba(255, 0, 0, 1);
+    opacity: 0.8;
+    bottom: -10px;
+    border-radius: 10px;
+}
+
+figure.effect-sarah-object img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-sarah-object figcaption {
+	text-align: left;
+}
+
+figure.effect-sarah-object h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+
+figure.effect-sarah-object h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: rgba(255, 0, 0, 1);
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect-sarah-object:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah-object p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect-sarah-object:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+
+
+/* NECKLACE */
+
+.item-cat-title-necklace::after {
+    content: '';
+    position: relative;
+    width: 15%;
+    display: block;
+    height: 5px;
+    background-color: rgba(255, 0, 255, 1);
+    opacity: 0.6;
+    bottom: -10px;
+    border-radius: 10px;
+}
+
+figure.effect-sarah-necklace img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-sarah-necklace figcaption {
+	text-align: left;
+}
+
+figure.effect-sarah-necklace h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+
+figure.effect-sarah-necklace h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: rgba(255, 0, 255, 1);
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect-sarah-necklace:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah-necklace p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect-sarah-necklace:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}

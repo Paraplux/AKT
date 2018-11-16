@@ -12,7 +12,8 @@
         <span><a href="../views/news.php?page=1">NEWS</a></span>
         <span><a href="../views/store.php" id="purple">STORE</a></span>
         <span><a href="../views/about.php">ABOUT</a></span>
-        <span><i class="fab fa-instagram"></i><i class="fab fa-pinterest-p"></i></span>
+        <span><a href="https://www.instagram.com/aktjewels/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.pinterest.fr/AKTjewels/destroyed-weapons-jewelry/"><i class="fab fa-pinterest-p"></i></a></span>
     </div>
     <div class="resp-nav">
         <span><a href="../views/collection.php">COLLECTION</a></span>
