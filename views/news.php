@@ -9,6 +9,7 @@ $PressArticlesRequest = new GetterRequest;
 $p = $_GET['page'] - 1;
 ?>
 <link rel="stylesheet" href="../css/news.css">
+<link rel="stylesheet" href="../css/drop-down.css">
 
 <div class="container">
     <div class="news-page">
@@ -26,7 +27,7 @@ $p = $_GET['page'] - 1;
             <?php if($_GET['page'] != 1): ?>
             <br><hr><br><br>
             <h3>Jetez un oeil à notre dernier article :</h3>
-            <button class="old-blog-title"><?= $BlogArticlesRequest->getCol('akt_blog', 'blog_title')[0]; ?></button>
+            <button class="drop-down"><?= $BlogArticlesRequest->getCol('akt_blog', 'blog_title')[0]; ?></button>
             <div class="panel">
                 <p><?= substr(strip_tags($BlogArticlesRequest->getCol('akt_blog', 'blog_corpus')[0]), 0, 500); ?> . . .</p>
                 <a href="../views/news.php?page=1">Lire la suite . . .</a>
@@ -70,6 +71,6 @@ $p = $_GET['page'] - 1;
     </div>
 </div>
 
-<script src="../js/news.js"></script>
+<script src="../js/dropdown.js"></script>
 
 <?php include '../components/footer.php'; ?>

@@ -1,4 +1,4 @@
-var acc = document.getElementsByClassName("old-blog-title");
+var acc = document.getElementsByClassName("drop-down");
 var i;
 
 for (i = 0; i < acc.length; i++) {

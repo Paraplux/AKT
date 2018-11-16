@@ -70,52 +70,7 @@
             font-family: "Raleway Extra Light";
         }
 
-        .old-blog-title {
-            background-color: #202020;
-            color: white;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 1.1rem;
-            font-family: 'Montserrat Extra Light';
-            font-weight: 200;
-            transition: 0.4s;
-        }
-
-        .active,
-        .old-blog-title:hover {
-            background-color: #282828;
-        }
-
-        .panel {
-            padding: 20px 18px;
-            display: none;
-            background-color: #202020;
-            overflow: hidden;
-            max-width: 100%;
-            border-bottom: 1px solid white;
-        }
-
-        .old-blog-title:after {
-            content: '\02795'; /* Unicode character for "plus" sign (+) */
-            font-size: 9px;
-            color: #777;
-            float: right;
-            margin-left: 5px;
-        }
-
-        .active:after {
-            content: "\2796"; /* Unicode character for "minus" sign (-) */
-        }
-
-        .panel a {
-            display: block;
-            color: #ededed;
-            text-align: right;
-        }
+        
 
     .press-section {
         width: 25%;

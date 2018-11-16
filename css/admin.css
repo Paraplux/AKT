@@ -15,65 +15,36 @@ body {
     padding: 2%;
 }
 
-.small-error-success ul,
-.small-error-fail ul {
-    font-size: 1rem;
-    font-weight: bold;
+.admin-nav {
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.small-error-success li,
-.small-error-fail li {
-    font-weight: normal;
+.admin-nav a {
+    text-decoration: none;
+    color: #202020;
+    border-bottom: 1px solid #aaa;
 }
 
-.small-error-success,
-.small-error-fail {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    margin: 20px 0;
-    display: block;
-    width: 70%;
-    padding: 2px;
-
-    border-radius: 5px;
-    border: 1px solid;
-}
-
-.small-error-success {
-    background-color: rgba(140, 255, 140, 0.9);
-    color: rgba(0, 50, 0, 0.7);
-}
-
-.small-error-fail {
-    background-color: rgba(255, 140, 140, 0.9);
-    color: rgba(50, 0, 0, 0.7);
-}
-
-.flash-message-dismiss {
-    position: absolute;
-    right:10px;
-    top:8px;
-    font-size: 1.2rem;
-}
-
-.flash-message-dismiss:hover {
-    cursor: pointer;
+.admin-nav a:hover {
+    font-weight: 600;
 }
 
 
 
 
 
-/*INPUT*/
+
+/*GLOBAL STYLE*/
 
 .input-title-style {
     width: 50%;
     font-family: 'Montserrat Light';
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background: #ededed;
     border: none;
-    border-bottom: 1px solid #404040;
+    border-bottom: 1px solid #aaa;
 }
 
 .admin-title-style,
@@ -100,7 +71,7 @@ body {
 
 .admin-button-style {
     padding: 10px;
-    border: 1px solid #404040;
+    border: 1px solid #aaa;
     background-color: #ededed;
 }
 
@@ -110,6 +81,58 @@ body {
     color: #ededed;
 }
 
+
+/*BLOG*/
+
+.drop-down {
+    background-color: #ededed;
+    color: #202020;
+    border-bottom: 1px solid #aaa;
+    font-size: 1.3rem;
+}
+
+.active,
+.drop-down:hover {
+    background-color: #dcdcdc;
+}
+
+.panel {
+    background-color: #ededed;
+    border-bottom: 1px solid #aaa;
+}
+
+.drop-down:after {
+    color: #202020;
+}
+
+.blog-list-article {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.blog-list-delete {
+    width: 5%;
+    text-align: center;
+    border-left: 1px solid #aaa;
+}
+
+.blog-list-delete i:hover {
+    cursor: pointer;
+}
+
+.blog-list-title{
+    width: 70%;
+    text-align: center;
+}
+
+.blog-list-date{
+    width: 10%;
+    text-align: center;
+    border-right: 1px solid #aaa;
+}
+
+
+/*COLLECTION*/
 
 .collection-modal {
     display: none;
@@ -196,4 +219,54 @@ body {
 #show-collection-modal .fa-images {
     font-size: 1.5rem;
     margin-left: 1rem;
+}
+
+
+
+/*ERROR FLASH*/
+
+.small-error-success ul,
+.small-error-fail ul {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.small-error-success li,
+.small-error-fail li {
+    font-weight: normal;
+}
+
+.small-error-success,
+.small-error-fail {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin: 20px 0;
+    display: block;
+    width: 70%;
+    padding: 2px;
+
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.small-error-success {
+    background-color: rgba(140, 255, 140, 0.9);
+    color: rgba(0, 50, 0, 0.7);
+}
+
+.small-error-fail {
+    background-color: rgba(255, 140, 140, 0.9);
+    color: rgba(50, 0, 0, 0.7);
+}
+
+.flash-message-dismiss {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 1.2rem;
+}
+
+.flash-message-dismiss:hover {
+    cursor: pointer;
 }
