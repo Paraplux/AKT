@@ -38,7 +38,7 @@ $p = $_GET['page'] - 1;
             <?php $articleQty = count($BlogArticlesRequest->getCol('akt_blog', 'blog_title')); ?>
             <?php for($i = 1; $i < 4; $i++) : 
             ?>
-            <button class="old-blog-title"><?= $BlogArticlesRequest->getCol('akt_blog', 'blog_title')[$i]; ?></button>
+            <button class="drop-down"><?= $BlogArticlesRequest->getCol('akt_blog', 'blog_title')[$i]; ?></button>
             <div class="panel">
                 <p><?= substr(strip_tags($BlogArticlesRequest->getCol('akt_blog', 'blog_corpus')[$i]), 0, 500); ?></p>
                 <a href="../views/news.php?page=<?= $i + 1 ?>">Lire la suite . . .</a>
