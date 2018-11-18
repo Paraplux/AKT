@@ -39,12 +39,20 @@ body {
 /*GLOBAL STYLE*/
 
 .input-title-style {
-    width: 50%;
+    width: 100%;
     font-family: 'Montserrat Light';
     font-size: 1.2rem;
-    background: #ededed;
+    background: none;
     border: none;
     border-bottom: 1px solid #aaa;
+}
+
+.input-title-style-textarea {
+    width: 100%;
+    font-family: 'Montserrat Light';
+    font-size: 1.2rem;
+    background: none;
+    border: 1px solid #aaa;
 }
 
 .admin-title-style,
@@ -53,6 +61,7 @@ body {
     font-family: 'Montserrat Light';
     font-weight: 500;
 }
+
 .admin-title-style {
     font-size: 2rem;
     text-align: center;
@@ -72,7 +81,7 @@ body {
 .admin-button-style {
     padding: 10px;
     border: 1px solid #aaa;
-    background-color: #ededed;
+    background-color: #ededed00;
 }
 
 .admin-button-style:hover {
@@ -81,13 +90,22 @@ body {
     color: #ededed;
 }
 
+.form-grouped {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-grouped div {
+    display: inline-block;
+    width: 40%;
+}
 
 /*BLOG*/
 
 .drop-down {
-    background-color: #ededed;
+    background-color: #ededed00;
     color: #202020;
-    border-bottom: 1px solid #aaa;
+    border: 1px solid #aaa;
     font-size: 1.3rem;
 }
 
@@ -97,35 +115,42 @@ body {
 }
 
 .panel {
-    background-color: #ededed;
-    border-bottom: 1px solid #aaa;
+    background-color: #ededed00;
+    border: 1px solid #aaa;
 }
 
 .drop-down:after {
     color: #202020;
 }
 
-.blog-list-article {
+.blog-list-article,
+.press-list-article {
+    padding: 10px;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between; 
+    border-bottom: 1px solid #aaa;
 }
 
-.blog-list-delete {
+.blog-list-delete,
+.press-list-delete {
     width: 5%;
     text-align: center;
     border-left: 1px solid #aaa;
 }
 
-.blog-list-delete i:hover {
+.blog-list-delete i:hover,
+.press-list-delete i:hover {
     cursor: pointer;
 }
 
-.blog-list-title{
+.blog-list-title, 
+.press-list-title {
     width: 70%;
     text-align: center;
 }
 
-.blog-list-date{
+.blog-list-date,
+.press-list-delete {
     width: 10%;
     text-align: center;
     border-right: 1px solid #aaa;

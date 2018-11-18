@@ -1,20 +1,47 @@
-Ce que François pourra changer :
+TODO LIST
 
-    - Les photos de la collection et gérer les anciennes
-    - Ecrire des articles de blogs
-    - Ajouter des critiques de presse
-    - Ajouter des objets à vendre et gérer les anciens (pouvoir les catégoriser)
-    - Gérer les prix
-    - Recevoir les commentaires via le formulaire
-    - Texte défilant
+A la fin de la 3ème semaine : le site doit être fini ! 
+On garde la 4ème semaine pour le nettoyage, l'optimisation, les mentions, la rgpd et le référencement !
 
+GLOBAL : 
 
-Ce qui changera automatiquement :
+- Nettoyage du css
+- Peaufiner le responsive
+- Référencement
+- Test de sécurité
+- Test de navigation normale
+- Test du responsive
+- Optimisation des requêtes css et js
+- Optimisation des requêtes SQL
+- Ajout d'un pop up pour la RGPD et pour une potentiel newsletter
 
-    - Les objets de la page home (ce sera les plus consultés)
-    - Le stock
+HOME : 
 
-Ce qui ne changera pas : 
+- Afficher quelques articles randoms
+- Faire le texte d'intro et choisir la photo qui ira avec
 
-    - Les textes de la page home, craft et about
-    - Le thème global du site et la disposition des articles et divers composants
+STORE :
+
+- Finir de choisir les catégories (voir avec François pour le choix définitif)
+- Finir le style
+- Gérer les articles par PhP&MySQL (voir blog) de la catégorie jusqu'au paiement ! /!\ LOURD
+
+NEWS : 
+
+- OK
+
+CRAFT : 
+
+- Choix des photos et des textes
+
+ABOUT : 
+
+- Finir le texte d'intro et mise en place du PhP pour le formulaire
+- Ajouter les mentions légales (RGPD++)
+
+ADMIN : 
+
+- Gérer la session et la sécurité
+- Finir la mise en place des outils de gestion
+- Opitmiser les requêtes
+- Prévoir et éviter les erreurs de François (dans le doute => ERREUR 404)

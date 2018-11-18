@@ -40,8 +40,11 @@ include '../components/db.php';
                 <img src="<?= $catBis['square_link']; ?>" alt="">
             </div>
             <div class="collection-fullscreen" target="<?= $catBis['id']; ?>">
-                <img src="<?= $catBis['med_link'] ;?>" alt="">
+                    <img src="<?= $catBis['med_link'] ;?>" alt="">
             </div>
+            <a class="collection-cat-item-resp" href='<?= $catBis["med_link"]; ?>' target='_blank'>
+                <img src="<?= $catBis['square_link']; ?>" alt="">
+            </a>
             <?php endforeach; ?>            
         </div>
         <?php endforeach; ?>

@@ -146,7 +146,7 @@
 #display-resp-nav-sidebar,
 #hide-resp-nav-sidebar {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     right:10px;
     font-size: 2.5rem;
