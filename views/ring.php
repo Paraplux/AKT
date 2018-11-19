@@ -24,6 +24,7 @@ include '../components/navbar-reverse.php';
         </div>
     </div>
     <div class="item-cat-mosaic">
+        <!-- foreach-->
         <div class="item-cat-container">
                 <div class="grid">
                     <figure class="effect-sarah-ring">
@@ -35,6 +36,7 @@ include '../components/navbar-reverse.php';
                     </figure>		
                 </div>
         </div>
+        <!-- endforeach -->
         <div class="item-cat-container">
                 <div class="grid">
                     <figure class="effect-sarah-ring">

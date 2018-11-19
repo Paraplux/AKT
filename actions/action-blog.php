@@ -25,6 +25,7 @@ if (isset($_POST)) {
     }
 
     if (empty($_SESSION['flash'])) {
+        
         $blog = new Upload($_FILES['blog_thumb']);
         if ($blog->uploaded) {
             $blogsha1 = 'blog_' . sha1(base64_encode(openssl_random_pseudo_bytes(30)));
@@ -36,6 +37,7 @@ if (isset($_POST)) {
             $blog->Process('../images/blog');
             $bloglink = '../images/blog/' . $blogsha1 . '.jpg';
         }
+
         include '../components/db.php';
         $req = $pdo->prepare("INSERT INTO akt_blog SET blog_title = :blog_title, blog_thumb = :blog_thumb, blog_corpus = :blog_corpus, blog_date = :blog_date");
         $req->execute(array(

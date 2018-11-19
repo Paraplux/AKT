@@ -183,7 +183,7 @@ $textDefil = new GetterRequest;
             <div class="form-grouped">
                 <div>
                     <h2 class="admin-subtitle-style">Description de l'article :</h2>
-                    <textarea name="admin_store_desc" type="text" class="input-title-style-textarea" placeholder="Entrez une description..." col=70 rows=10></textarea><br><br>
+                    <textarea name="admin_store_description" type="text" class="input-title-style-textarea" placeholder="Entrez une description..." col=70 rows=10></textarea><br><br>
                 </div>
                 <div>
                     <h2 class="admin-subtitle-style">Visuel de l'article :</h2>
