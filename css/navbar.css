@@ -150,7 +150,7 @@
     top: 0;
     right:10px;
     font-size: 2.5rem;
-    z-index: 1000000;
+    z-index: 100000000000000;
 }
 #display-resp-nav-sidebar:hover,
 #hide-resp-nav-sidebar:hover {
@@ -162,38 +162,17 @@
 #hide-resp-nav-sidebar {
     color: #ededed;
 }
+
 .resp-nav-sidebar {
-    position: absolute;
-    top: 0;
-    left:0;
-    right:0;
-    bottom:0;
-    padding-right: 30px;
     display: none;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-end;
-
-    background-color: #202020;
-    text-align: center;
-    
-    z-index: 100000;
 }
-.resp-nav-sidebar a {
-    margin: 20px;
-    padding-right: 10px;
 
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #ededed;
-    font-family: "Montserrat Light";
-    border-right: 1px solid #ededed;
-}
+
 @media all and (max-width: 780px) {
     .logo-resp {
         display: block;
         width: 90px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .logo {
         display: none;
@@ -226,6 +205,34 @@
 
     .fa-instagram:hover {
         color: inherit;
+    }
+
+    .resp-nav-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-right: 30px;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+
+        background-color: #202020;
+        text-align: center;
+
+        z-index: 1000000000;
+    }
+    .resp-nav-sidebar a {
+        margin: 20px;
+        padding-right: 10px;
+
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #ededed;
+        font-family: "Montserrat Light";
+        border-right: 1px solid #ededed;
     }
 }
 
