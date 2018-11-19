@@ -82,10 +82,11 @@ if (isset($_POST)) {
         $nameCapitalize = capitalize($_POST['admin_store_name']);
         $colorCapitalize = capitalize($_POST['admin_store_color']);
         $ref = '#AKTJ_' . $nameCapitalize . "_" . $colorCapitalize;
+        $cat_format = cleanString($_POST['admin_store_cat']);
 
 
         include '../components/db.php';
-        $req = $pdo->prepare("INSERT INTO akt_store SET name = :admin_store_name, prix = :admin_store_prix, item_description = :admin_store_description, color = :admin_store_color, cat = :admin_store_cat, thumb_1 = :admin_store_upload_1, thumb_2 = :admin_store_upload_2, thumb_3 = :admin_store_upload_3, ref = :ref");
+        $req = $pdo->prepare("INSERT INTO akt_store SET name = :admin_store_name, prix = :admin_store_prix, item_description = :admin_store_description, color = :admin_store_color, cat = :admin_store_cat, thumb_1 = :admin_store_upload_1, thumb_2 = :admin_store_upload_2, thumb_3 = :admin_store_upload_3, ref = :ref, cat_format = :cat_format");
         $req->execute(array(
             ':admin_store_name' => $_POST['admin_store_name'],
             ':admin_store_prix' => $_POST['admin_store_prix'],
@@ -96,6 +97,7 @@ if (isset($_POST)) {
             ':admin_store_upload_2' => $thumb2link,
             ':admin_store_upload_3' => $thumb3link,
             ':ref' => $ref,
+            ':cat_format' => $cat_format,
         ));
         $req->closeCursor();
         $_SESSION['flash']['success']['admin_store'] = "L'article a bien été créé";

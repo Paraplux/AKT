@@ -21,7 +21,7 @@ include '../controllers/controller-store.php';
             <img src="<?= $storeData['thumb_1'];?>" alt="img18" />
             <figcaption>
                 <h2>Check out our <?= $storeData['cat'];?>...</h2>
-                <a href="./bracelet.php"></a>
+                <a href="../views/category.php?cat=<?= $storeData['cat_format'];?>"></a>
                 <p>View More</p>
             </figcaption>
         </figure>
