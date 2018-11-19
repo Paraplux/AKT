@@ -44,8 +44,9 @@ if (isset($_POST)) {
             $thumb1->file_new_name_body = $thumb1sha1;
             $thumb1->image_resize = true;
             $thumb1->image_x = 500;
+            $thumb1->image_y = 300;
             $thumb1->image_convert = 'jpg';
-            $thumb1->image_ratio_y = true;
+            $thumb1->image_ratio_crop = true;
             $thumb1->Process('../images/store');
             $thumb1link = '../images/store/' . $thumb1sha1 . '.jpg';
         }
@@ -95,8 +96,9 @@ if (isset($_POST)) {
             ':ref' => $ref,
         ));
         $req->closeCursor();
-
-        echo "OK";
+        $_SESSION['flash']['success']['admin_store'] = "L'article a bien été créé";
+        header('Location: ../views/admin.php');
+        exit();
     } else {
         header('Location: ../views/admin.php');
     }

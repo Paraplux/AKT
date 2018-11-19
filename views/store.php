@@ -1,13 +1,18 @@
 <?php 
 include '../components/header.php';
 include '../components/navbar-reverse.php';
-include '../actions/controller-store.php';
+include '../controllers/controller-store.php';
 ?>
 
 <link rel="stylesheet" href="../css/navbar-reverse.css">
 <link rel="stylesheet" href="../css/store.css">
 
 <div class="container">
+    <?php if(empty($storeDatas)) : ?>
+        
+        <h1>Pas de catégorie définie</h1>
+
+    <?php endif; ?>
     <div class="store-tiles">
        <?php 
        foreach ($storeDatas as $storeData):
