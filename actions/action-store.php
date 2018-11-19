@@ -57,8 +57,9 @@ if (isset($_POST)) {
             $thumb2->file_new_name_body = $thumb2sha1;
             $thumb2->image_resize = true;
             $thumb2->image_x = 500;
+            $thumb2->image_y = 300;
             $thumb2->image_convert = 'jpg';
-            $thumb2->image_ratio_y = true;
+            $thumb2->image_ratio_crop = true;
             $thumb2->Process('../images/store');
             $thumb2link = '../images/store/' . $thumb2sha1 . '.jpg';
         }
@@ -69,8 +70,9 @@ if (isset($_POST)) {
             $thumb3->file_new_name_body = $thumb3sha1;
             $thumb3->image_resize = true;
             $thumb3->image_x = 500;
+            $thumb3->image_y = 300;
             $thumb3->image_convert = 'jpg';
-            $thumb3->image_ratio_y = true;
+            $thumb3->image_ratio_crop = true;
             $thumb3->Process('../images/store');
             $thumb3link = '../images/store/' . $thumb3sha1 . '.jpg';
         }
