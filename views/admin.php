@@ -9,8 +9,8 @@ if(session_status() == PHP_SESSION_NONE) {
 <?php  
 
 include '../components/header.php';
-include '../components/db.php';
 include '../components/navbar-reverse.php';
+include '../controllers/controller-admin.php';
 
 date_default_timezone_set('Europe/Paris');
 $dateSQL = date('Y-m-d');
@@ -18,8 +18,6 @@ $date = date("d-m-Y");
 $heure = date("H:i");
 
 /*CALLING CONTROLLER*/
-include '../components/controller.php';
-$textDefil = new GetterRequest;
 ?>
 
 <link rel="stylesheet" href="../css/drop-down.css">
@@ -30,6 +28,8 @@ $textDefil = new GetterRequest;
 
 
 <div class="container"><br><hr>
+
+    <!-- QUICK NAVIGATION BAR -->
     <h1 class="admin-title-style">Page d'aministration</h1><hr><br>
     <nav class="admin-nav">
         <a href="#anchor-defil">Home Message</a>
@@ -39,21 +39,6 @@ $textDefil = new GetterRequest;
         <a href="#anchor-press">Press</a>
     </nav>
 
-    <!-- ARTICLES DU BLOG -->
-
-    <?php 
-    $reqBlog = $pdo->prepare('SELECT * FROM akt_blog');
-    $reqBlog->execute();
-    $blogPosts = $reqBlog->fetchAll();
-    ?>
-
-    <!-- ARTICLES DE PRESS -->
-
-    <?php
-    $reqPress = $pdo->prepare('SELECT * FROM akt_press');
-    $reqPress->execute();
-    $pressPosts = $reqPress->fetchAll();
-    ?>
 
     <!-- MESSAGE D'ERREURS -->
     <?php if(isset($_SESSION['flash'])): ?>
@@ -89,7 +74,7 @@ $textDefil = new GetterRequest;
     <hr id="anchor-defil">
     <div class="admin-defil">
         <h1 class="admin-title-style">Text d'accueil</h1><br>
-        <p>Le texte actuel est : <?= $textDefil->getCol('akt_admin', 'home_defil')[0];  ?></p>
+        <p>Le texte actuel est : <?= $homeData; ?></p>
         <br>
         <form action="../actions/action-defil.php" method="POST" >
         <h2 class="admin-subtitle-style">Changer le texte :</h2>
@@ -121,13 +106,13 @@ $textDefil = new GetterRequest;
         </form>
         <h2 class="admin-subtitle-style drop-down">Gérer les articles :</h2>
             <div class="panel blog-list">
-                <?php foreach ($blogPosts as $blogPost) : ?>
+                <?php foreach ($blogDatas as $blogData) : ?>
                 <div class="blog-list-article">
-                    <div class="blog-list-date"><?= $blogPost['blog_date']; ?></div>
-                    <div class="blog-list-title"><?= $blogPost['blog_title']; ?></div>
+                    <div class="blog-list-date"><?= $blogData['blog_date']; ?></div>
+                    <div class="blog-list-title"><?= $blogData['blog_title']; ?></div>
                     <div class="blog-list-delete">
                         <form action="">
-                            <input type="hidden" value="<?= $blogPost['id']; ?>">
+                            <input type="hidden" value="<?= $blogData['id']; ?>">
                             <button class="btn-unstyle"><i class="fas fa-trash-alt"></i></button>
                         </form>
                     </div>

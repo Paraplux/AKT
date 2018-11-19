@@ -23,3 +23,7 @@ body {
 .left-nav {
     background-color: #ededed;
 }
+
+#display-resp-nav-sidebar {
+    color: #ededed;
+}

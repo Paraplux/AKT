@@ -1,25 +1,18 @@
 <?php 
 include '../components/header.php';
 include '../components/navbar.php';
-
-/*CALLING CONTROLLER*/
-include '../components/controller.php';
-$textDefil = new GetterRequest;
+include '../controllers/controller-home.php';
 ?>
 
 <link rel="stylesheet" href="../css/anim-home.css">
 <link rel="stylesheet" href="../css/home.css">
 
-<?php 
-?>
 
 <div class="defil-container welcomeHide">
-    <div class="defil">
-        <?= $textDefil->getCol('akt_admin', 'home_defil')[0]; ?>
+    <div class="defil"><?= $homeData; ?></div>
     </div>
-</div>
-
-<div class="container">
+    
+    <div class="container">
     <div class="home-page">
         <div class="presentation welcomeHide">  
             <div class="presentation-content">

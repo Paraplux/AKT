@@ -170,7 +170,6 @@ body {
     padding: 20px;
     background: #ededed;
     box-shadow: 0 0 5px #404040;
-    border-radius: 5px;
     z-index: 1000000;
 
     overflow-y: scroll;
@@ -180,6 +179,7 @@ body {
 
 .collection-modal-cat-mozaic {
     display: flex;
+    flex-wrap: wrap;
     border-bottom: 1px solid #aaa;
     margin-bottom: 10px;
 }
@@ -294,4 +294,46 @@ body {
 
 .flash-message-dismiss:hover {
     cursor: pointer;
+}
+
+@media all and (max-width: 1200px) {
+
+    .form-grouped {
+    display: block
+    }
+
+        .form-grouped div {
+            width: 100%;
+            display: block;
+            margin: 20px 0;
+        }
+
+    .collection-modal {
+        display: none;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left:0;
+    }
+    
+    #hide-collection-modal {
+        position: fixed;
+        right: 30px;
+        top: 13px;
+    }
+
+    .small-error-success,
+    .small-error-fail {
+        display: block;
+        width: 90%;
+        margin: auto;
+        position: fixed;
+        bottom: 10px;
+        padding: 2px;
+
+        border-radius: 5px;
+        border: 1px solid;
+    }
 }
