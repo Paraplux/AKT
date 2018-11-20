@@ -13,25 +13,28 @@ include '../controllers/controller-item.php';
             <img src="<?= $refData['thumb_1']; ?>" alt="">
         </div>
         <div class="product-cart">
-            <form action="" method="">
                 <div class="product-title">
-                    <h1><?= $refData['name']; ?> Dont l'id est = <?= $refData['id']; ?></h1>
+                    <h1><?= $refData['name']; ?> Dont la couleur est = <?= $refData['color']; ?></h1>
                     <h1><?= $refData['prix']; ?></h1>
                 </div>
-                <div class="product-variation">
-                    <select>
-                        <option>Bleu</option> 
-                        <option>Marron</option>
-                        <option>Beige</option>
-                    </select>
+                <div class="product-variation">                 
+                    <?php foreach ($variationDatas as $variationData) : ?>
+                    <a href="item.php?ref=<?= $variationData['ref']; ?>&color=<?= $variationData['color']; ?>">
+                        <?= $variationData['color']; ?>
+                    </a>
+                    <?php endforeach; ?>
                 </div>
                 <div class="product-desc">
                     <?= $refData['item_description']; ?>
                 </div>
                 <div class="product-buy">
+                    <form method="POST" action="/actions/action-cart.php">
+                    <input name="cart_ref" value="<?= $refData['ref'];?>" type="hidden">
+                    <input name="cart_color" value="<?= $refData['color'];?>" type="hidden">
+
                     <button class="product-buy-button" type="submit">Add to cart</button>
+                    </form>
                 </div>
-        </form>
         </div>
     </div>
 </div>

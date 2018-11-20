@@ -34,7 +34,7 @@ include '../controllers/controller-category.php';
         <?php foreach($eachCategoryDatas as $eachCategoryData) : ?>
         <div class="item-cat-container">
             <div class="grid">
-                <a href="./item.php?ref=<?= $eachCategoryData['ref']; ?>">
+                <a href="./item.php?ref=<?= $eachCategoryData['ref']."&color=". $eachCategoryData['color']; ?>">
                     <figure class="effect-sarah-bracelet">
                         <figcaption>
                             <img class="bracelet" src="<?= $eachCategoryData['thumb_1']; ?>" alt="">
