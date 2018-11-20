@@ -29,3 +29,9 @@ $req = $pdo->prepare('SELECT * FROM akt_store_cat');
 $req->execute();
 $storeCatDatas = $req->fetchAll();
 $req->closeCursor();
+
+
+$req = $pdo->prepare('SELECT * FROM akt_store WHERE variation = "false"');
+$req->execute();
+$variationDatas = $req->fetchAll();
+$req->closeCursor();

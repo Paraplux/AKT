@@ -182,7 +182,6 @@ $heure = date("H:i");
                     <input name="admin_store_color" type="text" class="input-title-style" placeholder="Sous quelle couleur sera vendu l'objet ?">
                 </div>
                 <div>
-                    <!-- <input name="admin_store_cat" type="text" class="input-title-style" placeholder="Choisissez la catégorie dont l'objet dépends ?"> -->
                     <select name="admin_store_cat">
                         <option value="">--Choisissez une catégorie--</option>
 
@@ -193,6 +192,17 @@ $heure = date("H:i");
                 </div>
             </div><br><br>
             <button class="admin-button-style"  type="submit">Submit <i class="fas fa-check"></i></button>
+        </form>
+        <form action="../actions/action-store-variation.php" method='POST'>
+            <input type="text" name="admin_store_variation">
+            <select name="admin_store_clone">
+                        <option value="">--Choisissez l'objet à faire varier--</option>
+
+                        <?php foreach ($variationDatas as $variationData) : ?>
+                        <option value="<?= $variationData['id'] ?>"><?= $variationData['name'] ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                    <button type="submit">TEST</button>
         </form>
         <br>
         <button class="admin-button-style admin-subtitle-style" id="show-collection-modal">Gérer le stock<i class="fas fa-images"></i></button>

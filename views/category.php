@@ -34,15 +34,15 @@ include '../controllers/controller-category.php';
         <?php foreach($eachCategoryDatas as $eachCategoryData) : ?>
         <div class="item-cat-container">
             <div class="grid">
-                <a href="./item.php?ref=<?= $eachCategoryData['ref'];?>&id=<?= $eachCategoryData['id']; ?>">
+                <a href="./item.php?ref=<?= $eachCategoryData['ref']; ?>">
                     <figure class="effect-sarah-bracelet">
                         <figcaption>
                             <img class="bracelet" src="<?= $eachCategoryData['thumb_1']; ?>" alt="">
-                            <h2><?= $eachCategoryData['name'] ;?></h2>
-                            <p><?= $eachCategoryData['prix']; ?></p>
+                            <h2><?= $eachCategoryData['name'] ;?></h2><span><?= $eachCategoryData['color']; ?></span>
+                            <p><?= $eachCategoryData['prix']; ?> €</p>
                         </figcaption>			
                     </figure>
-                </a>		
+                </a>
             </div>
         </div>
         <?php endforeach; ?>

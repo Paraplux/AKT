@@ -101,26 +101,9 @@
 figure.effect-apollo.blue-apollo p {
     border-right: 4px solid rgba(0, 0, 255, 1);
 }
-figure.effect-apollo.purple-apollo p {
-    border-right: 4px solid rgba(255, 0, 255, 1);
-}
-figure.effect-apollo.orange-apollo p {
-    border-right: 4px solid rgba(230, 100, 0, 1);
-}
-figure.effect-apollo.red-apollo p {
-    border-right: 4px solid rgba(255, 0, 0, 1);
-}
+
 figure.effect-apollo.blue-apollo {
     background: rgba(0, 0, 255, 0.2);
-}
-figure.effect-apollo.purple-apollo {
-    background: rgba(255, 0, 255, 0.2);
-}
-figure.effect-apollo.orange-apollo {
-    background: rgba(230, 100, 0, 0.2);
-}
-figure.effect-apollo.red-apollo {
-    background: rgba(255, 0, 0, 0.2);
 }
 
 figure.effect-apollo img {

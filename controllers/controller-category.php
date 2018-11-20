@@ -20,7 +20,7 @@
     $req->closeCursor();
 
 
-    $req = $pdo->prepare('SELECT * FROM akt_store WHERE cat_format = :currentCat');
+    $req = $pdo->prepare('SELECT * FROM akt_store WHERE cat_format = :currentCat AND variation ="false"');
     $req->execute(array(
         ':currentCat' => $currentCat,
     ));
