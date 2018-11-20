@@ -9,19 +9,17 @@ include '../controllers/controller-store.php';
 
 <div class="container">
     <?php if(empty($storeDatas)) : ?>
-        
         <h1>Pas de catégorie définie</h1>
-
     <?php endif; ?>
     <div class="store-tiles">
-       <?php 
+       <?php
        foreach ($storeDatas as $storeData):
        ?>
         <figure class="effect-apollo blue-apollo">
-            <img src="<?= $storeData['thumb_1'];?>" alt="img18" />
+            <img src="<?= $storeData['thumb'];?>" alt="img18" />
             <figcaption>
-                <h2>Check out our <?= $storeData['cat'];?>...</h2>
-                <a href="../views/category.php?cat=<?= $storeData['cat_format'];?>"></a>
+                <h2>Check out our <?= $storeData['name'];?>...</h2>
+                <a href="../views/category.php?cat=<?= $storeData['name_format'];?>"></a>
                 <p>View More</p>
             </figcaption>
         </figure>

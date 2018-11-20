@@ -182,7 +182,14 @@ $heure = date("H:i");
                     <input name="admin_store_color" type="text" class="input-title-style" placeholder="Sous quelle couleur sera vendu l'objet ?">
                 </div>
                 <div>
-                    <input name="admin_store_cat" type="text" class="input-title-style" placeholder="Choisissez la catégorie dont l'objet dépends ?">
+                    <!-- <input name="admin_store_cat" type="text" class="input-title-style" placeholder="Choisissez la catégorie dont l'objet dépends ?"> -->
+                    <select name="admin_store_cat">
+                        <option value="">--Choisissez une catégorie--</option>
+
+                        <?php foreach($storeCatDatas as $cat) : ?>
+                        <option value="<?= $cat['name'] ?>|<?= $cat['name_format']?>|<?= $cat['id'] ?>"><?= $cat['name'] ?></option>
+                        <?php endforeach; ?>
+                    </select>
                 </div>
             </div><br><br>
             <button class="admin-button-style"  type="submit">Submit <i class="fas fa-check"></i></button>

@@ -21,4 +21,11 @@ $req = $pdo->prepare('SELECT * FROM akt_press');
 $req->execute();
 $pressDatas = $req->fetchAll();
 $req->closeCursor();
-?>
+
+
+/* ---STORE--- */
+
+$req = $pdo->prepare('SELECT * FROM akt_store_cat');
+$req->execute();
+$storeCatDatas = $req->fetchAll();
+$req->closeCursor();

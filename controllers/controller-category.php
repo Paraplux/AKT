@@ -1,15 +1,28 @@
 <?php
-    foreach($storeDatas as $storeData) {
-    $req = $pdo->prepare('SELECT * FROM akt_store WHERE cat_format = :cat_format');
+
+    include '../components/db.php';
+    
+    $req = $pdo->prepare('SELECT name, name_format FROM akt_store_cat');
+    $req->execute();
+    $categoryNavs = $req->fetchAll();
+    $req->closeCursor();
+        
+    /* --- Depends on current page --- */
+
+    $currentCat = $_GET['cat'];
+
+
+    $req = $pdo->prepare('SELECT name, content, thumb FROM akt_store_cat WHERE name_format = :currentCat');
     $req->execute(array(
-        ':cat_format' => $storeData['cat_format'],
+        ':currentCat' => $currentCat,
     ));
-    ${$storeData['cat_format'] . 'Datas'} = $req->fetchAll();
+    $categoryData = $req->fetch();
     $req->closeCursor();
 
-    if ($_GET['cat'] = $storeData['cat_format']) {
-        $categoryData = ${$storeData['cat_format'] . 'Datas'};
-    } else {
-        header('Location: ../views/store.php');
-    }
-}
+
+    $req = $pdo->prepare('SELECT * FROM akt_store WHERE cat_format = :currentCat');
+    $req->execute(array(
+        ':currentCat' => $currentCat,
+    ));
+    $eachCategoryDatas = $req->fetchAll();
+    $req->closeCursor();
