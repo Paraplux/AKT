@@ -3,12 +3,11 @@ $(document).ready(function() {
 		$("button.add-to-cart").addClass("size");
 		setTimeout(function() {
 			$("button.add-to-cart").addClass("hover");
-		}, 200);
+		}, 300);
 		setTimeout(function() {
 			$("button.add-to-cart").removeClass("hover");
 			$("button.add-to-cart").removeClass("size");
-		}, 400);
-		// setTimeout(function (event) {
+		}, 600);
 			$.ajax({
 				type: 'post',
 				url: '../actions/action-cart.php',
@@ -16,10 +15,9 @@ $(document).ready(function() {
 				success: function () {
 					var count = $('.counter').html();
 					$("a.cart > span.counter").text(count);
-					$('.AddToCartDiv div').load('../components/countcart.php');
+					$('.add-to-cart-container div').load('../components/countcart.php');
 				}
 			});
-		// }, 500);
 		event.preventDefault();
 	});
 });

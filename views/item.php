@@ -24,7 +24,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 </div>
                 <div class="product-variation">                 
                     <?php foreach ($variationDatas as $variationData) : ?>
-                    <a href="item.php?ref=<?= $variationData['ref']; ?>&color=<?= $variationData['color']; ?>">
+                    <a href="item.php?ref=<?= $variationData['ref']; ?>&color=<?= $variationData['color_format']; ?>">
                         <?= $variationData['color']; ?>
                     </a>
                     <?php endforeach; ?>
@@ -33,10 +33,10 @@ if (session_status() == PHP_SESSION_NONE) {
                     <?= $refData['item_description']; ?>
                 </div>
                 <div class="product-buy">
-                    <form id="cart_submit">
+                    <form id="cart_submit" method="POST">
                     <input name="cart_ref" value="<?= $refData['ref'];?>" type="hidden">
-                    <input name="cart_color" value="<?= $refData['color'];?>" type="hidden">
-                    <div class="AddToCartDiv">
+                    <input name="cart_color" value="<?= $refData['color_format'];?>" type="hidden">
+                    <div class="add-to-cart-container">
                         <?php include '../components/addtocart.php'; ?>
                         <div>
                             <?php include '../components/countcart.php'; ?>

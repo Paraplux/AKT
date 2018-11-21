@@ -34,20 +34,19 @@ include '../components/functions.php';
     <div class="item-cat-mosaic">
         <?php
         foreach($eachCategoryDatas as $eachCategoryData) : 
-        $minimizedColor = minimize($eachCategoryData['color']);
         ?>
         <div class="item-cat-container">
             <div class="grid">
-                <a href="./item.php?ref=<?= $eachCategoryData['ref']."&color=". $minimizedColor; ?>">
+                <a href="./item.php?ref=<?= $eachCategoryData['ref']."&color=". $eachCategoryData['color_format']; ?>">
                     <figure class="effect-sarah-bracelet">
                         <figcaption>
                             <img class="bracelet" src="<?= $eachCategoryData['thumb_1']; ?>" alt="">
-                            <h2><?= $eachCategoryData['name'] ;?></h2><span><?= $eachCategoryData['color']; ?></span>
+                            <h2><?= $eachCategoryData['name'] ;?></h2>
                             <p><?= $eachCategoryData['prix']; ?> €</p>
                         </figcaption>			
                     </figure>
                 </a>
-                <div class="panier"><a href="about.php"></a></div>
+                <!-- <div class="panier"><a href="about.php"></a></div> -->
             </div>
         </div>
         <?php endforeach; ?>

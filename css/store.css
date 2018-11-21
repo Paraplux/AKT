@@ -23,6 +23,7 @@
     max-width: 480px;
     max-height: 360px;
     width: 48%;
+    height: 250px;
     text-align: center;
     cursor: pointer;
 }
@@ -96,7 +97,7 @@
 
 .effect-apollo {
     font-family: 'Montserrat';
-    box-shadow: 0 0 10px #808080;
+    box-shadow: 0 0 5px #909090;
 }
 figure.effect-apollo.blue-apollo p {
     border-right: 4px solid rgba(0, 0, 255, 1);

@@ -23,11 +23,14 @@ body{
 }
 
 .item-cat-presentation-thumb{
+	height: 300px;
     width: 50%;
 }
 
 .item-cat-presentation-thumb img {
+	height: 100%;
 	width: 100%;
+	object-fit: cover;
 }
 
 .main-bracelet{
@@ -40,7 +43,7 @@ body{
 }
 
 .item-cat-presentation-text{
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .item-cat-navigation{

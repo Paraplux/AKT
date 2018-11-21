@@ -1,6 +1,6 @@
 /*On inverse la couleur du body*/
 body {
-    background-color: #f6f6f6;
+    background-color: #f2f2f2;
     color: #202020;
 }
 
@@ -14,20 +14,16 @@ body {
 }
     .right-nav a,
     .resp-nav a {
-        color: #dcdcdc;
+        color: #f2f2f2;
     }
     .fab, 
     .fab {
-        color: #dcdcdc;
+        color: #f2f2f2;
     }
 .left-nav {
-    background-color: #ededed;
+    background-color: #f2f2f2;
 }
 
 #display-resp-nav-sidebar {
-    color: #ededed;
-}
-#cart {
-    color: white;
-    font-size: 2rem;
+    color: #f2f2f2;
 }

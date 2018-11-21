@@ -11,10 +11,10 @@ if(isset($_POST)) {
 
     include '../components/db.php';
 
-    $req = $pdo->prepare('SELECT id FROM akt_store WHERE ref = :ref AND color = :color');
+    $req = $pdo->prepare('SELECT id FROM akt_store WHERE ref = :ref AND color_format = :color_format');
     $req->execute(array(
         ':ref' => $cartRef,
-        ':color' => $cartColor,
+        ':color_format' => $cartColor,
     ));
     $cartID = $req->fetch(PDO::FETCH_ASSOC);
     $req->closeCursor();
