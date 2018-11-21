@@ -33,29 +33,22 @@ include '../controllers/controller-home.php';
         </div>
     
         <div class="flagship welcomeHide">
-        <h2 class="home-h2"><div>BEST SALES</div></h2>
+        <h2 class="home-h2"><div>TAKE A LOOK</div></h2>
             <div class="main-gallery js-flickity"
                     data-flickity-options='{"cellAlign": "center", "wrapAround": true }'>
+                    <?php
+                    for($i = 0; $i < 5; $i++) : 
+                    ?>
                 <div class="gallery-cell">
-                    <img class="gallery-cell-thumb" src="../images/jewelry/brace-1.jpg" alt="">
-                    <div class="gallery-cell-body">PRIX : 500$</div>
+                    <img class="gallery-cell-thumb" src="<?= $topItems[$i]['thumb_1'] ;?>" alt="">
+                    <div class="gallery-cell-body">
+                        <span class="gallery-cell-body-name"><?= $topItems[$i]['name']; ?></span>
+                        <span class="gallery-cell-body-prix"><?= $topItems[$i]['prix']; ?> €</span>
+                    </div>
                 </div>
-                <div class="gallery-cell">
-                    <img class="gallery-cell-thumb" src="../images/jewelry/brace-1.jpg" alt="">
-                    <div class="gallery-cell-body">PRIX : 500$</div>
-                </div>
-                <div class="gallery-cell">
-                    <img class="gallery-cell-thumb" src="../images/jewelry/brace-2.jpg" alt="">
-                    <div class="gallery-cell-body">PRIX : 500$</div>
-                </div>
-                <div class="gallery-cell">
-                    <img class="gallery-cell-thumb" src="../images/jewelry/brace-3.jpg" alt="">
-                    <div class="gallery-cell-body">PRIX : 500$</div>
-                </div>
-                <div class="gallery-cell">
-                    <img class="gallery-cell-thumb" src="../images/jewelry/brace-4.jpg" alt="">
-                    <div class="gallery-cell-body">PRIX : 500$</div>
-                </div>
+                    <?php
+                    endfor;
+                    ?>
             </div>
             
         </div>

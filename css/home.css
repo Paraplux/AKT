@@ -90,13 +90,14 @@
 }
 
 .gallery-cell-body{
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
     background-color: white;
     color: #202020;
     font-weight: 700;
     font-size: 1.2rem;
     height: 50px;
-    padding: 10px;
+    padding: 10px 20px;
     transform: translateY(0px);
     opacity: 0.9;
     transition-duration: 800ms;
