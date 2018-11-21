@@ -6,6 +6,9 @@ include '../controllers/controller-item.php';
 
 <link rel="stylesheet" href="../css/navbar-reverse.css">
 <link rel="stylesheet" href="../css/item.css">
+<link rel="stylesheet" href="../css/addtocart.css">
+<script src="../js/addtocart.js"></script>
+<script src="../js/jquery"></script>
 
 <div class="container">
     <div class="product">
@@ -31,8 +34,10 @@ include '../controllers/controller-item.php';
                     <form method="POST" action="/actions/action-cart.php">
                     <input name="cart_ref" value="<?= $refData['ref'];?>" type="hidden">
                     <input name="cart_color" value="<?= $refData['color'];?>" type="hidden">
-
-                    <button class="product-buy-button" type="submit">Add to cart</button>
+                <div class="AddToCartDiv">
+                    <?php include '../components/addtocart.php'; ?>
+	                <a href="#" class="cart"><span></span></a>
+                </div>
                     </form>
                 </div>
         </div>

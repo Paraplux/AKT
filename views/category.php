@@ -43,6 +43,7 @@ include '../controllers/controller-category.php';
                         </figcaption>			
                     </figure>
                 </a>
+                <div class="panier"><a href="about.php"></a></div>
             </div>
         </div>
         <?php endforeach; ?>
