@@ -1,6 +1,7 @@
 <?php 
 
 include '../components/db.php';
+include '../components/functions.php';
 
 
 $currentRef = $_GET['ref'];

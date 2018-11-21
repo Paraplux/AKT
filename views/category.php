@@ -3,6 +3,7 @@ include '../components/header.php';
 include '../components/navbar-reverse.php';
 include '../controllers/controller-store.php';
 include '../controllers/controller-category.php';
+include '../components/functions.php';
 ?>
 
 
@@ -31,10 +32,13 @@ include '../controllers/controller-category.php';
 
         <!-- OBJETS -->
     <div class="item-cat-mosaic">
-        <?php foreach($eachCategoryDatas as $eachCategoryData) : ?>
+        <?php
+        foreach($eachCategoryDatas as $eachCategoryData) : 
+        $minimizedColor = minimize($eachCategoryData['color']);
+        ?>
         <div class="item-cat-container">
             <div class="grid">
-                <a href="./item.php?ref=<?= $eachCategoryData['ref']."&color=". $eachCategoryData['color']; ?>">
+                <a href="./item.php?ref=<?= $eachCategoryData['ref']."&color=". $minimizedColor; ?>">
                     <figure class="effect-sarah-bracelet">
                         <figcaption>
                             <img class="bracelet" src="<?= $eachCategoryData['thumb_1']; ?>" alt="">

@@ -47,3 +47,15 @@ function capitalize($string)
     $string = preg_replace('#^-#', '', $string);
     return $string;
 }
+
+function minimize($string) {
+    $string = trim($string);
+    $string = specialCarRemove($string);
+    $string = strtr($string, "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz");
+    $string = preg_replace('#([^.a-z0-9]+)#i', '', $string);
+    $string = preg_replace('#-{2,}#', '', $string);
+    $string = preg_replace('#-$#', '', $string);
+    $string = preg_replace('#^-#', '', $string);
+    return $string;
+}
+
