@@ -1,19 +1,25 @@
 $(document).ready(function() {
-	var count = 0;
-	$("a.add-to-cart").click(function(event) {
-		count++;
-		$("a.add-to-cart").addClass("size");
+	$(document).on('submit', '#cart_submit', function (event) {
+		$("button.add-to-cart").addClass("size");
 		setTimeout(function() {
-			$("a.add-to-cart").addClass("hover");
+			$("button.add-to-cart").addClass("hover");
 		}, 200);
 		setTimeout(function() {
-			$("a.cart > span").addClass("counter");
-			$("a.cart > span.counter").text(count);
+			$("button.add-to-cart").removeClass("hover");
+			$("button.add-to-cart").removeClass("size");
 		}, 400);
-		setTimeout(function() {
-			$("a.add-to-cart").removeClass("hover");
-			$("a.add-to-cart").removeClass("size");
-		}, 600);
+		// setTimeout(function (event) {
+			$.ajax({
+				type: 'post',
+				url: '../actions/action-cart.php',
+				data: $(this).serialize(),
+				success: function () {
+					var count = $('.counter').html();
+					$("a.cart > span.counter").text(count);
+					$('.AddToCartDiv div').load('../components/countcart.php');
+				}
+			});
+		// }, 500);
 		event.preventDefault();
 	});
 });

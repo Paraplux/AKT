@@ -2,13 +2,15 @@
 include '../components/header.php';
 include '../components/navbar-reverse.php';
 include '../controllers/controller-item.php';
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 
 <link rel="stylesheet" href="../css/navbar-reverse.css">
 <link rel="stylesheet" href="../css/item.css">
 <link rel="stylesheet" href="../css/addtocart.css">
-<script src="../js/addtocart.js"></script>
-<script src="../js/jquery"></script>
 
 <div class="container">
     <div class="product">
@@ -31,13 +33,15 @@ include '../controllers/controller-item.php';
                     <?= $refData['item_description']; ?>
                 </div>
                 <div class="product-buy">
-                    <form method="POST" action="/actions/action-cart.php">
+                    <form id="cart_submit">
                     <input name="cart_ref" value="<?= $refData['ref'];?>" type="hidden">
                     <input name="cart_color" value="<?= $refData['color'];?>" type="hidden">
-                <div class="AddToCartDiv">
-                    <?php include '../components/addtocart.php'; ?>
-	                <a href="#" class="cart"><span></span></a>
-                </div>
+                    <div class="AddToCartDiv">
+                        <?php include '../components/addtocart.php'; ?>
+                        <div>
+                            <?php include '../components/countcart.php'; ?>
+                        </div>
+                    </div>
                     </form>
                 </div>
         </div>
@@ -46,6 +50,7 @@ include '../controllers/controller-item.php';
 
 
 <script src="../js/flickity.js"></script>
+<script src="../js/addtocart.js"></script>
 
 <?php
 include '../components/footer.php';

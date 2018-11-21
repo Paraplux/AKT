@@ -27,3 +27,7 @@ body {
 #display-resp-nav-sidebar {
     color: #ededed;
 }
+#cart {
+    color: white;
+    font-size: 2rem;
+}

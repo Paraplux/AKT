@@ -16,9 +16,20 @@ if(isset($_POST)) {
         ':ref' => $cartRef,
         ':color' => $cartColor,
     ));
-    $cartData = $req->fetch();
+    $cartID = $req->fetch(PDO::FETCH_ASSOC);
     $req->closeCursor();
-    array_push($_SESSION['cart'], $cartData['id']);
-
-    header('Location: ../views/item.php');
+    
+    if(!isset($_SESSION['cart'])) {
+        $_SESSION['cart'] = array(
+            $cartID['id'] => "1",
+        );
+    } else if (!isset($_SESSION['cart'][$cartID['id']])) {
+        $_SESSION['cart'][$cartID['id']] = 1;
+    } else if (isset($_SESSION['cart'][$cartID['id']])) {
+        $qty = $_SESSION['cart'][$cartID['id']];
+        $qty++;
+        $_SESSION['cart'][$cartID['id']] = $qty;
+    } else {
+        echo "Problème, contactez l'administrateur du site";
+    }
 }
