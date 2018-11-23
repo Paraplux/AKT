@@ -2,6 +2,7 @@
 include '../components/header.php';
 include '../components/navbar-reverse.php';
 include '../controllers/controller-item.php';
+include '../controllers/controller-quicknav.php';
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -13,6 +14,13 @@ if (session_status() == PHP_SESSION_NONE) {
 <link rel="stylesheet" href="../css/addtocart.css">
 
 <div class="container">
+    <!-- MENU -->
+    <div class="item-cat-navigation">
+        <?php foreach ($categoryNavs as $categoryNav) : ?>
+        <span class="item-cat-links"><a href="./category.php?cat=<?= $categoryNav['name_format'] ?>"><?= $categoryNav['name'] ?></a></span>
+        <?php endforeach; ?>
+    </div>
+    <hr>
     <div class="product">
         <div class="product-thumb">
             <img src="<?= $refData['thumb_1']; ?>" alt="">

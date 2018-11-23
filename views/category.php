@@ -3,6 +3,7 @@ include '../components/header.php';
 include '../components/navbar-reverse.php';
 include '../controllers/controller-store.php';
 include '../controllers/controller-category.php';
+include '../controllers/controller-quicknav.php';
 include '../components/functions.php';
 ?>
 
@@ -18,7 +19,7 @@ include '../components/functions.php';
         <span class="item-cat-links"><a href="./category.php?cat=<?= $categoryNav['name_format']?>"><?= $categoryNav['name']?></a></span>
         <?php endforeach; ?>
     </div>
-    
+    <hr>
         <!-- ENTETE -->
     <div class="item-cat-presentation">
         <div class="item-cat-presentation-content">

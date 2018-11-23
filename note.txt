@@ -17,14 +17,13 @@ GLOBAL :
 
 HOME : 
 
-- Afficher quelques articles randoms
 - Faire le texte d'intro et choisir la photo qui ira avec
 
 STORE :
 
 - Finir de choisir les catégories (voir avec François pour le choix définitif)
 - Finir le style
-- Gérer les articles par PhP&MySQL (voir blog) de la catégorie jusqu'au paiement ! /!\ LOURD
+- Gérer le passage en caisse + PAIEMENT ! 
 
 NEWS : 
 
@@ -43,5 +42,5 @@ ADMIN :
 
 - Gérer la session et la sécurité
 - Finir la mise en place des outils de gestion
-- Opitmiser les requêtes
+- Optimiser les requêtes
 - Prévoir et éviter les erreurs de François (dans le doute => ERREUR 404)

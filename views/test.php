@@ -1,10 +1,24 @@
-Il nous affiche tous les bracelets (qui ont donc comme cat = bracelets)
+<?php
 
-Même si la couleurs est différente
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+if(isset($_SESSION['panier'])) {
+    $_SESSION['panier'] = array();
+    
+    $_SESSION['panier']['id'] = array();
+    $_SESSION['panier']['qty'] = array();
+}
 
 
-Nous on veut qu'il affiche tous les bracelets MAIS une seule fois par couleur
-
-Pour l'instant : 
-
-SELECT * FROM akt_store WHERE cat_format = :currentCat AND varation = false
+    if (isset($_SESSION['cart'])) {
+    foreach ($itemsCart as $item) {
+        echo $_SESSION['cart'][$item['id']] . "<br>";
+        echo $item['name'] . "<br>";
+        echo $item['color'] . "<br>";
+        echo "<hr>";
+    }
+} else {
+    echo 'Votre panier est vide!';
+}

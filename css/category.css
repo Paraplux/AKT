@@ -5,6 +5,12 @@ body{
 
 /* BASIC CSS */
 
+.item-cat-navigation {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1%;
+}
+
 .item-cat-links a{
     text-decoration: none;
     color: #000000;
@@ -44,12 +50,6 @@ body{
 
 .item-cat-presentation-text{
     font-size: 1.2em;
-}
-
-.item-cat-navigation{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1%;
 }
 
 .item-cat-mosaic{

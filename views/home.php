@@ -40,11 +40,13 @@ include '../controllers/controller-home.php';
                     for($i = 0; $i < 5; $i++) : 
                     ?>
                 <div class="gallery-cell">
-                    <img class="gallery-cell-thumb" src="<?= $topItems[$i]['thumb_1'] ;?>" alt="">
-                    <div class="gallery-cell-body">
-                        <span class="gallery-cell-body-name"><?= $topItems[$i]['name']; ?></span>
-                        <span class="gallery-cell-body-prix"><?= $topItems[$i]['prix']; ?> €</span>
-                    </div>
+                    <a href="./item.php?ref=<?= $topItems[$i]['ref'] . "&color=" . $topItems[$i]['color_format']; ?>">
+                        <img class="gallery-cell-thumb" src="<?= $topItems[$i]['thumb_1'] ;?>" alt="">
+                        <div class="gallery-cell-body">
+                            <span class="gallery-cell-body-name"><?= $topItems[$i]['name']; ?></span>
+                            <span class="gallery-cell-body-prix"><?= $topItems[$i]['prix']; ?> €</span>
+                        </div>
+                    </a>
                 </div>
                     <?php
                     endfor;
