@@ -8,6 +8,7 @@ $req->execute();
 $blogDatas = $req->fetchAll();
 $req->closeCursor();
 
+
 /* ---PRESS--- */
 
 $req = $pdo->prepare('SELECT * FROM akt_press');

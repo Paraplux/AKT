@@ -25,6 +25,11 @@ $req->closeCursor();
 
 /* ---STORE--- */
 
+$req = $pdo->prepare('SELECT * FROM akt_store');
+$req->execute();
+$storeDatas = $req->fetchAll();
+$req->closeCursor();
+
 $req = $pdo->prepare('SELECT * FROM akt_store_cat');
 $req->execute();
 $storeCatDatas = $req->fetchAll();

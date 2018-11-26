@@ -90,35 +90,40 @@ $heure = date("H:i");
     <hr id="anchor-blog">
     <div class="admin-blog">
         <h1 class="admin-title-style">BLOG</h1><br>
-            <form action="../actions/action-blog.php" method="POST" enctype="multipart/form-data">
+            <form action="../actions/action-blog-add.php" method="POST" enctype="multipart/form-data">
             <h2 class="admin-subtitle-style">Ajouter un nouvel article :</h2>
-            <input class="input-title-style" name="blog_title" type="text" placeholder="Choisir un titre pour l'article...">
-            <label for="blog_date"><h4>Nous sommes le <?= $date ?> et il est <?= $heure ?></h4></label>
+            <input class="input-title-style" name="blog_title" type="text" placeholder="Choisir un titre pour l'article..."><br>
+            <h2 class="admin-subtitle-style">Nous sommes le <?= $date ?> et il est <?= $heure ?></h2><br>
 
-            <label for="blog_thumb"><h4>Choisissez une image pour illustrer l'article :</h4></label>
-            <input type="file" name="blog_thumb">
+            <label for="blog_thumb"><h2 class="admin-subtitle-style">Choisissez une image pour illustrer l'article :</h2></label>
+            <input class="input-title-style" type="file" name="blog_thumb"><br><br>
 
-            <label for="blog_corpus"><h4>Corps de l'article :</h4></label>
+            <label for="blog_corpus"><h2 class="admin-subtitle-style">Corps de l'article :</h2></label>
             <textarea name="blog_corpus" type="text" cols=70 rows=10></textarea> <br><br>
             
             <input name="blog_date" type="hidden" value="<?= $dateSQL; ?>">
             <button class="admin-button-style" type="submit">Submit <i class="fas fa-check"></i></button>
         </form>
         <h2 class="admin-subtitle-style drop-down">Gérer les articles :</h2>
-            <div class="panel blog-list">
-                <?php foreach ($blogDatas as $blogData) : ?>
-                <div class="blog-list-article">
-                    <div class="blog-list-date"><?= $blogData['blog_date']; ?></div>
-                    <div class="blog-list-title"><?= $blogData['blog_title']; ?></div>
-                    <div class="blog-list-delete">
-                        <form action="">
-                            <input type="hidden" value="<?= $blogData['id']; ?>">
-                            <button class="btn-unstyle"><i class="fas fa-trash-alt"></i></button>
-                        </form>
-                    </div>
-                </div>
-                <?php endforeach; ?>
+        <div class="panel blog-list">
+            <div class="store-list-article">
+                <div class="blog-list-date">DATE</div>
+                <div class="blog-list-title">TITLE</div>
+                <div class="blog-list-delete">DELETE</div>
             </div>
+            <?php foreach ($blogDatas as $blogData) : ?>
+            <div class="blog-list-article">
+                <div class="blog-list-date"><?= $blogData['blog_date']; ?></div>
+                <div class="blog-list-title"><?= $blogData['blog_title']; ?></div>
+                <div class="blog-list-delete">
+                    <form action="../actions/action-blog-delete.php" method="POST" onsubmit="if(confirm('Voulez vous vraiment supprimer cet article ?')){return true;}else{return false;}">
+                        <input type="hidden" name="blog-id-delete" value="<?= $blogData['id']; ?>">
+                        <button class="btn-unstyle"><i class="fas fa-trash-alt"></i></button>
+                    </form>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
     </div>
 
 
@@ -132,10 +137,10 @@ $heure = date("H:i");
         <form action="../actions/action-collection.php" method="POST" enctype="multipart/form-data">
             <div class="form-grouped">
                 <div>
-                    <input type="file" name="admin_collection_upload">
+                    <input class="input-title-style" type="file" name="admin_collection_upload">
                 </div>
                 <div>
-                    <input  class="input-title-style" type="text" name="admin_collection_cat" placeholder="Choisir une catégorie">
+                    <input class="input-title-style" type="text" name="admin_collection_cat" placeholder="Choisir une catégorie">
                 </div>
             </div><br><br>
             <button class="admin-button-style"  type="submit">Submit <i class="fas fa-check"></i></button>
@@ -172,9 +177,9 @@ $heure = date("H:i");
                 </div>
                 <div>
                     <h2 class="admin-subtitle-style">Visuel de l'article :</h2>
-                    <input name="admin_store_upload_1" type="file"><br><br>
-                    <input name="admin_store_upload_2" type="file"><br><br>
-                    <input name="admin_store_upload_3" type="file"><br><br>
+                    <input class="input-title-style" name="admin_store_upload_1" type="file"><br><br>
+                    <input class="input-title-style" name="admin_store_upload_2" type="file"><br><br>
+                    <input class="input-title-style" name="admin_store_upload_3" type="file"><br><br>
                 </div>
             </div>
             <div class="form-grouped">
@@ -182,7 +187,7 @@ $heure = date("H:i");
                     <input name="admin_store_color" type="text" class="input-title-style" placeholder="Sous quelle couleur sera vendu l'objet ?">
                 </div>
                 <div>
-                    <select name="admin_store_cat">
+                    <select class="input-title-style" name="admin_store_cat">
                         <option value="">--Choisissez une catégorie--</option>
 
                         <?php foreach($storeCatDatas as $cat) : ?>
@@ -192,20 +197,53 @@ $heure = date("H:i");
                 </div>
             </div><br><br>
             <button class="admin-button-style"  type="submit">Submit <i class="fas fa-check"></i></button>
-        </form>
+        </form><br> <hr>
+        <h2 class="admin-subtitle-style">Créer un clone d'objet d'une autre couleur :</h2><br><br>
         <form action="../actions/action-store-variation.php" method='POST'>
-            <input type="text" name="admin_store_variation">
-            <select name="admin_store_clone">
-                        <option value="">--Choisissez l'objet à faire varier--</option>
-
-                        <?php foreach ($variationDatas as $variationData) : ?>
-                        <option value="<?= $variationData['id'] ?>"><?= $variationData['name'] ?></option>
-                        <?php endforeach; ?>
-                    </select>
-                    <button type="submit">TEST</button>
+            <div class="form-grouped">
+                <div>
+                    <select class="input-title-style" name="admin_store_clone">
+                    <option value="">--Choisissez l'objet à faire varier--</option>
+                    
+                    <?php foreach ($variationDatas as $variationData) : ?>
+                    <option value="<?= $variationData['id'] ?>"><?= $variationData['name'] ?></option>
+                    <?php endforeach; ?>
+                </select>
+                </div>
+            <div>
+                <input type="text" name="admin_store_variation" class="input-title-style" placeholder="Créer un clone de quelle couleur ?">
+            </div>
+            </div> <br>
+            <button class="admin-button-style" type="submit">Dupliquer <i class="far fa-clone"></i></button>
         </form>
         <br>
-        <button class="admin-button-style admin-subtitle-style" id="show-collection-modal">Gérer le stock<i class="fas fa-images"></i></button>
+        <h2 class="admin-subtitle-style drop-down">Gérer le stock :</h2>
+        <div class="panel store-list">
+            <div class="store-list-article">
+                <div class="store-list-name">NAME</div>
+                <div class="store-list-prix">PRICE</div>
+                <div class="store-list-stock">STOCK</div>
+                <div class="store-list-delete">DELETE</div>
+            </div>
+            <?php foreach ($storeDatas as $storeData) : ?>
+            <div class="store-list-article">
+                <div class="store-list-name"><?= $storeData['name']; ?></div>
+                <div class="store-list-prix">
+                    <form action="../actions/action-store-change-price.php">
+                        <input class="input-title-style" type="text" name="change-prix" placeholder="<?= $storeData['prix'];?>">
+                        <button class="admin-button-style">Nouveau prix</button>
+                    </form>
+                </div>
+                <div class="store-list-stock">200</div>
+                <div class="store-list-delete">
+                    <form action="../actions/action-store-delete.php" method="POST" onsubmit="if(confirm('Voulez vous vraiment supprimer cet article ?')){return true;}else{return false;}">
+                        <input type="hidden" name="blog-id-delete" value="<?= $storeData['id']; ?>">
+                        <button class="btn-unstyle"><i class="fas fa-trash-alt"></i></button>
+                    </form>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
     </div>
     
 
@@ -226,19 +264,24 @@ $heure = date("H:i");
                 <input name="admin_press_signature" type="text" class="input-title-style"  placeholder="Qui a fait cette critique ?">
             </div>
         </div><br><br>
-        <textarea name="admin_press_content" type="text" cols=70 rows=10 class="input-title-style-textarea"></textarea><br><br>
+        <textarea name="admin_press_content" type="text" cols=70 rows=10 class="input-title-style-textarea" placeholder="Corps de la critique"></textarea><br><br>
         <input name="admin_press_link" type="text" class="input-title-style" placeholder="Lien vers la critique complète"><br><br>
         <button class="admin-button-style"  type="submit">Submit <i class="fas fa-check"></i></button>
         </form><br><br>
         <h2 class="admin-subtitle-style drop-down">Gérer les critiques :</h2>
             <div class="panel press-list">
-                <?php foreach ($pressPosts as $pressPost) : ?>
+                <div class="store-list-article">
+                    <div class="press-list-signature">FORM</div>
+                    <div class="press-list-title">TITLE</div>
+                    <div class="press-list-delete">DELETE</div>
+                </div>
+                <?php foreach ($pressDatas as $pressData) : ?>
                 <div class="press-list-article">
-                    <div class="press-list-signature"><?= $pressPost['press_signature']; ?></div>
-                    <div class="press-list-title"><?= $pressPost['press_title']; ?></div>
+                    <div class="press-list-signature"><?= $pressData['press_signature']; ?></div>
+                    <div class="press-list-title"><?= $pressData['press_title']; ?></div>
                     <div class="press-list-delete">
-                        <form action="">
-                            <input type="hidden" value="<?= $pressPost['id']; ?>">
+                        <form action="../actions/action-press-delete.php" method="POST" onsubmit="if(confirm('Voulez vous vraiment supprimer cette critique ?')){return true;}else{return false;}">
+                            <input type="hidden" name="press-id-delete" value="<?= $pressData['id']; ?>">
                             <button class="btn-unstyle"><i class="fas fa-trash-alt"></i></button>
                         </form>
                     </div>
