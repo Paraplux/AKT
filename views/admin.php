@@ -328,6 +328,21 @@ $heure = date("H:i");
             });
             e.preventDefault();
         });
+        $(document).on('submit', '#collection-modal-cat-trash', function(e) {
+            if(confirm('Voulez vous vraiment supprimer cette photo de votre collection ?')){
+                $.ajax({
+                    type: 'post',
+                    url: '../actions/action-collection-delete.php',
+                    data: $(this).serialize(),
+                    success: function () {
+                        $('.collection-modal').load('../components/admin-collection-modal.php');
+                    }
+                });
+            } else {
+                return false;
+            }
+            e.preventDefault();
+        });
     });
 </script>
 <script src="../js/dropdown.js"></script>

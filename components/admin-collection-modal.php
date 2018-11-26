@@ -30,14 +30,13 @@
             ?>
             <div class="collection-modal-cat-thumb">
                 <img class="is-thumb-selected-<?= $border; ?>" src="<?= $catBis['tiny_link']; ?>" alt="">
-                <form id="collection-modal-cat-fav">
+                <form id="collection-modal-cat-fav" >
                     <input name="fav-value-id" type="hidden" value="<?= $catBis['id'] ?>">
                     <input name="fav-value-cat" type="hidden" value="<?= $catBis['cat_format'] ?>">
                     <button class="btn-unstyle"><i class="fas fa-star"></i></button>
                 </form>
-                <form class="collection-modal-cat-trash">
-                    <input name="trash-value-id" type="hidden" value="<?= $catBis['id'] ?>">  
-                    <input name="trash-value-cat" type="hidden" value="<?= $catBis['cat_format'] ?>"> 
+                <form id="collection-modal-cat-trash">
+                    <input name="trash-value-id" type="hidden" value="<?= $catBis['id'] ?>">
                     <button class="btn-unstyle"><i class="fas fa-trash-alt"></i></button>
                 </form>
             </div>
