@@ -1,7 +1,5 @@
 TODO LIST
 
-A la fin de la 3ème semaine : le site doit être fini ! 
-On garde la 4ème semaine pour le nettoyage, l'optimisation, les mentions, la rgpd et le référencement !
 
 GLOBAL : 
 
@@ -23,7 +21,6 @@ STORE :
 
 - Finir de choisir les catégories (voir avec François pour le choix définitif)
 - Finir le style
-- Gérer le passage en caisse + PAIEMENT ! 
 
 NEWS : 
 
@@ -40,7 +37,8 @@ ABOUT :
 
 ADMIN : 
 
+- Responsive
 - Gérer la session et la sécurité
-- Finir la mise en place des outils de gestion
+- Finir la mise en place des actions pour le STORE
 - Optimiser les requêtes
 - Prévoir et éviter les erreurs de François (dans le doute => ERREUR 404)

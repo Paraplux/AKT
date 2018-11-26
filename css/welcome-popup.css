@@ -1,0 +1,145 @@
+* {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.welcome-popup {
+    position: fixed;
+    width: 110%;
+    height: 250px;
+    left: -5%;
+    bottom: -250px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #202020;
+    box-shadow: 0 0 12px black;
+
+    z-index: 10000000000000000;
+
+    -webkit-transform: skew(-25deg);
+    transform: skew(-25deg);
+
+    animation-name: welcomeShow;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.welcome-popup div div,
+.welcome-popup div form {
+    -webkit-transform: skew(25deg);
+    transform: skew(25deg);
+}
+.dismiss {
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    color: #202020;
+    -webkit-transform: skew(25deg);
+    transform: skew(25deg);
+}
+.dismiss:hover {
+    cursor: pointer;
+}
+.rgpd-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 70%;
+    padding-left: 5%;
+}
+
+    .rgpd-content {
+        width: 90%;
+        margin: auto;
+
+        text-indent: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .rpg-buttons {
+        width: 100%;
+    }
+
+    .rgpd-button {
+        padding: 5px 15px;
+        margin: 10px;
+
+        border: 2px solid #d218e2;
+        border-radius: 20px;
+    }
+
+    .rgpd-button:first-child {
+        background-color: #d218e2;
+    }
+    .rgpd-button:last-child {
+        border: 2px solid #101010;
+        background-color: #101010;
+    }
+
+    .rgpd-button:first-child:hover {
+        background-color: #202020;
+    }
+
+    .rgpd-button:last-child:hover {
+        background-color: #202020;
+    }
+
+    .rgpd-buttons a {
+        color: white;
+        text-decoration: none;
+    }
+
+.newsletter-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 30%;
+
+    border-left: 5px solid #a223ad;
+    background-color: #fefefe;
+    padding-right: 5%;
+}
+
+    .newsletter-content {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 1rem;
+
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #202020;
+    }
+
+    .newsletter-side input {
+        padding: 10px 15px;
+        margin: 10px;
+
+        border: none;
+        border-radius: 20px;
+        background-color: #202020;
+        color: white;
+    }
+
+    .newsletter-side button {
+        padding: 10px 13px;
+        margin: 10px;
+
+        border: none;
+        border-radius: 20px;
+        background-color: #a223ad;
+
+        color: white;
+        font-size: 1rem;
+    }
+
+@keyframes welcomeShow {
+    to {
+        bottom: 0;
+    }
+}

@@ -1,14 +1,15 @@
 <?php 
 include '../components/header.php';
 include '../components/navbar.php';
+include '../components/welcome-popup.php';
 include '../controllers/controller-home.php';
 ?>
 
 <link rel="stylesheet" href="../css/anim-home.css">
 <link rel="stylesheet" href="../css/home.css">
 
-
-<div class="defil-container welcomeHide">
+    
+    <div class="defil-container welcomeHide">
     <div class="defil"><?= $homeData; ?></div>
     </div>
     
