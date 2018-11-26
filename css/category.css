@@ -11,10 +11,10 @@ body{
 	margin-top: 1%;
 }
 
-.item-cat-links a{
-    text-decoration: none;
-    color: #000000;
+.item-cat-navigation a {
+	color: #202020;
 }
+
 
 .item-cat-links a:hover{
     color: rgba(255, 0, 255, 1);
@@ -37,10 +37,6 @@ body{
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-}
-
-.main-bracelet{
-    width: 100%;
 }
 
 .item-cat-presentation-content{
@@ -132,4 +128,27 @@ body{
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+}
+
+
+@media all and (max-width: 1200px) { 
+	.item-cat-presentation {
+		flex-wrap: wrap;
+	}
+
+	.item-cat-presentation-thumb {
+		width: 100%;
+	}
+
+	.item-cat-presentation-thumb img {
+		width: 100%;
+	}
+
+	.item-cat-presentation-content {
+		width: 100%;
+	}
+
+	.item-cat-container {
+		width: 100%;
+	}
 }

@@ -1,4 +1,22 @@
 /*Craft*/
+.container {
+    width: 85%;
+    margin: 0;
+    margin-left: 50px;
+}
+
+.craft-title {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat Light';
+    font-weight: 300;
+} 
+    .craft-title span {
+        padding: 2rem 4rem;
+        border: 1px solid white;
+    }
 
 .intro {
     font-style: italic;
@@ -8,11 +26,9 @@
 .article {
     text-align: justify;
     width: 80%;
+    margin: auto;
     margin-top: 50px;
     padding-left: 50px;
-
-    display: flex;
-    justify-content: space-around;
 
     font-family: 'Raleway Light';
     font-weight: 300;
@@ -38,18 +54,15 @@
     transform: skew(25deg);
 }
 
-.content {
-    width: 60%;
+.thumbs {
+    text-indent: 0;
+    width: 70%;
+    margin: auto;
 }
 
-.thumb-right {
-    margin: auto;
-    margin-left: 50px;
-}
-
-.thumb-left {
-    margin: auto;
-    margin-right: 50px;
+.thumbs img {
+    width: 100%;
+    height: auto;
 }
 @media all and (max-width: 780px){
     .thumb-right{

@@ -27,10 +27,10 @@ include '../components/functions.php';
                 <p class="item-cat-presentation-text"><?= $categoryData['content'] ?></p>
         </div> 
         <div class="item-cat-presentation-thumb">
-            <img class="main-bracelet" src="<?= $categoryData['thumb'] ?>" alt="">
+            <img src="<?= $categoryData['thumb'] ?>" alt="">
         </div>
     </div>
-
+    <hr>
         <!-- OBJETS -->
     <div class="item-cat-mosaic">
         <?php
