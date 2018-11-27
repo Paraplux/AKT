@@ -6,4 +6,7 @@ $(document).ready(function() {
     $('.rgpd-buttons').on('click', function () {
         $('.welcome-popup').fadeOut('slow');
     });
+
+
+   
 })

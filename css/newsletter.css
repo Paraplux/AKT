@@ -1,0 +1,55 @@
+.newsletter-page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newsletter-intro {
+    width: 100%;
+    padding: 50px 20%;
+}
+
+    .newsletter-title {
+        text-align: center;
+        font-family: 'Montserrat Thin';
+        font-weight: 200;
+        font-size: 2.5rem;
+    }
+
+    .newsletter-content {
+        font-family: 'Montserrat Extra Light';
+    }
+
+.newsletter-form {
+    width: 100%;
+    padding: 25px 20%;
+    text-align: center;
+}
+
+    .newsletter-form input, 
+    .newsletter-form button {
+        box-sizing: border-box;
+        height: 50px;
+        padding: 10px;
+        font-size: 1.1rem;
+        font-family: 'Montserrat Light';
+        border: 1px solid #efefef;
+
+    }
+    .newsletter-form input {
+        background-color: #202020;
+        color: white;
+    }
+
+    .newsletter-form button {
+        background-color: #efefef;  
+    }
+
+    .newsletter-form button:hover {
+        cursor: pointer;
+    }
+
+.unsubscribe {
+    font-size: 0.9rem;
+    color: #efefefaa;
+}
