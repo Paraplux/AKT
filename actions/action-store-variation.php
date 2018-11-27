@@ -1,4 +1,7 @@
 <?php 
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 
 if(isset($_POST)) {
 
@@ -20,6 +23,7 @@ if(isset($_POST)) {
         thumb_1 = :thumb_1,
         thumb_2 = :thumb_2,
         thumb_3 = :thumb_3,
+        qty = :qty,
         color = :color,
         color_format = :color_format,
         cat = :cat,
@@ -35,6 +39,7 @@ if(isset($_POST)) {
         ':thumb_1' => $clone['thumb_1'],
         ':thumb_2' => $clone['thumb_2'],
         ':thumb_3' => $clone['thumb_3'],
+        ':qty' => $_POST['admin_store_variation_stock'],
         ':color' => $_POST['admin_store_variation'],
         ':color_format' => $color_format,
         ':cat' => $clone['cat'],
@@ -43,7 +48,12 @@ if(isset($_POST)) {
         ':variation' => "true",
     ));
     $req->closeCursor();
-
+    $_SESSION['flash']['success']['admin_store_variation'] = "L'article a bien été dupliqué";
     header('Location: ../views/admin.php');
+    exit();
 
+} else {
+    $_SESSION['flash']['fail']['admin_store_variation'] = "Erreur veuillez réessayer";
+    header('Location: ../views/admin.php');
+    exit();
 }

@@ -196,6 +196,8 @@ $heure = date("H:i");
                     </select>
                 </div>
             </div><br><br>
+                <label class="stock-label" for="admin_store_stock">Initial stock : <span></span></label><br>
+                <input  min="1" max="2000" name="admin_store_stock" type="range" class="input-title-style stock-input"><br><br>
             <button class="admin-button-style"  type="submit">Submit <i class="fas fa-check"></i></button>
         </form><br> <hr>
         <h2 class="admin-subtitle-style">Créer un clone d'objet d'une autre couleur :</h2><br><br>
@@ -213,7 +215,9 @@ $heure = date("H:i");
             <div>
                 <input type="text" name="admin_store_variation" class="input-title-style" placeholder="Créer un clone de quelle couleur ?">
             </div>
-            </div> <br>
+            </div><br><br>
+            <label class="stock-label" for="admin_store_variation_stock">Initial stock : <span></span></label><br>
+                <input  min="1" max="2000" name="admin_store_variation_stock" type="range" class="input-title-style stock-input"><br><br>
             <button class="admin-button-style" type="submit">Dupliquer <i class="far fa-clone"></i></button>
         </form>
         <br>
@@ -229,12 +233,19 @@ $heure = date("H:i");
             <div class="store-list-article">
                 <div class="store-list-name"><?= $storeData['name']; ?></div>
                 <div class="store-list-prix">
-                    <form action="../actions/action-store-change-price.php">
-                        <input class="input-title-style" type="text" name="change-prix" placeholder="<?= $storeData['prix'];?>">
+                    <form method="POST" action="../actions/action-store-change-price.php">
+                        <input type="hidden" name="change-price-id" value="<?= $storeData['id'];?>">
+                        <input class="input-title-style" type="text" name="change-price-value" placeholder="<?= $storeData['prix'];?>">
                         <button class="admin-button-style">Nouveau prix</button>
                     </form>
                 </div>
-                <div class="store-list-stock">200</div>
+                <div class="store-list-stock">
+                    <form method="POST" action="../actions/action-store-change-stock.php">
+                        <input type="hidden" name="change-stock-id" value="<?= $storeData['id']; ?>">
+                        <input class="input-title-style" type="text" name="change-stock-value" placeholder="<?= $storeData['qty']; ?>">
+                        <button class="admin-button-style">Nouveau stock</button>
+                    </form>
+                </div>
                 <div class="store-list-delete">
                     <form action="../actions/action-store-delete.php" method="POST" onsubmit="if(confirm('Voulez vous vraiment supprimer cet article ?')){return true;}else{return false;}">
                         <input type="hidden" name="blog-id-delete" value="<?= $storeData['id']; ?>">
@@ -356,6 +367,11 @@ $heure = date("H:i");
         });
         $('.flash-message-dismiss').on('click', function() {
         $('.flash-message').fadeOut();
+        });
+        
+        $('.stock-label span').html( $('.stock-input').val() );
+        $(document).on('input', '.stock-input', function() {
+            $('.stock-label span').html( $(this).val() );
         });
 
 

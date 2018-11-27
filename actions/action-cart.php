@@ -11,25 +11,28 @@ if(isset($_POST)) {
 
     include '../components/db.php';
 
-    $req = $pdo->prepare('SELECT id FROM akt_store WHERE ref = :ref AND color_format = :color_format');
+    $req = $pdo->prepare('SELECT id, qty FROM akt_store WHERE ref = :ref AND color_format = :color_format');
     $req->execute(array(
         ':ref' => $cartRef,
         ':color_format' => $cartColor,
     ));
     $cartID = $req->fetch(PDO::FETCH_ASSOC);
     $req->closeCursor();
-    
-    if(!isset($_SESSION['cart'])) {
-        $_SESSION['cart'] = array(
-            $cartID['id'] => "1",
-        );
-    } else if (!isset($_SESSION['cart'][$cartID['id']])) {
-        $_SESSION['cart'][$cartID['id']] = 1;
-    } else if (isset($_SESSION['cart'][$cartID['id']])) {
-        $qty = $_SESSION['cart'][$cartID['id']];
-        $qty++;
-        $_SESSION['cart'][$cartID['id']] = $qty;
+    if($cartID['qty'] == 0) {
+        echo "Désolé l'article demandé n'est plus disponible";
     } else {
-        echo "Problème, contactez l'administrateur du site";
+        if(!isset($_SESSION['cart'])) {
+            $_SESSION['cart'] = array(
+                $cartID['id'] => "1",
+            );
+        } else if (!isset($_SESSION['cart'][$cartID['id']])) {
+            $_SESSION['cart'][$cartID['id']] = 1;
+        } else if (isset($_SESSION['cart'][$cartID['id']])) {
+            $qty = $_SESSION['cart'][$cartID['id']];
+            $qty++;
+            $_SESSION['cart'][$cartID['id']] = $qty;
+        } else {
+            echo "Problème, contactez l'administrateur du site";
+        }
     }
 }

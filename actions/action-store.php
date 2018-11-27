@@ -90,7 +90,7 @@ if (isset($_POST)) {
 
         include '../components/db.php';
 
-        $req = $pdo->prepare("INSERT INTO akt_store SET name = :admin_store_name, prix = :admin_store_prix, item_description = :admin_store_description, color = :admin_store_color, color_format = :color_format, cat = :admin_store_cat, thumb_1 = :admin_store_upload_1, thumb_2 = :admin_store_upload_2, thumb_3 = :admin_store_upload_3, ref = :ref, cat_format = :cat_format, cat_id = :cat_id, variation = 'true'");
+        $req = $pdo->prepare("INSERT INTO akt_store SET name = :admin_store_name, prix = :admin_store_prix, item_description = :admin_store_description, color = :admin_store_color, color_format = :color_format, cat = :admin_store_cat, thumb_1 = :admin_store_upload_1, thumb_2 = :admin_store_upload_2, thumb_3 = :admin_store_upload_3, qty = :qty, ref = :ref, cat_format = :cat_format, cat_id = :cat_id, variation = 'true'");
         $req->execute(array(
             ':admin_store_name' => $_POST['admin_store_name'],
             ':admin_store_prix' => $_POST['admin_store_prix'],
@@ -101,6 +101,7 @@ if (isset($_POST)) {
             ':admin_store_upload_1' => $thumb1link,
             ':admin_store_upload_2' => $thumb2link,
             ':admin_store_upload_3' => $thumb3link,
+            ':qty' => $_POST['admin_store_stock'],
             ':ref' => $ref,
             ':cat_format' => $cat_format,
             ':cat_id' => $cat_id,
@@ -110,6 +111,8 @@ if (isset($_POST)) {
         header('Location: ../views/admin.php');
         exit();
     } else {
+        $_SESSION['flash']['fail']['admin_store_variation'] = "Erreur veuillez réessayer";
         header('Location: ../views/admin.php');
+        exit();
     }
 }

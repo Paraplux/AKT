@@ -47,6 +47,10 @@ body {
     border-bottom: 1px solid #aaa;
 }
 
+.stock-input {
+    width: 30%;
+}
+
 .input-title-style-textarea {
     width: 100%;
     font-family: 'Montserrat Light';
@@ -129,6 +133,8 @@ body {
     padding: 10px;
     display: flex;
     justify-content: space-between; 
+    align-items: center;
+    align-content: center;
     border-bottom: 1px solid #aaa;
     text-align: center;
 }
@@ -168,22 +174,31 @@ body {
     width: 30%;
 }
 
-.store-list-prix form {
+.store-list-stock {
+    width: 30%;
+}
+
+.store-list-prix form,
+.store-list-stock form {
     display: flex;
 }
 
-.store-list-prix form input {
+.store-list-prix form input,
+.store-list-stock form input {
     width: 70%;
 }
 
-.store-list-prix form button {
+.store-list-prix form button,
+.store-list-stock form button {
     width: 30%;
     padding: 0;
     margin: 0 20px;
 }
 
-.store-list-stock {
-    width: 20%;
+
+.store-list-stock input, 
+.store-list-stock label {
+    width: 100%;
 }
 
 
