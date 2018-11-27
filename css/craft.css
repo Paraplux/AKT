@@ -97,7 +97,8 @@
     }
     .article h2{
         display: block;
-        width: 100%;
+        width: 80%;
+        margin: auto;
     }
     .content {
         width: 100%;    

@@ -236,14 +236,14 @@ $heure = date("H:i");
                     <form method="POST" action="../actions/action-store-change-price.php">
                         <input type="hidden" name="change-price-id" value="<?= $storeData['id'];?>">
                         <input class="input-title-style" type="text" name="change-price-value" placeholder="<?= $storeData['prix'];?>">
-                        <button class="admin-button-style">Nouveau prix</button>
+                        <button class="admin-button-style">Change</button>
                     </form>
                 </div>
                 <div class="store-list-stock">
                     <form method="POST" action="../actions/action-store-change-stock.php">
                         <input type="hidden" name="change-stock-id" value="<?= $storeData['id']; ?>">
                         <input class="input-title-style" type="text" name="change-stock-value" placeholder="<?= $storeData['qty']; ?>">
-                        <button class="admin-button-style">Nouveau stock</button>
+                        <button class="admin-button-style">Change</button>
                     </form>
                 </div>
                 <div class="store-list-delete">
@@ -354,15 +354,18 @@ $heure = date("H:i");
     $(document).ready(function(){
         $('#show-collection-modal').on('click', function(){
             $('.fullscreen-brightness').css('display', 'block');
+            $('#display-resp-nav-sidebar').css('display', 'none');
             $('.collection-modal').fadeIn();
-
+            
         });
         $('.fullscreen-brightness').on('click', function(){
             $('.fullscreen-brightness').css('display', 'none');
+            $('#display-resp-nav-sidebar').css('display', 'block');
             $('.collection-modal').fadeOut();
         });
         $('#hide-collection-modal').on('click', function(){
             $('.fullscreen-brightness').css('display', 'none');
+            $('#display-resp-nav-sidebar').css('display', 'block');
             $('.collection-modal').fadeOut();
         });
         $('.flash-message-dismiss').on('click', function() {

@@ -135,6 +135,7 @@ body {
     justify-content: space-between; 
     align-items: center;
     align-content: center;
+    flex-wrap: wrap;
     border-bottom: 1px solid #aaa;
     text-align: center;
 }
@@ -144,7 +145,6 @@ body {
 .store-list-delete {
     width: 8%;
     text-align: center;
-    border-left: 1px solid #aaa;
 }
 
 .blog-list-delete i:hover,
@@ -181,6 +181,7 @@ body {
 .store-list-prix form,
 .store-list-stock form {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .store-list-prix form input,
@@ -345,7 +346,9 @@ body {
 }
 
 @media all and (max-width: 1200px) {
-
+    .stock-input {
+        width: 100%;
+    }
     .form-grouped {
     display: block
     }
@@ -383,5 +386,46 @@ body {
 
         border-radius: 5px;
         border: 1px solid;
+    }
+    
+    .store-list-name {
+        width: 100%;
+    }
+    .store-list-prix,
+    .store-list-stock {
+        width: 40%;
+    }
+    .store-list-delete {
+        width: 20%;
+    }
+    .store-list-prix form input,
+    .store-list-stock form input {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .store-list-prix form button,
+    .store-list-stock form button {
+        width: 100%;
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    .blog-list-delete,
+    .press-list-delete,
+    .store-list-delete {
+        width: 20%;
+    }
+
+    .blog-list-title,
+    .press-list-title {
+        width: 59%;
+    }
+
+    .blog-list-date,
+    .press-list-date {
+        width: 20%;
     }
 }
