@@ -9,8 +9,8 @@
             Odit in minus nihil blanditiis, delectus reiciendis voluptate, ipsam sit excepturi maxime animi aspernatur maiores perferendis praesentium molestiae at eum illum dignissimos. Itaque voluptatum ea earum tenetur dignissimos est nisi?
         </div>
         <div class="rgpd-buttons">
-            <a href="" class="rgpd-button">Accepter</a>
-            <a href="_blank" class="rgpd-button">Refuser</a>
+            <a class="rgpd-button">I understand</a>
+            <a href="" class="rgpd-button">More informations</a>
         </div>
     </div>
     <div class="newsletter-side">
