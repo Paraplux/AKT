@@ -83,3 +83,38 @@
 .StripeElement--webkit-autofill {
     background-color: #fefde5 !important;
 }
+
+/* MODIF BRYAN */
+
+.cart{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cart-thumb{
+    width: 15%;
+}
+.cart-thumb img {
+    width: 100%;
+}
+.cart-name {
+    width: 30%;
+    text-align: center;
+}
+.cart-qty {
+    width: 15%;
+    text-align: center;
+}
+.cart-price {
+    width: 15%;
+    text-align: right;
+}
+
+hr{
+    border-color: #d318c3;
+}
+
+ /* *{
+    border: 1px solid red;
+}  */
