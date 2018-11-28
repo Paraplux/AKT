@@ -40,6 +40,12 @@ body {
 
 }
 
+.back {
+    display: block;
+    text-align: center;
+    color: #808080;
+}
+
 /*ERROR FLASH*/
 
 .small-error-success ul,

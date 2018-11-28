@@ -37,6 +37,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <input name="auth-username" class="auth-input" type="text" placeholder="Username"><br>
         <input name="auth-password" class="auth-input" type="password" placeholder="Password"><br>
         <button class="auth-button" type="submit">Connexion</button><br>
+        <a class="back" href="../views/home">Retour au site</a>
     </form>
 </div>  
 
