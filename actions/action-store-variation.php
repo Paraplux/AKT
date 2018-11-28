@@ -49,11 +49,11 @@ if(isset($_POST)) {
     ));
     $req->closeCursor();
     $_SESSION['flash']['success']['admin_store_variation'] = "L'article a bien été dupliqué";
-    header('Location: ../views/admin');
+    header('Location: ../admin58624/admin42685');
     exit();
 
 } else {
     $_SESSION['flash']['fail']['admin_store_variation'] = "Erreur veuillez réessayer";
-    header('Location: ../views/admin');
+    header('Location: ../admin58624/admin42685');
     exit();
 }

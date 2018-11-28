@@ -6,12 +6,10 @@ GLOBAL :
 - Nettoyage du css
 - Peaufiner le responsive
 - Référencement
-- Test de sécurité
 - Test de navigation normale
 - Test du responsive
 - Optimisation des requêtes css et js
 - Optimisation des requêtes SQL
-- Ajout d'un pop up pour la RGPD et pour une potentiel newsletter
 
 HOME : 
 
@@ -19,7 +17,6 @@ HOME :
 
 STORE :
 
-- Finir de choisir les catégories (voir avec François pour le choix définitif)
 - Finir le style
 
 NEWS : 
@@ -38,7 +35,6 @@ ABOUT :
 ADMIN : 
 
 - Responsive
-- Gérer la session et la sécurité
-- Finir la mise en place des actions pour le STORE
+- Finir la mise en place des actions pour le STORE (manque ajout de catégories)
 - Optimiser les requêtes
 - Prévoir et éviter les erreurs de François (dans le doute => ERREUR 404)

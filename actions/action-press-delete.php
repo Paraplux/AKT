@@ -14,6 +14,6 @@ if (!empty($_POST)) {
     ));
     $req->closeCursor();
     $_SESSION['flash']['success']['admin_press'] = "La critique a bien été supprimé";
-    header('Location: ../views/admin');
+    header('Location: ../admin58624/admin42685');
     exit();
 }

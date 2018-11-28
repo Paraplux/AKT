@@ -32,10 +32,10 @@ if (isset($_POST)){
         $req->execute();
         $req->closeCursor();
         $_SESSION['flash']['success']['admin_press'] = "La critique a bien été ajoutée !";
-        header('Location: ../views/admin');
+        header('Location: ../admin58624/admin42685');
         exit();
     } else {
-        header('Location: ../views/admin');
+        header('Location: ../admin58624/admin42685');
         exit();
     }
 }

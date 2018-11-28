@@ -14,10 +14,10 @@ if (isset($_POST)) {
     ));
     $req->closeCursor();
     $_SESSION['flash']['success']['admin_store'] = "Le stock de l'article a bien été modifié";
-    header('Location: ../views/admin');
+    header('Location: ../admin58624/admin42685');
     exit();
 } else {
     $_SESSION['flash']['fail']['admin_store_variation'] = "Erreur veuillez réessayer";
-    header('Location: ../views/admin');
+    header('Location: ../admin58624/admin42685');
     exit();
 }

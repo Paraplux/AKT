@@ -1,9 +1,11 @@
 <?php 
+include './logged-only.php';
 
 if(session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
+admin();
 ?>
 
 <?php  
@@ -37,6 +39,7 @@ $heure = date("H:i");
         <a href="#anchor-collection">Collection</a>
         <a href="#anchor-store">Store</a>
         <a href="#anchor-press">Press</a>
+        <a href="./logout.php">Logout</a>
     </nav>
 
 
@@ -302,6 +305,23 @@ $heure = date("H:i");
     </div>
 
 
+    <!-- LOGS -->
+    <hr>
+    <div class="admin-logs">
+        <h1 class="admin-title-style">Change Password</h1><br>
+        <form action="./change-logs.php" method="POST">
+
+        <div class="form-grouped">
+            <div>
+                <input name="new-username" type="text" class="input-title-style" placeholder="New Username">
+            </div>
+            <div>
+                <input name="new-password" type="password" class="input-title-style"  placeholder="New password">
+            </div>
+        </div><br><br>
+        <button class="admin-button-style"  type="submit">Submit <i class="fas fa-check"></i></button>
+        </form><br><br>
+    </div>
     <!-- FIN de la page admin -->
 </div>
 
