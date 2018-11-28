@@ -1,0 +1,22 @@
+
+body{
+    background-color: #efefef;
+}
+
+p{
+    font-family: 'VT323', monospace;
+    text-align: center;
+  }
+  
+  .title{
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  
+  .ticket{
+    margin: auto;
+    width: 30%;
+    height: 80%;
+    background-color: #404040;
+    border-bottom: 6px dotted #efefef;
+  }
