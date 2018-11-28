@@ -1,5 +1,9 @@
 <?php 
 
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 $name = $_POST['name'];
 $email = $_POST['email'];
 $address1 = $_POST['address_1'];
@@ -81,7 +85,8 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token) 
         
         
     ]);
-    header('Location: ../views/ticket.php');
+    $_SESSION['payed'] = 'true';
+    header('Location: ../views/ticket');
     exit();
 } else {
     echo 'echec'; /*MESSAGE ERREUR*/

@@ -1,6 +1,15 @@
-<?php include '../components/header.php';
+<?php
+include '../components/header.php';
 include '../components/navbar.php';
 include '../controllers/controller-cart.php';
+
+if(!isset($_SESSION['payed']) || $_SESSION['payed'] != 'true') {
+  header('Location: ./home');
+  exit();
+} else {
+  unset($_SESSION['payed']);
+}
+
 ?>
 
 <link rel="stylesheet" href="../css/ticket.css">
