@@ -11,21 +11,9 @@ GLOBAL :
 - Optimisation des requêtes css et js
 - Optimisation des requêtes SQL
 
-HOME : 
-
-- Faire le texte d'intro et choisir la photo qui ira avec
-
 STORE :
 
-- Finir le style
-
-NEWS : 
-
-- OK
-
-CRAFT : 
-
-- Choix des photos et des textes
+- Finir la page panier
 
 ABOUT : 
 

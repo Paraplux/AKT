@@ -35,7 +35,7 @@ include '../controllers/controller-cart.php';
   </div>
   <div class="payement-button-container">
     <div class="payement-button">
-      PAY
+      PAYED
     </div>
   </div>
 

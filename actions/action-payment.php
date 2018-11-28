@@ -34,6 +34,9 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token) 
     ));
     $data = $req->fetch();
     if($data) {
+        $customer = $stripe->update($data['stripe_id'], [
+            'source' => $token,
+        ]);
         $customerID = $data['stripe_id'];
     } else {
         $customer = $stripe->api('customers', [
@@ -78,7 +81,8 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token) 
         
         
     ]);
-    die('Votre paiement a bien été enregistré');
+    header('Location: ../views/ticket.php');
+    exit();
 } else {
     echo 'echec'; /*MESSAGE ERREUR*/
 }
