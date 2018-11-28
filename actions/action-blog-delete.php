@@ -23,6 +23,6 @@ if (!empty($_POST)) {
     ));
     $req->closeCursor();
     $_SESSION['flash']['success']['admin_blog'] = "L'article a bien été supprimé";
-    header('Location: ../views/admin.php');
+    header('Location: ../views/admin');
     exit();
 }

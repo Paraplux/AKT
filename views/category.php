@@ -16,7 +16,7 @@ include '../components/functions.php';
         <!-- MENU -->
     <div class="item-cat-navigation">
         <?php foreach($categoryNavs as $categoryNav) : ?>
-        <span class="item-cat-links"><a href="./category.php?cat=<?= $categoryNav['name_format']?>"><?= $categoryNav['name']?></a></span>
+        <span class="item-cat-links"><a href="./category?cat=<?= $categoryNav['name_format']?>"><?= $categoryNav['name']?></a></span>
         <?php endforeach; ?>
     </div>
     <hr>
@@ -38,7 +38,7 @@ include '../components/functions.php';
         ?>
         <div class="item-cat-container">
             <div class="grid">
-                <a href="./item.php?ref=<?= $eachCategoryData['ref']."&color=". $eachCategoryData['color_format']; ?>">
+                <a href="./item?ref=<?= $eachCategoryData['ref']."&color=". $eachCategoryData['color_format']; ?>">
                     <figure class="effect-sarah-bracelet">
                         <figcaption>
                             <img class="bracelet" src="<?= $eachCategoryData['thumb_1']; ?>" alt="">
@@ -47,7 +47,6 @@ include '../components/functions.php';
                         </figcaption>			
                     </figure>
                 </a>
-                <!-- <div class="panier"><a href="about.php"></a></div> -->
             </div>
         </div>
         <?php endforeach; ?>

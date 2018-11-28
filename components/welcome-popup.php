@@ -11,7 +11,7 @@ if(session_status() == PHP_SESSION_NONE) {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dolorem repudiandae ea aperiam molestias distinctio repellendus possimus? Dicta ipsa provident maxime aliquid, labore deserunt beatae nostrum veniam, quibusdam, eius quae!
         </div>
         <div class="newsletter-side-resp">
-            Don't forget to <a href="../views/newsletter.php">subscribe.</a>
+            Don't forget to <a href="../views/newsletter">subscribe.</a>
         </div>
         <div class="rgpd-buttons">
             <a class="rgpd-button">I understand</a>

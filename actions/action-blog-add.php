@@ -48,9 +48,9 @@ if (isset($_POST)) {
         ));
         $req->closeCursor();
         $_SESSION['flash']['success']['admin_blog'] = "L'article a bien été créé";
-        header('Location: ../views/admin.php');
+        header('Location: ../views/admin');
         exit();
     } else {
-        header('Location: ../views/admin.php');
+        header('Location: ../views/admin');
     }
 }

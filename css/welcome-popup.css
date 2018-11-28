@@ -12,6 +12,7 @@
     box-sizing: border-box;
 
     display: flex;
+    /* display: none; */
     justify-content: space-around;
 
     background-color: #202020;

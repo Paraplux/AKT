@@ -104,10 +104,10 @@ if(isset($_POST)) {
         ));
         $req->closeCursor();
         $_SESSION['flash']['success']['admin_collection'] = "Image ajoutée!";
-        header('Location: ../views/admin.php#anchor-collection');
+        header('Location: ../views/admin#anchor-collection');
         exit();
     } else {
-        header('Location: ../views/admin.php#anchor-collection');
+        header('Location: ../views/admin#anchor-collection');
         exit();
     }
 }

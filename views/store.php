@@ -19,7 +19,7 @@ include '../controllers/controller-store.php';
             <img src="<?= $storeData['thumb'];?>" alt="img18" />
             <figcaption>
                 <h2>Check out our <?= $storeData['name'];?>...</h2>
-                <a href="../views/category.php?cat=<?= $storeData['name_format'];?>"></a>
+                <a href="../views/category?cat=<?= $storeData['name_format'];?>"></a>
                 <p>View More</p>
             </figcaption>
         </figure>

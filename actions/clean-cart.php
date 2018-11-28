@@ -6,4 +6,4 @@ if (session_status() == PHP_SESSION_NONE) {
 
 session_destroy();
 
-header('Location: ../views/cart.php');
+header('Location: ../views/cart');

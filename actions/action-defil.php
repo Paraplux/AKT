@@ -16,10 +16,10 @@ if (isset($_POST)) {
         $req->execute([$_POST['home_defil']]);
         $req->closeCursor();
         $_SESSION['flash']['success']['admin_defil'] = "Le message d'accueil a bien été changé !";
-        header('Location: ../views/admin.php');
+        header('Location: ../views/admin');
         exit();
     } else {
-        header('Location: ../views/admin.php');
+        header('Location: ../views/admin');
         exit();
     }
 }

@@ -20,7 +20,7 @@ include '../controllers/controller-quicknav.php';
     <!-- MENU -->
     <div class="item-cat-navigation">
         <?php foreach ($categoryNavs as $categoryNav) : ?>
-        <span class="item-cat-links"><a href="./category.php?cat=<?= $categoryNav['name_format'] ?>"><?= $categoryNav['name'] ?></a></span>
+        <span class="item-cat-links"><a href="./category?cat=<?= $categoryNav['name_format'] ?>"><?= $categoryNav['name'] ?></a></span>
         <?php endforeach; ?>
     </div>
     <hr>
@@ -29,7 +29,7 @@ include '../controllers/controller-quicknav.php';
     if(isset($_SESSION['cart'])) : 
         foreach ($itemsCart as $item) :
     ?>
-    <a href="./item.php?ref=<?= $item['ref'] . "&color=" . $item['color_format']; ?>"><?= $item['name']; ?> - <?= $item['color']; ?></a>
+    <a href="./item?ref=<?= $item['ref'] . "&color=" . $item['color_format']; ?>"><?= $item['name']; ?> - <?= $item['color']; ?></a>
     <div><?= $_SESSION['cart'][$item['id']] ?> - <strong><?= $item['prix']; ?> €</strong></div>
     <hr>
     <?php

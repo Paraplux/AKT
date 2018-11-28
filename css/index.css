@@ -42,7 +42,7 @@
 
 #jewels {
     position: fixed;
-    top: 35.5%;
+    top: 38%;
     left: 62%;
     transform: rotate(-90deg) scale(0);
 
@@ -129,7 +129,7 @@
     }
 
     #jewels {
-        top: 37%;
+        top: 38%;
         left: 72%;
         font-size: 2rem;
     }
@@ -161,7 +161,7 @@
     }
 
     #jewels {
-        top: 37%;
+        top: 38%;
         left: 78%;
         font-size: 1.1rem;
     }

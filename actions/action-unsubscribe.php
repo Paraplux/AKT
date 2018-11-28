@@ -31,9 +31,9 @@ if (!empty($_POST)) {
             exit();
         } else {
             $_SESSION['flash']['fail']['not_sub'] = "Vous n'êtes pas abonné";
-            header('Location: ../views/unsubscribe.php');
+            header('Location: ../views/unsubscribe');
         }
     } else {
-        header('Location: ../views/unsubscribe.php');
+        header('Location: ../views/unsubscribe');
     }
 }

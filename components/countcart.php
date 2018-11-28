@@ -6,7 +6,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 ?>
 
-<a href="../views/cart.php" class="cart ">
+<a href="../views/cart" class="cart ">
     <span class="counter">
         <?php 
         if (!isset($_SESSION['cart'])) {

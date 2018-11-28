@@ -17,7 +17,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <!-- MENU -->
     <div class="item-cat-navigation">
         <?php foreach ($categoryNavs as $categoryNav) : ?>
-        <span class="item-cat-links"><a href="./category.php?cat=<?= $categoryNav['name_format'] ?>"><?= $categoryNav['name'] ?></a></span>
+        <span class="item-cat-links"><a href="./category?cat=<?= $categoryNav['name_format'] ?>"><?= $categoryNav['name'] ?></a></span>
         <?php endforeach; ?>
     </div>
     <hr>
@@ -32,7 +32,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 </div>
                 <div class="product-variation">                 
                     <?php foreach ($variationDatas as $variationData) : ?>
-                    <a href="item.php?ref=<?= $variationData['ref']; ?>&color=<?= $variationData['color_format']; ?>">
+                    <a href="item?ref=<?= $variationData['ref']; ?>&color=<?= $variationData['color_format']; ?>">
                         <?= $variationData['color']; ?>
                     </a>
                     <?php endforeach; ?>

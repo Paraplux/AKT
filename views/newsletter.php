@@ -24,6 +24,6 @@ if (session_status() == PHP_SESSION_NONE) {
                 <input type="text" name="newsletter_email" placeholder="Enter your mail">
                 <button type="submit">Valider</button>
         </form>
-        <a class="unsubscribe" href="./unsubscribe.php">Unsubscribe</a>
+        <a class="unsubscribe" href="./unsubscribe">Unsubscribe</a>
     </div>
 </div>
