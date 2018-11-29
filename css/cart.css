@@ -8,6 +8,7 @@
 .form-part {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     z-index: 1000;
     width: 80%;
     padding: 20px;
@@ -126,18 +127,58 @@
     text-transform: uppercase;
 }
 .cart-qty {
+    display: flex;
     width: 15%;
     text-align: center;
+}
+.cart-qty input {
+    width: 80%;
+    height: 20px;
+    background: none;
+    border: none;
+    border: 1px solid #aaa;
 }
 .cart-price {
     width: 15%;
     text-align: right;
 }
-
 .cart-total{
     text-align: right;
+}
+
+.btn-unstyle {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fa-trash-alt {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.fa-trash-alt:hover {
+    cursor: pointer;
+    color: red;
 }
 
  /* *{
     border: 1px solid red;
 }  */
+
+
+
+@media all and (max-width: 1200px) {
+    .form-shipping {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form-checkout {
+        margin-top: 2rem;
+        width: 100%;
+    }
+}

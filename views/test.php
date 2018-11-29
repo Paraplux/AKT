@@ -16,35 +16,79 @@ include '../controllers/controller-quicknav.php';
 
 
 <div class="container">
+  
+  <!-- MENU -->
+  <div class="item-cat-navigation">
+    <?php foreach ($categoryNavs as $categoryNav) : ?>
+    <span class="item-cat-links"><a href="./category?cat=<?= $categoryNav['name_format'] ?>"><?= $categoryNav['name'] ?></a></span>
+    <?php endforeach; ?>
+  </div>
+  <hr>
 
-    <!-- MENU -->
-    <div class="item-cat-navigation">
-        <?php foreach ($categoryNavs as $categoryNav) : ?>
-        <span class="item-cat-links"><a href="./category?cat=<?= $categoryNav['name_format'] ?>"><?= $categoryNav['name'] ?></a></span>
-        <?php endforeach; ?>
+    <?php if(isset($_SESSION['cart'])) : ?>
+
+
+      <div class="cart">
+        <p class="cart-thumb">Thumb</p>
+        <p class="cart-name">Name</p>
+        <p class="cart-qty">Quantity</p>
+        <p class="cart-price">Price</p>
+      </div>
+      <hr>
+      
+      <?php foreach ($itemsCart as $item) : ?>
+
+<!-- PANIER -->
+  <div class="cart">
+    <div class="cart-thumb">
+      <img src="../images/jewelry/brace-1.jpg" alt="">
     </div>
-    <hr>
-    
+    <div class="cart-name">
+      <a href="./item?ref=<?= $item['ref'] . "&color=" . $item['color_format']; ?>"><?= $item['name']; ?> - <?= $item['color']; ?></a>
+    </div>
+    <div class="cart-qty">
+      <input
+      data-id="<?= $item['id'] ?>"
+      data-price = "<?= $item['prix'] ?>"
+      data-subtotal = "<?= $item['prix'] * $_SESSION['cart'][$item['id']] ?>"
+      class="cart-qty-input" 
+      type="number" step="1" min="0" max="500"
+      value="<?= $_SESSION['cart'][$item['id']] ?>" >
+    </div>
+    <div class="cart-price">
+      <strong><?= $item['prix']; ?> €</strong>
+    </div>
+  </div>
+  <hr>
+
+      <?php endforeach;?>
+
+<!-- TOTAL -->
     <?php
-    if (isset($_SESSION['cart'])) :
-        foreach ($itemsCart as $item) :
+      $total = array();
+      foreach($itemsCart as $item) {
+
+        $price = $item['prix'];
+        $qty = $_SESSION['cart'][$item['id']];
+
+        $tmpPrice = $qty * $price;
+        array_push($total, $tmpPrice);
+      }
+
+      $totalPrice = array_sum($total);
+      $_SESSION['charge'] = $totalPrice;
+      var_dump($_SESSION['charge']);
     ?>
-    <a href="./item?ref=<?= $item['ref'] . "&color=" . $item['color_format']; ?>"><?= $item['name']; ?> - <?= $item['color']; ?></a>
-    <div><?= $_SESSION['cart'][$item['id']] ?> - <strong><?= $item['prix']; ?> €</strong></div>
-    <hr>
-    <?php
-    endforeach;
-    ?>
-        <p><strong>TOTAL : <?= $totalPrice ?></strong></p>
+        <p class="cart-total"><strong>TOTAL : <span><?= $totalPrice ?></span></strong></p>
     <?php
     else :
     ?>
     <p><strong>Votre panier est vide!</strong></p>
     <?php 
-    endif;
+    endif; 
     ?>
     
-
+    <?php if(isset($_SESSION['cart'])) : ?>
     <hr>
     <a href="../actions/clean-cart.php">Vider le panier</a>
     <br><br><br><hr>
@@ -70,7 +114,18 @@ include '../controllers/controller-quicknav.php';
                 <label for="email">Country</label><br>
                 <input value="Pas de Satan" type="text" name="address_state" placeholder="Your state">
                 <input value="Gilet Jaunes" type="text" name="address_country" required placeholder="Your country"><br>
-                <input type="hidden" name="charge" value="<?= $totalPrice; ?>">
+
+                <!-- CHARGE AND RECAP -->
+                <?php foreach ($itemsCart as $item) : ?>
+                <input
+                data-id="<?= $item['id'] ?>"
+                data-name="<?= $item['name'] ?>"
+                data-ref="<?= $item['ref'] ?>"
+                data-qty="<?= $_SESSION['cart'][$item['id']] ?>" 
+                class="charge-recap"
+                type="hidden">
+                <?php endforeach; ?>
+                <input id="charge-total" type="hidden" name="charge" value="<?= $totalPrice; ?>">
             </div>
             <div class="form-checkout">
                 <h2>Checkout Information</h2>
@@ -86,8 +141,48 @@ include '../controllers/controller-quicknav.php';
                 <button>Submit Payment</button>
             </div>
         </div>
-</form>
+  </form>
+  <?php endif; ?>
 </div>
+
+
+<script>
+
+  $(document).ready(function(){
+    $(document).on('change', '.cart-qty-input', function() {
+      var total = parseInt(0)
+      var thisId = $(this).attr('data-id')
+      var thisPrice = $(this).attr('data-price')
+      var thisQty = $(this).val()
+      var thisTotal = parseInt(thisQty) * parseInt(thisPrice)
+      $(this).attr('data-subtotal', thisTotal)
+
+      $('.charge-recap').each(function() {
+        if($(this).attr('data-id') == thisId) {
+          $(this).attr('data-qty', thisQty)
+        }
+      })
+      $('.cart-qty-input').each(function() {
+        var subtotal = $(this).attr('data-subtotal')
+        total += parseInt(subtotal)
+      })
+      $('.cart-total strong span').text(total)
+      $.ajax({
+        type: 'post',
+        url: '../actions/charge.php',
+        data: $(this).serialize(),
+        success: function () {
+        }
+      });
+    })
+  })
+
+</script>
+
+
+
+
+<!-- STRIPE -->
 
 <script>
         // Create a Stripe client.

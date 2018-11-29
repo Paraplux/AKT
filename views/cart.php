@@ -33,7 +33,7 @@ include '../controllers/controller-quicknav.php';
   </div>
 
     <?php
-    if(isset($_SESSION['cart'])) : 
+    if(!empty($_SESSION['cart'])) : 
         foreach ($itemsCart as $item) :
     ?>
 
@@ -49,7 +49,14 @@ include '../controllers/controller-quicknav.php';
       <a href="./item?ref=<?= $item['ref'] . "&color=" . $item['color_format']; ?>"><?= $item['name']; ?> - <?= $item['color']; ?></a>
     </div>
     <div class="cart-qty">
-      <?= $_SESSION['cart'][$item['id']] ?>
+      <form id="change_qty_form" action="../actions/action-change-cart.php" method="POST">
+          <input name="id_to_change" type="hidden" value="<?= $item['id'] ;?>">
+          <input id="change_qty_input" name="qty_to_change" type="number" step="1" min="0" max="100" value="<?= $_SESSION['cart'][$item['id']]['qty'] ?>">
+      </form>
+      <form action="../actions/action-delete-cart.php" method="POST">
+          <input name="id_to_del" type="hidden" value="<?= $item['id']; ?>">
+          <button class="btn-unstyle"><i class="fas fa-trash-alt"></i></button>
+      </form>
     </div>
     <div class="cart-price">
       <strong><?= $item['prix']; ?> €</strong></div>
@@ -61,6 +68,9 @@ include '../controllers/controller-quicknav.php';
         endforeach;
     ?>
           <p class="cart-total"><strong>TOTAL : <?= $totalPrice ?> $</strong></p>
+          <hr>
+          <a href="../actions/clean-cart.php">Vider le panier</a>
+          <br><br><br><hr>
     <?php
     else :
     ?>
@@ -70,11 +80,10 @@ include '../controllers/controller-quicknav.php';
     ?>
     
 
-    <hr>
-    <a href="../actions/clean-cart.php">Vider le panier</a>
-    <br><br><br><hr>
 
-
+    <?php
+    if (!empty($_SESSION['cart'])) :
+    ?>
     <form action="../actions/action-payment.php" method="post" id="payment-form">
         <div class="form-part">
             <div class="form-shipping">
@@ -95,7 +104,6 @@ include '../controllers/controller-quicknav.php';
                 <label for="email">Country</label><br>
                 <input value="Pas de Satan" type="text" name="address_state" placeholder="Your state">
                 <input value="Gilet Jaunes" type="text" name="address_country" required placeholder="Your country"><br>
-                <input type="hidden" name="charge" value="<?= $totalPrice; ?>">
             </div>
             <div class="form-checkout">
                 <h2>Checkout Information</h2>
@@ -112,7 +120,29 @@ include '../controllers/controller-quicknav.php';
             </div>
         </div>
 </form>
+<?php
+endif;
+?>
 </div>
+
+<script>
+  $(document).ready(function() {
+
+
+    $('#change_qty_input').change(function(){
+      $('#change_qty_form').submit()
+    })
+
+    $(document).on('submit', '#change_qty_form', function(){
+      $.ajax({
+        type: 'post',
+        url: '../actions/action-change-cart.php',
+        data: $(this).serialize()
+            });
+      });
+      e.preventDefault();
+    })
+</script>
 
 <script>
         // Create a Stripe client.

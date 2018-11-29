@@ -1,5 +1,7 @@
 <?php 
 
+include '../controllers/controller-cart.php';
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -25,7 +27,9 @@ if (empty($_POST['address_state'])) {
 }
 
 $token = $_POST['stripeToken'];
-$total = $_POST['charge'] * 100;
+
+
+$total = $totalPrice * 100;
 
 if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token) && !empty($address1) && !empty($addressCity) && !empty($addressZip) && !empty($addressCountry)) {
     require '../components/class.stripe.php';
@@ -48,13 +52,15 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token) 
             'description' => $name,
             'email' => $email,
             'metadata' => [
-                "Facturation Adress" => "",
                 "Adress" => $address1,
                 "Adress (optional)" => $address2,
                 "City" => $addressCity,
                 "Zip Code" => $addressZip,
                 "State (optional)" => $addressState,
                 "Country" => $addressCountry,
+                "Recap" => [
+
+                ]
             ],
         ]);
 
@@ -74,7 +80,6 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token) 
         'currency' => 'usd',
         'customer' => $customerID,
         'metadata' => [
-            "Shipping Adress" => "",
             "Adress" => $address1,
             "Adress (optional)" => $address2,
             "City" => $addressCity,

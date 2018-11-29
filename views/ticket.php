@@ -23,7 +23,7 @@ if(!isset($_SESSION['payed']) || $_SESSION['payed'] != 'true') {
         foreach ($itemsCart as $item) :
       ?>
         <a href="./item?ref=<?= $item['ref'] . "&color=" . $item['color_format']; ?>"><?= $item['name']; ?> (<?= $item['color']; ?>) - Ref :  <?= $item['ref'] ?></a>
-        <div>Qty : <?= $_SESSION['cart'][$item['id']] ?> x <strong><?= $item['prix']; ?> €</strong></div>
+        <div>Qty : <?= $_SESSION['cart'][$item['id']]['qty'] ?> x <strong><?= $item['prix']; ?> €</strong></div>
         <hr>
         <?php
         endforeach;
@@ -50,4 +50,5 @@ if(!isset($_SESSION['payed']) || $_SESSION['payed'] != 'true') {
 
 <?php
 include '../components/footer.php';
+unset($_SESSION['cart']);
 ?>

@@ -11,7 +11,7 @@ if(isset($_POST)) {
 
     include '../components/db.php';
 
-    $req = $pdo->prepare('SELECT id, qty FROM akt_store WHERE ref = :ref AND color_format = :color_format');
+    $req = $pdo->prepare('SELECT ref, id, qty, prix FROM akt_store WHERE ref = :ref AND color_format = :color_format');
     $req->execute(array(
         ':ref' => $cartRef,
         ':color_format' => $cartColor,
@@ -23,14 +23,22 @@ if(isset($_POST)) {
     } else {
         if(!isset($_SESSION['cart'])) {
             $_SESSION['cart'] = array(
-                $cartID['id'] => "1",
+                $cartID['id'] => [
+                    'ref' => $cartID['ref'],
+                    'qty' =>  intval(1),
+                    'u_price' => $cartID['prix']
+                ],
             );
         } else if (!isset($_SESSION['cart'][$cartID['id']])) {
-            $_SESSION['cart'][$cartID['id']] = 1;
+            $_SESSION['cart'][$cartID['id']] = [
+                'ref' => $cartID['ref'],
+                'qty' => intval(1),
+                'u_price' => $cartID['prix']
+            ];
         } else if (isset($_SESSION['cart'][$cartID['id']])) {
-            $qty = $_SESSION['cart'][$cartID['id']];
+            $qty = $_SESSION['cart'][$cartID['id']]['qty'];
             $qty++;
-            $_SESSION['cart'][$cartID['id']] = $qty;
+            $_SESSION['cart'][$cartID['id']]['qty'] = $qty;
         } else {
             echo "Problème, contactez l'administrateur du site";
         }
