@@ -83,3 +83,61 @@
 .StripeElement--webkit-autofill {
     background-color: #fefde5 !important;
 }
+
+/* MODIF BRYAN */
+
+.container a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.form-shipping h2,
+.form-checkout h2{
+    color: #b515c4;
+}
+
+.item-cat-navigation a{
+    color: #000000;
+}
+
+.cart{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: #d218e2 1px solid;
+    align-items: center;
+}
+
+.cart-thumb{
+    width: 15%;
+}
+.cart-thumb img {
+    width: 100%;
+}
+.cart-name {
+    width: 30%;
+    text-align: center;
+}
+
+.cart-name a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.cart-qty {
+    width: 15%;
+    text-align: center;
+}
+.cart-price {
+    width: 15%;
+    text-align: right;
+}
+
+.cart-total{
+    text-align: right;
+}
+
+ /* *{
+    border: 1px solid red;
+}  */

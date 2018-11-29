@@ -16,26 +16,51 @@ include '../controllers/controller-quicknav.php';
 
 
 <div class="container">
+  
+  <!-- MENU -->
+  <div class="item-cat-navigation">
+    <?php foreach ($categoryNavs as $categoryNav) : ?>
+    <span class="item-cat-links"><a href="./category?cat=<?= $categoryNav['name_format'] ?>"><?= $categoryNav['name'] ?></a></span>
+    <?php endforeach; ?>
+  </div>
+  <hr>
 
-    <!-- MENU -->
-    <div class="item-cat-navigation">
-        <?php foreach ($categoryNavs as $categoryNav) : ?>
-        <span class="item-cat-links"><a href="./category?cat=<?= $categoryNav['name_format'] ?>"><?= $categoryNav['name'] ?></a></span>
-        <?php endforeach; ?>
-    </div>
-    <hr>
-    
+  <div class="cart">
+    <p class="cart-thumb"> </p>
+    <p class="cart-name">Name</p>
+    <p class="cart-qty">Quantity</p>
+    <p class="cart-price">Price</p>
+  </div>
+
     <?php
     if(isset($_SESSION['cart'])) : 
         foreach ($itemsCart as $item) :
     ?>
-    <a href="./item?ref=<?= $item['ref'] . "&color=" . $item['color_format']; ?>"><?= $item['name']; ?> - <?= $item['color']; ?></a>
-    <div><?= $_SESSION['cart'][$item['id']] ?> - <strong><?= $item['prix']; ?> €</strong></div>
-    <hr>
+
+
+    <!-- MODIF -->
+
+
+  <div class="cart">
+    <div class="cart-thumb">
+      <img src="../images/jewelry/brace-1.jpg" alt="">
+    </div>
+    <div class="cart-name">
+      <a href="./item?ref=<?= $item['ref'] . "&color=" . $item['color_format']; ?>"><?= $item['name']; ?> - <?= $item['color']; ?></a>
+    </div>
+    <div class="cart-qty">
+      <?= $_SESSION['cart'][$item['id']] ?>
+    </div>
+    <div class="cart-price">
+      <strong><?= $item['prix']; ?> €</strong></div>
+    </div>
+
+
+
     <?php
         endforeach;
     ?>
-        <p><strong>TOTAL : <?= $totalPrice ?></strong></p>
+          <p class="cart-total"><strong>TOTAL : <?= $totalPrice ?> $</strong></p>
     <?php
     else :
     ?>
@@ -51,29 +76,41 @@ include '../controllers/controller-quicknav.php';
 
 
     <form action="../actions/action-payment.php" method="post" id="payment-form">
-        <div class="form-row">
-            <input value="Bouchez Marc" type="text" name="name" required placeholder="Your name">
-            <input value="theparaplux@test.com" type="email" name="email" required placeholder="Your@mail.com">
-            <input value="123 rue des ténèbres" type="text" name="address_1" required placeholder="Your address">
-            <input value="Appartemment 666" type="text" name="address_2" placeholder="Your address(Optional)">
-            <input value="Noir sur marne" type="text" name="address_city" required placeholder="Your city">
-            <input value="62666" type="text" name="address_zip" required placeholder="Your zip code">
-            <input value="Pas de Satan" type="text" name="address_state" placeholder="Your state">
-            <input value="Gilet Jaunes" type="text" name="address_country" required placeholder="Your country">
-            <input type="hidden" name="charge" value="<?= $totalPrice;?>">
-        </div>
-        <div class="form-row">
-            <label for="card-element">
-                Credit or debit card
-            </label>
-            <div id="card-element">
-            <!-- A Stripe Element will be inserted here. -->
+        <div class="form-part">
+            <div class="form-shipping">
+                <h2>Shipping Information</h2>
+                <label for="name">Your name</label>
+                <label for="email">Your email</label><br>
+                <input value="Bouchez Marc" type="text" name="name" required placeholder="Your name">
+                <input value="theparaplux@test.com" type="email" name="email" required placeholder="Your@mail.com"><br>
+                <label for="name">Adress</label>
+                <label for="email">Adress (optional)</label><br>
+                <input value="123 rue des ténèbres" type="text" name="address_1" required placeholder="Your address">
+                <input value="Appartemment 666" type="text" name="address_2" placeholder="Your address(Optional)"><br>
+                <label for="name">City</label>
+                <label for="email">Zipcode</label><br>
+                <input value="Noir sur marne" type="text" name="address_city" required placeholder="Your city">
+                <input value="62666" type="text" name="address_zip" required placeholder="Your zip code"><br>
+                <label for="name">State</label>
+                <label for="email">Country</label><br>
+                <input value="Pas de Satan" type="text" name="address_state" placeholder="Your state">
+                <input value="Gilet Jaunes" type="text" name="address_country" required placeholder="Your country"><br>
+                <input type="hidden" name="charge" value="<?= $totalPrice; ?>">
             </div>
-
-            <!-- Used to display form errors. -->
-            <div id="card-errors" role="alert"></div>
+            <div class="form-checkout">
+                <h2>Checkout Information</h2>
+                <label for="card-element">
+                    Credit or debit card
+                </label><br><br>
+                <div id="card-element">
+                <!-- A Stripe Element will be inserted here. -->
+                </div><br>
+    
+                <!-- Used to display form errors. -->
+                <div id="card-errors" role="alert"></div>
+                <button>Submit Payment</button>
+            </div>
         </div>
-        <button>Submit Payment</button>
 </form>
 </div>
 
