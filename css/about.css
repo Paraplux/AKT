@@ -33,3 +33,16 @@ input[type=submit] {
   color: white;
   padding: 50px;
 }
+
+.legal-mentions {
+  text-align: center;
+  font-family: 'Montserrat Light';
+}
+
+.legal-mentions a{
+  color: rgb(226, 43, 243);
+}
+
+hr {
+  width: 100%;
+}
