@@ -9,7 +9,7 @@ include '../controllers/controller-store.php';
 
 <div class="container">
     <?php if(empty($storeDatas)) : ?>
-        <h1>Pas de catégorie définie</h1>
+        <h1>No category defined</h1>
     <?php endif; ?>
     <div class="store-tiles">
        <?php

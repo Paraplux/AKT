@@ -20,14 +20,14 @@ if(session_status() == PHP_SESSION_NONE) {
     </div>
     <div class="newsletter-side">
         <div class="newsletter-content">
-            Pour ne rien rater des actualités d'AKT et de ses produits, abonnez vous à la <a href="../views/newsletter.php">newsletter</a>.
+            Subscribe to our <a href="../views/newsletter.php">newsletter</a>.
         </div>
         <div class="newsletter-flash">
             <?php include '../components/newsletter-flash.php'; ?>
         </div>
         <form method="POST" action="../actions/action-newsletter-home.php">
             <input type="text" name="newsletter_email" placeholder="Enter your mail">
-            <button type="submit">Valider</button>
+            <button type="submit">Validate</button>
         </form>
     </div>
 </div>

@@ -12,11 +12,11 @@ include '../components/functions.php';
 if(isset($_POST)) {
 
     if(empty($_POST['admin_collection_cat'])) {
-        $_SESSION['flash']['fail']['admin_collection_cat'] = "Vous n'avez pas choisi de catégorie";
+        $_SESSION['flash']['fail']['admin_collection_cat'] = "You didn't choose any category";
     }
 
     if(!isset($_FILES['admin_collection_upload'])) {
-        $_SESSION['flash']['fail']['admin_collection_upload'] = "Vous n'avez pas selectionné de photo";
+        $_SESSION['flash']['fail']['admin_collection_upload'] = "You didn't select any photo!";
     }
     
     if(empty($_SESSION['flash'])) {
@@ -103,7 +103,7 @@ if(isset($_POST)) {
             ':is_thumb' => 'true',
         ));
         $req->closeCursor();
-        $_SESSION['flash']['success']['admin_collection'] = "Image ajoutée!";
+        $_SESSION['flash']['success']['admin_collection'] = "Photo added!";
         header('Location: ../admin58624/admin42685#anchor-collection');
         exit();
     } else {

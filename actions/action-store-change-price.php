@@ -13,11 +13,11 @@ if(isset($_POST)) {
         ':prix' => $_POST['change-price-value']
     ));
     $req->closeCursor();
-    $_SESSION['flash']['success']['admin_store'] = "Le prix de l'article a bien été modifié";
+    $_SESSION['flash']['success']['admin_store'] = "The article price has been modified";
     header('Location: ../admin58624/admin42685');
     exit();
 } else {
-    $_SESSION['flash']['fail']['admin_store_variation'] = "Erreur veuillez réessayer";
+    $_SESSION['flash']['fail']['admin_store_variation'] = "Errors, try again";
     header('Location: ../admin58624/admin42685');
     exit();
 }

@@ -48,12 +48,12 @@ if(isset($_POST)) {
         ':variation' => "true",
     ));
     $req->closeCursor();
-    $_SESSION['flash']['success']['admin_store_variation'] = "L'article a bien été dupliqué";
+    $_SESSION['flash']['success']['admin_store_variation'] = "The article has been cloned";
     header('Location: ../admin58624/admin42685');
     exit();
 
 } else {
-    $_SESSION['flash']['fail']['admin_store_variation'] = "Erreur veuillez réessayer";
+    $_SESSION['flash']['fail']['admin_store_variation'] = "Error, try again";
     header('Location: ../admin58624/admin42685');
     exit();
 }

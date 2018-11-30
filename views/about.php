@@ -5,7 +5,7 @@ include '../components/navbar.php';
 <link rel="stylesheet" href="../css/about.css">
 
 <div class="about-page">
-  <h2>Formulaire de contact</h2>
+  <h2>Contact Us</h2>
   <div class="presentation">
     Lorem ipsum dolor sit, amet consectetur adipisicing <br/>
     Exercitationem totam earum aut modi? Vitae recusandae aspernatur quisquam,<br/> 

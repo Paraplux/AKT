@@ -9,6 +9,8 @@ $p = $_GET['page'] - 1;
 <link rel="stylesheet" href="../css/drop-down.css">
 
 <div class="container">
+    <?php 
+    if(!empty($blogDatas)): ?>
     <div class="news-page">
         <section class="blog-section">
             <article class="main-blog">
@@ -66,6 +68,7 @@ $p = $_GET['page'] - 1;
         </section>
     
     </div>
+            <?php endif;?>
 </div>
 
 <script src="../js/dropdown.js"></script>

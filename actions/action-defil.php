@@ -7,7 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
 if (isset($_POST)) {
 
     if (empty($_POST['home_defil'])) {
-        $_SESSION['flash']['fail']['home_defil'] = "Le champ est vide !";
+        $_SESSION['flash']['fail']['home_defil'] = "The message input is empty !";
     }
 
     if (empty($_SESSION['flash'])) {
@@ -15,7 +15,7 @@ if (isset($_POST)) {
         $req = $pdo->prepare('UPDATE akt_admin SET home_defil = ? WHERE id=1');
         $req->execute([$_POST['home_defil']]);
         $req->closeCursor();
-        $_SESSION['flash']['success']['admin_defil'] = "Le message d'accueil a bien été changé !";
+        $_SESSION['flash']['success']['admin_defil'] = "The home message has been changed!";
         header('Location: ../admin58624/admin42685');
         exit();
     } else {

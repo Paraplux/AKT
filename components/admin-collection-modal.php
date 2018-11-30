@@ -9,7 +9,7 @@
             $req->execute();
             $cats = $req->fetchAll();
             if ($cats == null) {
-                echo "Vous n'avez pas de photos dans votre collection ! Ajoutez en !";
+                echo "You don't have any photos in your collection !";
             }
             foreach ($cats as $cat) :
             ?>

@@ -10,14 +10,14 @@ $req->closeCursor();
 
 
 /* ---BLOG--- */
-$req = $pdo->prepare('SELECT id, blog_title, blog_date FROM akt_blog');
+$req = $pdo->prepare('SELECT id, blog_title, blog_date FROM akt_blog ORDER BY blog_date');
 $req->execute();
 $blogDatas = $req->fetchAll();
 $req->closeCursor();
 
 
 /* ---PRESS--- */
-$req = $pdo->prepare('SELECT * FROM akt_press');
+$req = $pdo->prepare('SELECT * FROM akt_press ORDER BY blog_date');
 $req->execute();
 $pressDatas = $req->fetchAll();
 $req->closeCursor();
@@ -25,7 +25,7 @@ $req->closeCursor();
 
 /* ---STORE--- */
 
-$req = $pdo->prepare('SELECT * FROM akt_store');
+$req = $pdo->prepare('SELECT * FROM akt_store ORDER BY name');
 $req->execute();
 $storeDatas = $req->fetchAll();
 $req->closeCursor();

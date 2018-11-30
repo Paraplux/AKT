@@ -69,12 +69,12 @@ include '../controllers/controller-quicknav.php';
     ?>
           <p class="cart-total"><strong>TOTAL : <?= $totalPrice ?> $</strong></p>
           <hr>
-          <a href="../actions/clean-cart.php">Vider le panier</a>
+          <a href="../actions/clean-cart.php">Clean the cart</a>
           <br><br><br><hr>
     <?php
     else :
     ?>
-    <p><strong>Votre panier est vide!</strong></p>
+    <p><strong>Your cart is empty!</strong></p>
     <?php 
     endif; 
     ?>

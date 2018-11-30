@@ -19,7 +19,7 @@ if(isset($_POST)) {
     $cartID = $req->fetch(PDO::FETCH_ASSOC);
     $req->closeCursor();
     if($cartID['qty'] == 0) {
-        echo "Désolé l'article demandé n'est plus disponible";
+        echo "Sorry the article is not available, contact the administrator";
     } else {
         if(!isset($_SESSION['cart'])) {
             $_SESSION['cart'] = array(
@@ -40,7 +40,7 @@ if(isset($_POST)) {
             $qty++;
             $_SESSION['cart'][$cartID['id']]['qty'] = $qty;
         } else {
-            echo "Problème, contactez l'administrateur du site";
+            echo "Problem ! Contact the administrator";
         }
     }
 }

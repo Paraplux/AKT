@@ -13,11 +13,11 @@ if (isset($_POST)) {
         ':qty' => $_POST['change-stock-value']
     ));
     $req->closeCursor();
-    $_SESSION['flash']['success']['admin_store'] = "Le stock de l'article a bien été modifié";
+    $_SESSION['flash']['success']['admin_store'] = "The artice stock has been updated";
     header('Location: ../admin58624/admin42685');
     exit();
 } else {
-    $_SESSION['flash']['fail']['admin_store_variation'] = "Erreur veuillez réessayer";
+    $_SESSION['flash']['fail']['admin_store_variation'] = "Error, try again";
     header('Location: ../admin58624/admin42685');
     exit();
 }

@@ -9,19 +9,15 @@ require_once('../components/class.upload.php');
 if (isset($_POST)) {
 
     if (empty($_POST['blog_title'])) {
-        $_SESSION['flash']['fail']['blog_title'] = "Vous n'avez pas choisi de titre";
+        $_SESSION['flash']['fail']['blog_title'] = "You didn't type any title";
     }
 
     if (!isset($_FILES['blog_thumb'])) {
-        $_SESSION['flash']['fail']['blog_thumb'] = "Vous n'avez pas ajouté d'image d'illustration";
+        $_SESSION['flash']['fail']['blog_thumb'] = "You didn't choose any thumb";
     }
 
     if (empty($_POST['blog_corpus'])) {
-        $_SESSION['flash']['fail']['blog_corpus'] = "Vous n'avez pas entré de texte";
-    }
-
-    if (empty($_POST['blog_date'])) {
-        $_SESSION['flash']['fail']['blog_date'] = "Vous n'avez pas défini de date";
+        $_SESSION['flash']['fail']['blog_corpus'] = "The article body is empty!";
     }
 
     if (empty($_SESSION['flash'])) {
@@ -47,7 +43,7 @@ if (isset($_POST)) {
             ':blog_date' => $_POST['blog_date'],
         ));
         $req->closeCursor();
-        $_SESSION['flash']['success']['admin_blog'] = "L'article a bien été créé";
+        $_SESSION['flash']['success']['admin_blog'] = "The article has been created";
         header('Location: ../admin58624/admin42685');
         exit();
     } else {

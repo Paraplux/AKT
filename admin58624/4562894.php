@@ -12,7 +12,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 <div class="flash-message-dismiss"><i class="fas fa-times"></i></div>
                 <?php if (isset($_SESSION['flash']['fail'])) : ?>
                 <ul>
-                    Vous avez mal rempli le formulaire :
+                    The form has errors :
                     <?php foreach ($_SESSION['flash']['fail'] as $message) : ?>
                     <li> <?= $message ?> </li>
                     <?php endforeach; ?>
@@ -20,7 +20,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 <?php endif ?>
                 <?php if (isset($_SESSION['flash']['success'])) : ?>
                 <ul>
-                    Parfait !
+                    Perfect !
                     <?php foreach ($_SESSION['flash']['success'] as $message) : ?>
                     <li> <?= $message ?> </li>
                     <?php endforeach; ?>
@@ -37,7 +37,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <input name="auth-username" class="auth-input" type="text" placeholder="Username"><br>
         <input name="auth-password" class="auth-input" type="password" placeholder="Password"><br>
         <button class="auth-button" type="submit">Connexion</button><br>
-        <a class="back" href="../views/home">Retour au site</a>
+        <a class="back" href="../views/home">Back to the site</a>
     </form>
 </div>  
 

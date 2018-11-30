@@ -9,27 +9,27 @@ require_once('../components/class.upload.php');
 if (isset($_POST)) {
 
     if (empty($_POST['admin_store_name'])) {
-        $_SESSION['flash']['fail']['admin_store_name'] = "Vous n'avez pas choisi de nom pour l'objet";
+        $_SESSION['flash']['fail']['admin_store_name'] = "You din't choose any name for the article";
     }
 
     if (empty($_POST['admin_store_prix'])) {
-        $_SESSION['flash']['fail']['admin_store_prix'] = "Vous n'avez pas choisi de prix";
+        $_SESSION['flash']['fail']['admin_store_prix'] = "You didn't choose any price";
     }
 
     if (empty($_POST['admin_store_description'])){
-        $_SESSION['flash']['fail']['admin_store_description'] = "Vous n'avez pas saisi de descriptif";
+        $_SESSION['flash']['fail']['admin_store_description'] = "The description field is empty";
     }
 
     if (empty($_POST['admin_store_color'])) {
-        $_SESSION['flash']['fail']['admin_store_color'] = "Vous n'avez pas choisi de couleur";
+        $_SESSION['flash']['fail']['admin_store_color'] = "The color field is empty";
     }
 
     if (empty($_POST['admin_store_cat'])){
-        $_SESSION['flash']['fail']['admin_store_cat'] = "Vous n'avez pas choisi de catégorie";
+        $_SESSION['flash']['fail']['admin_store_cat'] = "You didn't choose any category";
     }
 
     if (!isset($_FILES['admin_store_upload_1'])){
-        $_SESSION['flash']['fail']['admin_store_upload_1'] = "Vous n'avez choisi de visuel pour l'article";
+        $_SESSION['flash']['fail']['admin_store_upload_1'] = "You didn't choose any thumb";
     }    
 
     if (empty($_SESSION['flash'])) {
@@ -107,11 +107,11 @@ if (isset($_POST)) {
             ':cat_id' => $cat_id,
         ));
         $req->closeCursor();
-        $_SESSION['flash']['success']['admin_store'] = "L'article a bien été créé";
+        $_SESSION['flash']['success']['admin_store'] = "The article has been added";
         header('Location: ../admin58624/admin42685');
         exit();
     } else {
-        $_SESSION['flash']['fail']['admin_store_variation'] = "Erreur veuillez réessayer";
+        $_SESSION['flash']['fail']['admin_store_variation'] = "Error, try again!";
         header('Location: ../admin58624/admin42685');
         exit();
     }

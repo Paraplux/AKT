@@ -13,7 +13,7 @@ if (!empty($_POST)) {
         ':id' => $_POST['press-id-delete'],
     ));
     $req->closeCursor();
-    $_SESSION['flash']['success']['admin_press'] = "La critique a bien été supprimé";
+    $_SESSION['flash']['success']['admin_press'] = "The review has been deleted!";
     header('Location: ../admin58624/admin42685');
     exit();
 }

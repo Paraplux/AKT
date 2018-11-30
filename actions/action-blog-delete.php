@@ -22,7 +22,7 @@ if (!empty($_POST)) {
         ':id' => $_POST['blog-id-delete'],
     ));
     $req->closeCursor();
-    $_SESSION['flash']['success']['admin_blog'] = "L'article a bien été supprimé";
+    $_SESSION['flash']['success']['admin_blog'] = "The article has been deleted!";
     header('Location: ../admin58624/admin42685');
     exit();
 }
