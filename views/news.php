@@ -54,21 +54,22 @@ $p = $_GET['page'] - 1;
         </div>
         </section>
 
-        <?php 
-        ?>
-        <section class="press-section">
-            <?php foreach($pressDatas as $pressData): ?>
-            <article class="press-article">
-                <h3 class="press-title"><?= $pressData['press_title']; ?></h3>
-                <p class="press-content"><?= $pressData['press_corpus']; ?></p>
-                <p class="press-link"><a href="<?= $pressData['press_link']; ?>">En savoir plus. . .</a></p>
-                <h4 class="press-signature"> - <?= $pressData['press_signature']; ?></h4>
-            </article>
-            <?php endforeach; ?>
-        </section>
-    
+         <?php endif; ?>
+         <?php if(!empty($pressDatas)) : ?>
+         <section class="press-section">
+             <?php foreach($pressDatas as $pressData): ?>
+             <article class="press-article">
+                 <h3 class="press-title"><?= $pressData['press_title']; ?></h3>
+                 <p class="press-content"><?= $pressData['press_corpus']; ?></p>
+                 <p class="press-link"><a href="<?= $pressData['press_link']; ?>">En savoir plus. . .</a></p>
+                 <h4 class="press-signature"> - <?= $pressData['press_signature']; ?></h4>
+                </article>
+                <?php endforeach; ?>
+            </section>
+            <?php endif; ?>
+            
     </div>
-            <?php endif;?>
+           
 </div>
 
 <script src="../js/dropdown.js"></script>
