@@ -39,7 +39,7 @@ body{
     width: 100%;
     height: 101%;
   }
-  .payement-button-container {
+.payement-button-container {
     display: flex;
     justify-content: center;
     align-items: center;

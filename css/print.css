@@ -1,0 +1,16 @@
+.ticket-point{
+    overflow: hidden;
+}
+
+.ticket-container{
+    width: 50%;
+    border: 1px solid #000000;
+}
+
+.payement-button-container, .display-resp-nav-sidebar i{
+    display: none;
+}
+
+#navigation{
+    display: none;
+}

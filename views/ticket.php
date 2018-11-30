@@ -13,11 +13,16 @@ if(!isset($_SESSION['payed']) || $_SESSION['payed'] != 'true') {
 ?>
 
 <link rel="stylesheet" href="../css/ticket.css">
+<link rel="stylesheet" href="../css/print.css" media="print">
   <div class="ticket-container">
     <div class="ticket">
       <p class="title">AKT JEWELS</p>
       <p class="slogan">Creating mo' with ammo</p>
-      <p class="date">21 - 12 - 2018</p>
+      <?php
+      $date = date("d-m-Y");
+      Print($date);
+      ?>
+  <br>
       <?php
       if (isset($_SESSION['cart'])) :
         foreach ($itemsCart as $item) :
@@ -37,14 +42,14 @@ if(!isset($_SESSION['payed']) || $_SESSION['payed'] != 'true') {
     <?php 
     endif;
     ?>
-      <p>*****************************************</p>
+      <p class="ticket-point">*****************************************</p>
       <p class="thank">AKT Jewels thanks you !</p>
-      <p>*****************************************</p>
+      <p class="ticket-point">*****************************************</p>
     </div>
   </div>
   <div class="payement-button-container">
     <div class="payement-button">
-      PAYED
+    <a href="javascript:window.print()"><p>PRINT</p></a>
     </div>
   </div>
 
