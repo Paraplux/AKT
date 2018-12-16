@@ -7,8 +7,5 @@ $(document).ready(function () {
         var fill = scroll * 1600/ maxScroll;
         // Changement de la hauteur en fonction de maxScroll
         $('.filling').css('stroke-dashoffset', - (1600 - fill));
-        console.log('Max = ' + maxScroll);
-        console.log('Scroll = ' + scroll);
-        console.log('Fill = ' + fill);
     });
 });

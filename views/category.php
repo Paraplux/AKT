@@ -23,7 +23,7 @@ include '../components/functions.php';
         <!-- ENTETE -->
     <div class="item-cat-presentation">
         <div class="item-cat-presentation-content">
-           <h1 class="item-cat-title-bracelet"><?= $categoryData['name']?></h1>
+           <h1 class="item-cat-title"><?= $categoryData['name']?></h1>
                 <p class="item-cat-presentation-text"><?= $categoryData['content'] ?></p>
         </div> 
         <div class="item-cat-presentation-thumb">

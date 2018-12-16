@@ -97,6 +97,7 @@
 
 .effect-apollo {
     font-family: 'Montserrat';
+    font-weight: 200;
     box-shadow: 0 0 5px #909090;
 }
 figure.effect-apollo.blue-apollo p {
@@ -147,7 +148,6 @@ figure.effect-apollo h2,
 figure.effect-apollo p {
     padding: 3px;
     text-align: left;
-    font-weight: 400;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
 }

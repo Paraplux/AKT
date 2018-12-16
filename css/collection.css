@@ -18,8 +18,8 @@
     padding: 3rem 2.5rem;
      
     font-size: 3rem;
-    font-family: 'Montserrat Extra Light';
-    font-weight: 200;
+    font-family: 'Montserrat';
+    font-weight: 100;
     
     border: 1px solid white;
 }
@@ -59,8 +59,8 @@
     padding: 1.5rem 1.25rem;
 
     font-size: 2rem;
-    font-family: 'Montserrat Extra Light';
-    font-weight: 200;
+    font-family: 'Montserrat';
+    font-weight: 100;
 
     border: 1px solid white;
 }

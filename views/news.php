@@ -25,7 +25,7 @@ $p = $_GET['page'] - 1;
             <!-- Accordion -->
             <?php if($_GET['page'] != 1): ?>
             <br><hr><br><br>
-            <h3>Jetez un oeil à notre dernier article :</h3>
+            <h3 class="press-title">Jetez un oeil à notre dernier article :</h3>
             <button class="drop-down"><?= $blogDatas[0]['blog_title']; ?></button>
             <div class="panel">
                 <p><?= substr(strip_tags($blogDatas[0]['blog_corpus']), 0, 500); ?> . . .</p>
@@ -33,7 +33,7 @@ $p = $_GET['page'] - 1;
             </div>
             <?php endif; ?>
             <br><hr>
-            <h3>Articles précédents :</h3>
+            <h3 class="press-title">Articles précédents :</h3>
             <?php $articleQty = count($blogDatas); ?>
             <?php for($i = 1; $i < 4; $i++) : 
             ?>

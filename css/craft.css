@@ -64,7 +64,17 @@
     width: 100%;
     height: auto;
 }
+
 @media all and (max-width: 780px){
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .primary {
+        display: block;
+        width: 100%;
+    }
     .thumb-right{
         display: block;
         width: 100%;
@@ -94,14 +104,22 @@
         width: 100%;
         padding-left: 0px;
         padding-right: 0px;
+        margin: 0;
     }
     .article h2{
         display: block;
         width: 80%;
         margin: auto;
+        margin-bottom: 1rem;
     }
     .content {
-        width: 100%;    
+        width: 80%;
+        margin: auto;   
+    }
+    .intro {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1rem;
     }
 }
 @media all and (max-width: 1200px){

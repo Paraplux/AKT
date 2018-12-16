@@ -165,6 +165,21 @@ $heure = date("H:i");
     <hr id="anchor-store">
     <div class="admin-store">
         <h1 class="admin-title-style">Store</h1><br>
+        <h2 class="admin-subtitle-style">Create a category :</h2><br><br>
+        <form action="../actions/action-store-create-cat.php" method="POST" enctype="multipart/form-data">
+            <div class="form-grouped">
+                <div>
+                    <input name="admin_cat_store_name" type="text" class="input-title-style" placeholder="Choisir un nom">
+                </div>
+                <div>
+                    <h2 class="admin-subtitle-style">Category thumb :</h2>
+                    <input class="input-title-style" name="admin_cat_store_upload" type="file">
+                </div>
+            </div><br><br>
+            <h2 class="admin-subtitle-style">Category description :</h2>
+            <textarea name="admin_cat_store_description" type="text" class="input-title-style-textarea" placeholder="Type a description..." col=70 rows=10></textarea><br><br>
+            <button class="admin-button-style"  type="submit">Submit <i class="fas fa-check"></i></button>
+        </form><br> <hr>
         <h2 class="admin-subtitle-style">Add a new article to sell :</h2><br><br>
         <form action="../actions/action-store.php" method="POST" enctype="multipart/form-data">
             <div class="form-grouped">
@@ -335,7 +350,7 @@ $heure = date("H:i");
             name: 'Subtitle',
             element: 'h2',
             styles: {
-                'font-family' : 'Montserrat Thin',
+                'font-family' : 'Montserrat',
                 'font-weight' : '300',
                 'font-size' : '1.8rem',
             }
@@ -344,8 +359,8 @@ $heure = date("H:i");
             name: 'Corps de texte',
             element: 'p',
             styles: {
-                'font-family' : 'Raleway Light',
-                'font-weight' : '300',
+                'font-family' : 'Raleway',
+                'font-weight' : '200',
                 'font-size' : '1rem',
                 'text-align': 'justify',
             }
@@ -354,7 +369,7 @@ $heure = date("H:i");
             name:'Small',
             element: 'p', 
             styles: {
-                'font-family' : 'Raleway Light',
+                'font-family' : 'Raleway',
                 'font-weight' : '300',
                 'font-size' : '0.8rem',
                 'font-style': 'italic',

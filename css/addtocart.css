@@ -6,6 +6,9 @@
 	right: 30px;
 	bottom: 60px;
 	/* display: float; */
+
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
 }
 
 button.add-to-cart {

@@ -30,9 +30,9 @@ if(!isset($_SESSION['payed']) || $_SESSION['payed'] != 'true') {
         <a href="./item?ref=<?= $item['ref'] . "&color=" . $item['color_format']; ?>"><?= $item['name']; ?> (<?= $item['color']; ?>) - Ref :  <?= $item['ref'] ?></a>
         <div>Qty : <?= $_SESSION['cart'][$item['id']]['qty'] ?> x <strong><?= $item['prix']; ?> €</strong></div>
         <hr>
-        <?php
-        endforeach;
-        ?>
+      <?php
+      endforeach;
+      ?>
         <p>-----------------------------------------</p> 
         <p><strong>TOTAL TTC : <?= $totalPrice ?> $</strong></p>
     <?php

@@ -18,6 +18,7 @@
         <!-- PERSONNAL CSS -->
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/navbar.css">
+        <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Montserrat:100,200,300,400,700|Raleway:200,300,400">
 
     </head>
     <body>

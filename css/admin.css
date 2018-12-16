@@ -40,7 +40,8 @@ body {
 
 .input-title-style {
     width: 100%;
-    font-family: 'Montserrat Light';
+    font-family: 'Montserrat';
+    font-weight: 200;
     font-size: 1.2rem;
     background: none;
     border: none;
@@ -53,7 +54,8 @@ body {
 
 .input-title-style-textarea {
     width: 100%;
-    font-family: 'Montserrat Light';
+    font-family: 'Montserrat';
+    font-weight: 200;
     font-size: 1.2rem;
     background: none;
     border: 1px solid #aaa;
@@ -62,7 +64,8 @@ body {
 .admin-title-style,
 .admin-subtitle-style {
     text-transform: uppercase;
-    font-family: 'Montserrat Light';
+    font-family: 'Montserrat';
+    font-weight: 200;
     font-weight: 500;
 }
 

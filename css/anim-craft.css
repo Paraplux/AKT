@@ -20,4 +20,7 @@
   .sidebar{
     display: none;
   }
+  .svg {
+    display: none;
+  }
 }

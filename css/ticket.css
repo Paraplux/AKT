@@ -61,6 +61,9 @@ body{
     width: 100%;
     transform: translateY(-2px);
   }
+  .payement-button a {
+    color: #202020;
+  }
 
   
   @media all and (max-width: 1200px) {

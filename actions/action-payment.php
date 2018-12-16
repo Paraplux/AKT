@@ -31,6 +31,21 @@ $token = $_POST['stripeToken'];
 
 $total = $totalPrice * 100;
 
+$cart = array();
+foreach ($_SESSION['cart'] as $d) {
+    array_push($cart, $d);
+}
+$recap = array();
+for ($i = 1; $i <= count($cart); $i++) {
+    $recap += [
+        'Reference - ' . $i => $cart[$i-1]['ref'],
+        'Size - ' . $i => $cart[$i-1]['size'],
+        'Type - ' . $i => $cart[$i-1]['color'],
+        'Qty - ' . $i => $cart[$i-1]['qty'],
+        'Unit price - ' . $i => $cart[$i-1]['u_price'],
+    ];
+};
+
 if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token) && !empty($address1) && !empty($addressCity) && !empty($addressZip) && !empty($addressCountry)) {
     require '../components/class.stripe.php';
     require '../components/db.php';
@@ -52,15 +67,13 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token) 
             'description' => $name,
             'email' => $email,
             'metadata' => [
+                "This represent" => "Shipping informations of the client",
                 "Adress" => $address1,
                 "Adress (optional)" => $address2,
                 "City" => $addressCity,
                 "Zip Code" => $addressZip,
                 "State (optional)" => $addressState,
-                "Country" => $addressCountry,
-                "Recap" => [
-
-                ]
+                "Country" => $addressCountry
             ],
         ]);
 
@@ -79,18 +92,12 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token) 
         'amount' => $total,
         'currency' => 'usd',
         'customer' => $customerID,
-        'metadata' => [
-            "Adress" => $address1,
-            "Adress (optional)" => $address2,
-            "City" => $addressCity,
-            "Zip Code" => $addressZip,
-            "State (optional)" => $addressState,
-            "Country" => $addressCountry,
-        ],
+        'metadata' => $recap,
         
         
     ]);
     $_SESSION['payed'] = 'true';
+    $headers = $_POST['email'];
     header('Location: ../views/ticket');
     exit();
 } else {

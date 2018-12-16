@@ -8,7 +8,7 @@ include '../controllers/controller-collection-category.php';
 
 
     <div class="collection-head">
-        <div class="collection-head-thumb"><img src="../images/collection_thumbs/collection-head.jpg" alt=""></div>
+        <div class="collection-head-thumb"><img src="../images/collection/collection-head.jpg" alt=""></div>
         <span class="collection-head-title"><span>COLLECTION</span></span>
     </div>
     <div class="collection-mozaic">

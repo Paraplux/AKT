@@ -33,15 +33,16 @@
         .main-blog-title {
             margin-bottom: 15px;
             text-align: center;
-            font-family: 'Montserrat Thin';
-            font-weight: 300;
+            font-family: 'Montserrat';
+            font-weight: 100;
             font-size: 2rem;
         }
 
         .main-blog-date {
             padding-bottom: 20px;
             text-align: center;
-            font-family: 'Montserrat Light';
+            font-family: 'Montserrat';
+            font-weight: 400;
             font-size: 0.9rem;
 
             border-bottom: 1px solid #ededed;
@@ -56,18 +57,20 @@
 
         .main-blog-small {
             font-size: 1rem;
-            font-family: "Raleway Extra Light";
+            font-family: "Raleway";
+            font-weight: 300;
             font-style: italic;
         }
 
         .main-blog-subtitle {
-            font-family: 'Montserrat Thin';
-            font-weight: 300;
+            font-family: 'Montserrat';
+            font-weight: 400;
             font-size: 1.8rem;
         }
 
         .main-blog-content {
-            font-family: "Raleway Extra Light";
+            font-family: "Raleway";
+            font-weight: 200;
         }
 
         
@@ -86,14 +89,14 @@
     
 
     .press-content {
-        font-family: 'Raleway Light';
+        font-family: 'Raleway';
         font-weight: 300;
         text-indent: 1.5rem;
         text-align: justify;
     }
 
     .press-link {
-            font-family: 'Raleway Light';
+            font-family: 'Raleway';
             font-weight: 300;
             font-size: 0.9rem;
             text-align: right;
@@ -105,7 +108,7 @@
 
     .press-signature {
         padding-bottom: 1rem;
-        font-family: "Montserrat Extra Light";
+        font-family: "Montserrat";
         font-weight: 200;
         font-style: oblique;
         border-bottom: 1px solid white;

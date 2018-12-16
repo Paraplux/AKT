@@ -23,7 +23,7 @@ if(isset($_POST)) {
 
         $tiny = new Upload($_FILES['admin_collection_upload']);
         if ($tiny->uploaded) {
-   // resized to 50px wide()
+   // resized to 75px wide()
             $tinysha1 = 'tiny_' . sha1(base64_encode(openssl_random_pseudo_bytes(30)));
             $tiny->file_new_name_body = $tinysha1;
             $tiny->image_resize = true;

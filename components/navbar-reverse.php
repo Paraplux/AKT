@@ -1,8 +1,8 @@
 <div class='nav-fix'></div>
 <div id="navigation" class="welcomeHide">
     <div class="left-nav">
-        <span><a href="../index"><img class="logo" src="../images/logo-black.png" alt=""></a></span>
-        <span><a href="../views/home"><img class="logo-resp" src="../images/logo-black.png" alt=""></a></span>
+        <span><a href="../index"><img class="logo" src="../images/navbar/logo-black.png" alt=""></a></span>
+        <span><a href="../views/home"><img class="logo-resp" src="../images/navbar/logo-black.png" alt=""></a></span>
     </div>
     <div id="nav-separator"></div>
     <div class="right-nav">

@@ -28,6 +28,11 @@ body{
 	text-align: justify;
 }
 
+.item-cat-title {
+	font-family: 'Montserrat';
+	font-weight: 400;
+}
+
 .item-cat-presentation-thumb{
 	height: 300px;
     width: 50%;
@@ -63,7 +68,7 @@ body{
 	color: #202020;
 }
 
-.item-cat-title-bracelet::after {
+.item-cat-title::after {
 	content: '';
 	position: relative;
 	width: 15%;
@@ -89,6 +94,7 @@ body{
 
 .effect-sarah-bracelet h2 {
 	font-family: 'Montserrat';
+	font-weight: 400;
 	position: relative;
 	overflow: hidden;
 	margin: 0;

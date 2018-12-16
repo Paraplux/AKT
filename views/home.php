@@ -20,10 +20,26 @@ include '../controllers/controller-home.php';
                 <h1 class="home-h1">Une histoire</h1>
                 <div class="home-intro">
                     <p>
-                        J’ai créé <strong>AKT Jewels</strong> début 2012 par amour des beaux objets. Pour moi, un bel objet est un objet qui a un intérêt esthétique mais aussi une <strong>histoire</strong>. L’histoire que je voulais que mes objets racontent est une histoire de <strong>paix et de liberté</strong>.
+                        AKT is an <strong>art editor</strong> based in France near Geneva.
+                    </p> <br>
+                    <p>
+                        AKT creates art objects from weapons, destroyed by the <strong>Swiss Foundation for Mine Action.</strong>
+                        The Swiss Foundation for Mine Action is a non-governmental organization
+                        where former soldiers organize <strong>the destruction of weapons</strong> around the world in
+                        conflict zones to <strong>protect civilian populations</strong>.
+                        The metal collected is transformed at l’<strong>Ecole Nationale des Arts et Métiers</strong> in Cluny/Burgundy. In their laboratory and Foundry, we turn the metal used to
+                        produce the jewels into a <strong>jewerly</strong> standart stainless steel.
+                        Some pieces of the collection are made with a mixed of the metal from the
+                        weapons and solid silver.
                     </p>
                     <p>
-                        C’est pourquoi j’ai choisi symboliquement d’utiliser des matériaux symbolisant la violence et la mort, de les <strong>détruire</strong> et de les refaire vivre à travers des créations qui incarnent <strong>la paix et la liberté</strong>.
+                        All of our creations are entirely <strong>made in France</strong>, from the preparation of the
+                        raw material to the finished product.
+                        Our designers and craftsmen create in a small workshop in France, objects
+                        with an <strong>excellent quality</strong> and a bold design.
+                        Our <strong>ambition</strong> is to create objects with with a bold design and a meaningful
+                        story.
+                        We want to <strong>honor</strong> with you the <strong>women and men</strong> who fight for <strong>peace and freedom</strong>.
                     </p>
                     <p class="intro-signature">Francois Ghys</p>
                 </div>

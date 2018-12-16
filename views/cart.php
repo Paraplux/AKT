@@ -31,7 +31,22 @@ include '../controllers/controller-quicknav.php';
     <p class="cart-qty">Quantity</p>
     <p class="cart-price">Price</p>
   </div>
-
+    <?php
+    // $cart = array();
+    // foreach($_SESSION['cart'] as $d) {
+    //   array_push($cart, $d);
+    // }
+    // $recap = array();
+    // for($i = 0; $i < count($cart); $i++) {
+    //   $recap += [
+    //     'Reference' . $i => $cart[$i]['ref'],
+    //     'Size' . $i => $cart[$i]['size'],
+    //     'Type' . $i => $cart[$i]['color'],
+    //     'Qty' . $i => $cart[$i]['qty'],
+    //     'Unit price' . $i => $cart[$i]['u_price'],
+    //   ];
+    // };
+    ?>
     <?php
     if(!empty($_SESSION['cart'])) : 
         foreach ($itemsCart as $item) :
@@ -39,7 +54,6 @@ include '../controllers/controller-quicknav.php';
 
 
     <!-- MODIF -->
-
 
   <div class="cart">
     <div class="cart-thumb">
@@ -49,9 +63,9 @@ include '../controllers/controller-quicknav.php';
       <a href="./item?ref=<?= $item['ref'] . "&color=" . $item['color_format']; ?>"><?= $item['name']; ?> - <?= $item['color']; ?></a>
     </div>
     <div class="cart-qty">
-      <form id="change_qty_form" action="../actions/action-change-cart.php" method="POST">
+      <form class="change_qty_form" action="../actions/action-change-cart.php" method="POST">
           <input name="id_to_change" type="hidden" value="<?= $item['id'] ;?>">
-          <input id="change_qty_input" name="qty_to_change" type="number" step="1" min="0" max="100" value="<?= $_SESSION['cart'][$item['id']]['qty'] ?>">
+          <input class="change_qty_input" name="qty_to_change" type="number" step="1" min="0" max="100" value="<?= $_SESSION['cart'][$item['id']]['qty'] ?>">
       </form>
       <form action="../actions/action-delete-cart.php" method="POST">
           <input name="id_to_del" type="hidden" value="<?= $item['id']; ?>">
@@ -90,20 +104,35 @@ include '../controllers/controller-quicknav.php';
                 <h2>Shipping Information</h2>
                 <label for="name">Your name</label>
                 <label for="email">Your email</label><br>
-                <input value="Bouchez Marc" type="text" name="name" required placeholder="Your name">
-                <input value="theparaplux@test.com" type="email" name="email" required placeholder="Your@mail.com"><br>
+                <input value="test@test.test" type="text" name="name" required placeholder="Your name">
+                <input value="test@test.test" type="email" name="email" required placeholder="Your@mail.com"><br>
                 <label for="name">Adress</label>
                 <label for="email">Adress (optional)</label><br>
-                <input value="123 rue des ténèbres" type="text" name="address_1" required placeholder="Your address">
-                <input value="Appartemment 666" type="text" name="address_2" placeholder="Your address(Optional)"><br>
+                <input value="test@test.test" type="text" name="address_1" required placeholder="Your address">
+                <input value="test@test.test" type="text" name="address_2" placeholder="Your address(Optional)"><br>
                 <label for="name">City</label>
                 <label for="email">Zipcode</label><br>
-                <input value="Noir sur marne" type="text" name="address_city" required placeholder="Your city">
-                <input value="62666" type="text" name="address_zip" required placeholder="Your zip code"><br>
+                <input value="test@test.test" type="text" name="address_city" required placeholder="Your city">
+                <input value="test@test.test" type="text" name="address_zip" required placeholder="Your zip code"><br>
                 <label for="name">State</label>
                 <label for="email">Country</label><br>
-                <input value="Pas de Satan" type="text" name="address_state" placeholder="Your state">
-                <input value="Gilet Jaunes" type="text" name="address_country" required placeholder="Your country"><br>
+                <input value="test@test.test" type="text" name="address_state" placeholder="Your state">
+                <input value="test@test.test" type="text" name="address_country" required placeholder="Your country"><br>
+
+                <!-- CART -->
+                <?php
+                if (isset($_SESSION['cart'])) :
+                  foreach ($_SESSION['cart'] as $item) :
+                ?>
+                <input type="hidden" name="<?= $item['ref'] ?>_ref" value="<?= $item['ref']?>">
+                <input type="hidden" name="<?= $item['ref'] ?>_size" value="<?= $item['size']?>">
+                <input type="hidden" name="<?= $item['ref'] ?>_color" value="<?= $item['color']?>">
+                <input type="hidden" name="<?= $item['ref'] ?>_qty" value="<?= $item['qty']?>">
+                <?php
+                  endforeach;
+                endif;
+                ?>
+
             </div>
             <div class="form-checkout">
                 <h2>Checkout Information</h2>
@@ -129,11 +158,11 @@ endif;
   $(document).ready(function() {
 
 
-    $('#change_qty_input').change(function(){
-      $('#change_qty_form').submit()
+    $('.change_qty_input').change(function(){
+      $('.change_qty_form').submit()
     })
 
-    $(document).on('submit', '#change_qty_form', function(){
+    $(document).on('submit', '.change_qty_form', function(){
       $.ajax({
         type: 'post',
         url: '../actions/action-change-cart.php',

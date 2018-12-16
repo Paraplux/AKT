@@ -8,6 +8,7 @@ if(isset($_POST)) {
 
     $cartRef = $_POST['cart_ref'];
     $cartColor = $_POST['cart_color'];
+    $cartSize = $_POST['cart_size'];
 
     include '../components/db.php';
 
@@ -25,6 +26,8 @@ if(isset($_POST)) {
             $_SESSION['cart'] = array(
                 $cartID['id'] => [
                     'ref' => $cartID['ref'],
+                    'size' => $cartSize,
+                    'color' => $cartColor,
                     'qty' =>  intval(1),
                     'u_price' => $cartID['prix']
                 ],
@@ -32,6 +35,8 @@ if(isset($_POST)) {
         } else if (!isset($_SESSION['cart'][$cartID['id']])) {
             $_SESSION['cart'][$cartID['id']] = [
                 'ref' => $cartID['ref'],
+                'size' => $cartSize,
+                'color' => $cartColor,
                 'qty' => intval(1),
                 'u_price' => $cartID['prix']
             ];
