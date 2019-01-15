@@ -13,9 +13,7 @@ include '../controllers/controller-collection-category.php';
     </div>
     <div class="collection-mozaic">
 
-        <?php 
-        foreach($catDatas as $catData):
-            ?>
+        <?php foreach($catDatas as $catData): ?>
         <div class="collection-cat-head">
             <div class="collection-cat-thumb"><img src="<?= $catData['small_link']; ?>" alt=""></div>
             <span class="collection-cat-title"><span><?= $catData['cat']; ?></span></span>

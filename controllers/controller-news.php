@@ -3,15 +3,13 @@
 include '../components/db.php';
 
 /* ---BLOG--- */
-$req = $pdo->prepare('SELECT * FROM akt_blog');
-$req->execute();
+$req = $pdo->query('SELECT * FROM akt_blog ORDER BY id DESC');
 $blogDatas = $req->fetchAll();
 $req->closeCursor();
 
 
 /* ---PRESS--- */
 
-$req = $pdo->prepare('SELECT * FROM akt_press');
-$req->execute();
+$req = $pdo->query('SELECT * FROM akt_press');
 $pressDatas = $req->fetchAll();
 $req->closeCursor();

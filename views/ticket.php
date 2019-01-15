@@ -34,7 +34,7 @@ if(!isset($_SESSION['payed']) || $_SESSION['payed'] != 'true') {
       endforeach;
       ?>
         <p>-----------------------------------------</p> 
-        <p><strong>TOTAL TTC : <?= $totalPrice ?> $</strong></p>
+        <p><strong>TOTAL TTC : <?= $totalPrice ?> €</strong></p>
     <?php
     else :
     ?>

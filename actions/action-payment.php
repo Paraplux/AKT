@@ -101,5 +101,5 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token) 
     header('Location: ../views/ticket');
     exit();
 } else {
-    echo 'echec'; /*MESSAGE ERREUR*/
+    header('Location: ../views/cart.php');
 }

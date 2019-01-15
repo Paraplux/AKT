@@ -34,8 +34,13 @@ if(isset($_POST)) {
             $_SESSION['flash']['success']['auth'] = "Perfect, you are now, logged in";
             header('Location: ./admin42685');
             exit();
-        } 
+        } else {
+            $_SESSION['flash']['fail']['auth'] = "Incorrect logs, try again";
+            header('Location: ./4562894');
+            exit();
+        }
     } else {
+        $_SESSION['flash']['fail']['auth'] = "Incorrect logs, try again";
         header('Location: ./4562894');
         exit();
     }

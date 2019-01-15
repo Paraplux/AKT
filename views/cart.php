@@ -57,7 +57,7 @@ include '../controllers/controller-quicknav.php';
 
   <div class="cart">
     <div class="cart-thumb">
-      <img src="../images/jewelry/brace-1.jpg" alt="">
+      <img src="<?= $item['thumb_1'] ?>" alt="">
     </div>
     <div class="cart-name">
       <a href="./item?ref=<?= $item['ref'] . "&color=" . $item['color_format']; ?>"><?= $item['name']; ?> - <?= $item['color']; ?></a>
@@ -81,7 +81,7 @@ include '../controllers/controller-quicknav.php';
     <?php
         endforeach;
     ?>
-          <p class="cart-total"><strong>TOTAL : <?= $totalPrice ?> $</strong></p>
+          <p class="cart-total"><strong>TOTAL : <?= $totalPrice ?> €</strong></p>
           <hr>
           <a href="../actions/clean-cart.php">Clean the cart</a>
           <br><br><br><hr>
@@ -92,6 +92,13 @@ include '../controllers/controller-quicknav.php';
     <?php 
     endif; 
     ?>
+    <br>
+    <form class="change-shipping-form" action="../actions/action-shipping.php" method="POST">
+      <h2>Shipping :</h2>
+      <strong>France (5€) :</strong><input id="france" value="france" name="shipping" type="radio" class="change-shipping-input"><br>
+      <strong>Europe (10€) :</strong><input id="europe" value="europe" name="shipping" type="radio" class="change-shipping-input"><br>
+      <strong>International (15€) :</strong> <input id="international" value="international" name="shipping" type="radio" class="change-shipping-input"><br>
+    </form>
     
 
 
@@ -156,10 +163,22 @@ endif;
 
 <script>
   $(document).ready(function() {
-
+    <?php
+    if(isset($_SESSION['shipping'])) {
+      $checked = $_SESSION['shipping'];
+    } else {
+      $checked = 'france';
+    }
+    ?>
+    $('.change-shipping-input').removeAttr('checked');
+    $('#<?= $checked ?>').attr('checked', true)
 
     $('.change_qty_input').change(function(){
       $('.change_qty_form').submit()
+    })
+
+    $('.change-shipping-input').change(function(){
+      $('.change-shipping-form').submit()
     })
 
     $(document).on('submit', '.change_qty_form', function(){
@@ -169,7 +188,13 @@ endif;
         data: $(this).serialize()
             });
       });
-      e.preventDefault();
+      $(document).on('submit', '.change-shipping-form', function(){
+      $.ajax({
+        type: 'post',
+        url: '../actions/action-shipping.php',
+        data: $(this).serialize()
+            });
+      });
     })
 </script>
 

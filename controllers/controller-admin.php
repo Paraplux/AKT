@@ -17,7 +17,7 @@ $req->closeCursor();
 
 
 /* ---PRESS--- */
-$req = $pdo->prepare('SELECT * FROM akt_press ORDER BY blog_date');
+$req = $pdo->prepare('SELECT * FROM akt_press');
 $req->execute();
 $pressDatas = $req->fetchAll();
 $req->closeCursor();

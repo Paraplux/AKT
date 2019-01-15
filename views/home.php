@@ -10,7 +10,7 @@ include '../controllers/controller-home.php';
 
     
     <div class="defil-container welcomeHide">
-    <div class="defil"><?= $homeData; ?></div>
+    <div class="defil"><a href="./news"><?= $homeData; ?></a></div>
     </div>
     
     <div class="container">
@@ -51,11 +51,8 @@ include '../controllers/controller-home.php';
     
         <div class="flagship welcomeHide">
         <h2 class="home-h2"><div>TAKE A LOOK</div></h2>
-            <div class="main-gallery js-flickity"
-                    data-flickity-options='{"cellAlign": "center", "wrapAround": true }'>
-                    <?php
-                    for($i = 0; $i < 5; $i++) : 
-                    ?>
+            <div class="main-gallery js-flickity" data-flickity-options='{"cellAlign": "center", "wrapAround": true, "imagesLoaded": true}'>
+                    <?php for($i = 0; $i < 5; $i++) : ?>
                 <div class="gallery-cell">
                     <a href="./item?ref=<?= $topItems[$i]['ref'] . "&color=" . $topItems[$i]['color_format']; ?>">
                         <img class="gallery-cell-thumb" src="<?= $topItems[$i]['thumb_1'] ;?>" alt="">
@@ -65,9 +62,7 @@ include '../controllers/controller-home.php';
                         </div>
                     </a>
                 </div>
-                    <?php
-                    endfor;
-                    ?>
+                    <?php endfor; ?>
             </div>
             
         </div>

@@ -181,6 +181,7 @@ $heure = date("H:i");
             <button class="admin-button-style"  type="submit">Submit <i class="fas fa-check"></i></button>
         </form><br> <hr>
         <h2 class="admin-subtitle-style">Add a new article to sell :</h2><br><br>
+        <p><i class="fas fa-exclamation-circle"></i> If you encounter problems while creating an item, please lower the thumb resolutionzq.</p>
         <form action="../actions/action-store.php" method="POST" enctype="multipart/form-data">
             <div class="form-grouped">
                 <div>
@@ -306,7 +307,8 @@ $heure = date("H:i");
                     <div class="press-list-title">TITLE</div>
                     <div class="press-list-delete">DELETE</div>
                 </div>
-                <?php foreach ($pressDatas as $pressData) : ?>
+                <?php 
+                foreach ($pressDatas as $pressData) : ?>
                 <div class="press-list-article">
                     <div class="press-list-signature"><?= $pressData['press_signature']; ?></div>
                     <div class="press-list-title"><?= $pressData['press_title']; ?></div>
@@ -389,22 +391,28 @@ $heure = date("H:i");
 </script>
 <script>
     $(document).ready(function(){
+        
+        /*Quand on clique sur le bouton collection, le modal s'ouvre et la div
+        qui assombrit l'écran s'ouvre*/
         $('#show-collection-modal').on('click', function(){
             $('.fullscreen-brightness').css('display', 'block');
             $('#display-resp-nav-sidebar').css('display', 'none');
             $('.collection-modal').fadeIn();
-            
         });
+        /*Quand on clique sur le fond assombri le modal se ferme*/
         $('.fullscreen-brightness').on('click', function(){
             $('.fullscreen-brightness').css('display', 'none');
-            $('#display-resp-nav-sidebar').css('display', 'block');
+            // $('#display-resp-nav-sidebar').css('display', 'block');
             $('.collection-modal').fadeOut();
         });
+        /*Quand on clique sur la croix, le modal se ferme*/
         $('#hide-collection-modal').on('click', function(){
             $('.fullscreen-brightness').css('display', 'none');
-            $('#display-resp-nav-sidebar').css('display', 'block');
+            // $('#display-resp-nav-sidebar').css('display', 'block');
             $('.collection-modal').fadeOut();
         });
+
+
         $('.flash-message-dismiss').on('click', function() {
         $('.flash-message').fadeOut();
         });

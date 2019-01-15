@@ -112,8 +112,8 @@ figure.effect-apollo img {
     opacity: .95;
     -webkit-transition: opacity .35s, -webkit-transform .35s;
     transition: opacity .35s, transform .35s;
-    -webkit-transform: scale3d(1.05, 1.05, 1);
-    transform: scale3d(1.05, 1.05, 1);
+    -webkit-transform: scale3d(1.05, 1.05, 1) translateY(-18%);
+    transform: scale3d(1.05, 1.05, 1) translateY(-18%);
 }
 
 figure.effect-apollo figcaption::before {
@@ -154,8 +154,8 @@ figure.effect-apollo p {
 
 figure.effect-apollo:hover img {
     opacity: .6;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1) translateY(-18%);
+    transform: scale3d(1, 1, 1) translateY(-18%);
 }
 
 figure.effect-apollo:hover figcaption::before {
@@ -168,4 +168,23 @@ figure.effect-apollo:hover p {
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
 }
+
+@media all and (max-width: 780px) {
+
+    figure.effect-apollo img {
+        opacity: .95;
+        -webkit-transition: opacity .35s, -webkit-transform .35s;
+        transition: opacity .35s, transform .35s;
+        -webkit-transform: scale3d(1.05, 1.05, 1);
+        transform: scale3d(1.05, 1.05, 1);
+    }
+
+    figure.effect-apollo:hover img {
+        opacity: .6;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+
+ }
 

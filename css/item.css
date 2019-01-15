@@ -29,10 +29,14 @@
 }
 
     .product-title {
-        font-family: 'Montserrat';
-        font-weight: 200;
         display: flex;
         justify-content: space-between;
+    }
+
+    .product-title h1,
+    .product-title h2 {
+        font-family: 'Montserrat';
+        font-weight: 300;
     }
 
     .product-variation select {
@@ -76,6 +80,18 @@
             border: 3px solid #808080; 
         }
 
+/*CSS du carousel*/
+
+.gallery-cell {
+    width: 100%;
+
+    position: relative;
+}
+
+.gallery-cell img {
+    width: 80%;
+    margin: auto 10%;
+}
 
 @media all and (max-width: 1200px) {
    .product {

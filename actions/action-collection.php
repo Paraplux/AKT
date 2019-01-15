@@ -20,7 +20,7 @@ if(isset($_POST)) {
     }
     
     if(empty($_SESSION['flash'])) {
-
+        $_POST['admin_collection_cat'] = 'Our Works';
         $tiny = new Upload($_FILES['admin_collection_upload']);
         if ($tiny->uploaded) {
    // resized to 75px wide()

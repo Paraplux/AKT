@@ -23,7 +23,8 @@ if(isset($_SESSION['cart'])) {
 
     $total = array();
     foreach ($itemsCart as $item) {
-
+        
+        
         $price = $item['prix'];
         $qty = $_SESSION['cart'][$item['id']]['qty'];
 
@@ -32,4 +33,20 @@ if(isset($_SESSION['cart'])) {
     }
 
     $totalPrice = array_sum($total);
-} 
+}
+if(isset($_SESSION['shipping'])) {
+    
+    if ($_SESSION['shipping'] === 'france') {
+        $shipping = 5;
+    } else if ($_SESSION['shipping'] == 'europe') {
+        $shipping = 10;
+    } else {
+        $shipping = 15;
+    }
+
+} else {
+    $shipping = 0;
+}
+
+    $totalPrice += $shipping;
+

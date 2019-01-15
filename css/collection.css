@@ -115,13 +115,15 @@
     display: none;
 
     position: fixed;
-    top: 0;
-    bottom:0;
-    left: 0;
-    right: 0;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
     z-index: 100000;
 
     overflow: hidden;
+    overflow-y: scroll;
+    box-shadow: 0 0 20px #000;
 }
 
 .collection-fullscreen img {
@@ -131,8 +133,8 @@
 .fullscreen-brightness-remove {
     display: none;
     position: fixed;
-    top: 50px;
-    right: 30px;
+    top: 10%;
+    right: 10%;
 
     color: white;
     font-size: 3rem;

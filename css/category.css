@@ -1,8 +1,3 @@
-body{
-    background-color: #fafafa;
-    color: #000000
-}
-
 /* BASIC CSS */
 
 .item-cat-navigation {
@@ -156,5 +151,16 @@ body{
 
 	.item-cat-container {
 		width: 100%;
+	}
+
+	.effect-sarah-bracelet h2::after {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	.effect-sarah-bracelet p {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
 	}
 }

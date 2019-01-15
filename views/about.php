@@ -7,9 +7,7 @@ include '../components/navbar.php';
 <div class="about-page">
   <h2>Contact Us</h2>
   <div class="presentation">
-    Lorem ipsum dolor sit, amet consectetur adipisicing <br/>
-    Exercitationem totam earum aut modi? Vitae recusandae aspernatur quisquam,<br/> 
-    totam asperiores dolorem expedita sed quae odit eveniet placeat perspiciatis suscipit sint ex.
+    Please contact us if you have some feedback! This is not the newsletter form, if you want to subscribe to our newsletter please follow <a href="./newsletter.php">this link</a>.
   </div>
   <div class="formulaire">
 

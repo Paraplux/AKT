@@ -48,10 +48,6 @@ body {
     border-bottom: 1px solid #aaa;
 }
 
-.stock-input {
-    width: 30%;
-}
-
 .input-title-style-textarea {
     width: 100%;
     font-family: 'Montserrat';
@@ -59,6 +55,10 @@ body {
     font-size: 1.2rem;
     background: none;
     border: 1px solid #aaa;
+}
+
+.stock-input {
+    width: 30%;
 }
 
 .admin-title-style,
@@ -88,7 +88,7 @@ body {
 .admin-button-style {
     padding: 10px;
     border: 1px solid #aaa;
-    background-color: #ededed00;
+    background-color: #00000000;
 }
 
 .admin-button-style:hover {

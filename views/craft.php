@@ -68,7 +68,7 @@ include '../components/navbar.php';
                     </p>
                 </div>
                 <div class="thumbs">
-                    <img width="400" height="266" src="../images/craft/thumb-forge.jpg" alt="">
+                    <img width="400" height="266" src="../images/craft/thumb-craft.jpg" alt="">
                 </div>
             </article>
             <hr>
@@ -86,7 +86,7 @@ include '../components/navbar.php';
                     </p>
                 </div>
                 <div class="thumbs">
-                    <img width="246" height="400" src="../images/craft/Tendance-et-dEcoration-Akt-Jewels-1.jpg" alt="">
+                    <img width="246" height="400" src="../images/craft/thumb_final.jpg" alt="">
                 </div>
             </article>
         </section>

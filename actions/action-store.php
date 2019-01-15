@@ -85,12 +85,12 @@ if (isset($_POST)) {
         $cat = $catExplode[0];
         $cat_format = $catExplode[1];
         $cat_id = $catExplode[2];
-        $color_format = minimize($_POST['color']);
+        $color_format = minimize($_POST['admin_store_color']);
 
 
         include '../components/db.php';
 
-        $req = $pdo->prepare("INSERT INTO akt_store SET name = :admin_store_name, prix = :admin_store_prix, item_description = :admin_store_description, color = :admin_store_color, color_format = :color_format, cat = :admin_store_cat, thumb_1 = :admin_store_upload_1, thumb_2 = :admin_store_upload_2, thumb_3 = :admin_store_upload_3, qty = :qty, ref = :ref, cat_format = :cat_format, cat_id = :cat_id, variation = 'true'");
+        $req = $pdo->prepare("INSERT INTO akt_store SET name = :admin_store_name, prix = :admin_store_prix, item_description = :admin_store_description, color = :admin_store_color, color_format = :color_format, cat = :admin_store_cat, thumb_1 = :admin_store_upload_1, thumb_2 = :admin_store_upload_2, thumb_3 = :admin_store_upload_3, qty = :qty, ref = :ref, cat_format = :cat_format, cat_id = :cat_id, variation = 'false'");
         $req->execute(array(
             ':admin_store_name' => $_POST['admin_store_name'],
             ':admin_store_prix' => $_POST['admin_store_prix'],

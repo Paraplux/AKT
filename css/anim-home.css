@@ -38,6 +38,11 @@
     transform: translateX(100vw);
 }
 
+.defil a {
+    text-decoration: none; 
+    color: #fff;
+}
+
 @keyframes marquee {
     to {
         transform: translateX(-110%);
