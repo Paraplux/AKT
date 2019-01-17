@@ -8,7 +8,7 @@ if(session_status() == PHP_SESSION_NONE) {
     <div class="dismiss"><i class="fas fa-times"></i></div>
     <div class="rgpd-side">
         <div class="rgpd-content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dolorem repudiandae ea aperiam molestias distinctio repellendus possimus? Dicta ipsa provident maxime aliquid, labore deserunt beatae nostrum veniam, quibusdam, eius quae!
+            By clickling the "I understand" button, you're accepting that Akt Jewels will keep some informations to make your navigation easier.
         </div>
         <div class="newsletter-side-resp">
             Don't forget to <a href="../views/newsletter">subscribe.</a>

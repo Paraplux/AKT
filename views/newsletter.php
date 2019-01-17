@@ -13,9 +13,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <div class="newsletter-page">
         <div class="newsletter-intro">
             <h1 class="newsletter-title">Subscribe</h1>
-            <p class="newsletter-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio tempore ducimus neque nesciunt quidem ipsum doloribus sunt eveniet aliquam. Accusamus mollitia deleniti assumenda. Consequuntur adipisci repellat consequatur, commodi quos assumenda.
-            Labore, excepturi enim architecto commodi in, pariatur libero, temporibus exercitationem velit impedit inventore repellat nisi veritatis quia nesciunt ratione dolorem blanditiis optio cumque sequi unde ipsam alias adipisci! Atque, reprehenderit!
-            Mollitia dolorem at iusto, id architecto consectetur error autem! Maxime, dolores doloremque blanditiis eaque ratione ipsam culpa excepturi distinctio harum voluptatibus nisi facere quidem recusandae illo repellendus sequi enim molestiae.</p>
+            <p class="newsletter-content">Don't forget to subscribe to be warn of AKT Jewels news and new products</p>
         </div>
         <div class="newsletter-flash">
             <?php include '../components/newsletter-flash.php'; ?>

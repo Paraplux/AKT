@@ -11,24 +11,15 @@ include '../components/navbar.php';
         <section class="primary">
             <h1 class='craft-title'><span>CRAFTMANSHIP</span></h1>
             <article class="article section-intro intro">
-                <p class="intro">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum temporibus eius amet, quos assumenda officiis quidem qui reprehenderit quia commodi! Non, quisquam similique!
-                </p>
-                <p class="intro">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum temporibus eius amet, quos assumenda officiis quidem qui reprehenderit quia commodi! Non, quisquam similique!
-                </p>
             </article>
             <article class="article">
                 <div class="content">
                     <h2><div>Idea</div></h2>
-                    <p class="intro">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum temporibus eius amet, quos assumenda officiis quidem qui reprehenderit quia commodi! Non, quisquam similique!
-                    </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
+                        I have always dreamed of making beautiful objects.
+                        Objects of striking design, that we love and keep.
+                        Objects which have a story and which express certain values.
+                        It’s the reason why I have created AKT in 2012 to transform war weapons into art objects and jewelry.
                     </p>
                 </div>
                 <div class="thumbs">
@@ -39,14 +30,9 @@ include '../components/navbar.php';
             <article class="article">
                 <div class="content">
                     <h2><div>Collect</div></h2>
-                    <p class="intro">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum temporibus eius amet, quos assumenda officiis quidem qui reprehenderit quia commodi! Non, quisquam similique!
-                    </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
+                        I collect the weapons through the Swiss Foundation for Mine Action, an NGO’s based in Geneva, in charge of disarming war zones.
+                        These weapons are dismantled, transported, destroyed and then melted down until they disappear completely. We then recreate them as art objects.
                     </p>
                 </div>
                 <div class="thumbs">
@@ -57,14 +43,8 @@ include '../components/navbar.php';
             <article class="article">
                 <div class="content">
                     <h2><div>Craft</div></h2>
-                    <p class="intro">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum temporibus eius amet, quos assumenda officiis quidem qui reprehenderit quia commodi! Non, quisquam similique!
-                    </p>
                     <p>
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
+                       Each object is created using artisanal methods, in order to produce highly creative items of excellent quality. The metal from the weapons is melted down in lab. It undergoes a treatment which renders it stainless and eliminates any risk of allergy. This preparation allows AKT to obtain a metal which strictly adheres to the European standards of the jewellery industry.
                     </p>
                 </div>
                 <div class="thumbs">
@@ -75,14 +55,8 @@ include '../components/navbar.php';
             <article class="article">
                 <div class="content">
                     <h2><div>Final</div></h2>
-                    <p class="intro">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum temporibus eius amet, quos assumenda officiis quidem qui reprehenderit quia commodi! Non, quisquam similique!
-                    </p>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum aut deserunt amet, aspernatur ipsam voluptate magnam quis fugiat blanditiis veritatis officia asperiores eveniet ipsa vero soluta illum, pariatur facilis inventore. Enim voluptatibus ut sed tenetur beatae fugiat repellendus nihil officiis dolor nesciunt delectus accusantium, id ea error quia perspiciatis, eveniet quidem deserunt laborum magnam sint! Eos nemo consequatur modi velit? Soluta dolor ducimus qui, accusamus recusandae ipsa exercitationem voluptatibus consequatur necessitatibus quod! Ipsum, magnam.
+                        My desire with AKT is to transform symbols of death into symbols of life and pay a tribute to the courage of women and men who fight for peace and liberty.
                     </p>
                 </div>
                 <div class="thumbs">
