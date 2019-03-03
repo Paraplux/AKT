@@ -11,13 +11,15 @@
 
     .newsletter-title {
         text-align: center;
-        font-family: 'Montserrat Thin';
+        font-family: 'Montserrat';
         font-weight: 200;
         font-size: 2.5rem;
     }
 
     .newsletter-content {
-        font-family: 'Montserrat Extra Light';
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 200;
     }
 
 .newsletter-form {
@@ -32,7 +34,8 @@
         height: 50px;
         padding: 10px;
         font-size: 1.1rem;
-        font-family: 'Montserrat Light';
+        font-family: 'Montserrat';
+        font-weight: 200;
         border: 1px solid #efefef;
 
     }

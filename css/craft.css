@@ -39,7 +39,7 @@
     padding: 6px;
 
     background: #ffffff;
-    border-left: 2px solid #d218e2;
+    border-left: 5px solid #db1702;
     font-family: 'Montserrat',
     sans-serif;
     font-weight: 400;
@@ -48,7 +48,6 @@
 
     transform: skew(-25deg);
 }
-
 
 .article h2 div {
     transform: skew(25deg);

@@ -93,14 +93,14 @@
     width: 100%;
     transform: scale(1);
     transition-duration: 500ms;
-    filter: grayscale(60%);
+    filter: grayscale(100%);
 }
 
 .collection-cat-item img {
     width: 100%;
     transform: scale(1);
     transition-duration: 500ms;
-    filter: grayscale(60%);
+    filter: grayscale(100%);
 }
 .collection-cat-item img:hover {
     transition-duration: 500ms;
@@ -108,7 +108,7 @@
     z-index: 1;
     overflow: hidden;
     cursor: pointer;
-    filter: grayscale(0%);
+    filter: grayscale(30%);
 }
 
 .collection-fullscreen {
@@ -152,7 +152,7 @@
     .collection-cat-title {
         padding: 0.5rem 2rem;
         font-size: 1.5rem;
-        font-family: 'Montserrat Light';
+        font-family: 'Montserrat';
         font-weight: 300;
     }
 
@@ -177,7 +177,7 @@
         padding: 1rem 0.5rem;
 
         font-size: 2rem;
-        font-family: 'Montserrat Extra Light';
+        font-family: 'Montserrat';
         font-weight: 200;
 
         border: 1px solid white;

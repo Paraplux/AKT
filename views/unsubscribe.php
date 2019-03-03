@@ -22,3 +22,7 @@ if (session_status() == PHP_SESSION_NONE) {
         </form>
     </div>
 </div>
+
+<?php
+include '../components/footer.php';
+?>

@@ -1,5 +1,4 @@
 <?php if (isset($_SESSION['flash'])) : ?>
-    <?php foreach ($_SESSION['flash'] as $type => $error) : ?>
         <?php if (isset($_SESSION['flash']['fail'])) : ?>
             <?php foreach ($_SESSION['flash']['fail'] as $message) : ?>
                 <?= $message ?>
@@ -10,6 +9,5 @@
                 <?= $message ?>
                 <?php endforeach; ?>
             <?php endif ?>
-    <?php endforeach; ?>
     <?php unset($_SESSION['flash']); ?>
 <?php endif; ?>

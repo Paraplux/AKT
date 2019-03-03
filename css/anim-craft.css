@@ -13,8 +13,8 @@
   opacity: 0.8;
 }
 .filling {
-  stroke-dasharray: 1600;
-  stroke-dashoffset: 1600 ;
+  stroke-dasharray: 1730;
+  stroke-dashoffset: 1730;
 }
 @media all and (max-width: 780px){
   .sidebar{

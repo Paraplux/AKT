@@ -66,7 +66,7 @@
         justify-content: center;
         width: 20%;
         background-color: #202020;
-        border-right: 4px solid #d218e2;
+        border-right: 5px solid #db1702;
     }
 
         .logo {
@@ -95,7 +95,7 @@
             }
             
             #purple:hover {
-                color: #d218e2;
+                color: #db1702;
             }
             
             .fab {
@@ -103,15 +103,15 @@
                 color: #202020;
                 margin-right: 1vw;
             }
-            .fa-pinterest-p:hover,
+            .fa-facebook-f:hover,
             .fa-instagram:hover {
                 cursor:pointer;
             }
-            .fa-pinterest-p {
+            .fa-facebook-f {
                 margin-left: 1vw;
             }
-            .fa-pinterest-p:hover {
-                color: rgb(167, 43, 43);
+            .fa-facebook-f:hover {
+                color: rgb(43, 66, 167);
             }
 
             .fa-instagram:hover {

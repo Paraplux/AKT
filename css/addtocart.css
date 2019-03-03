@@ -14,7 +14,7 @@
 button.add-to-cart {
 	width: 216px;
 	height: 48px;
-	background: #d218e2;
+	background: #db1702;
 	font-size: 18px;
 	line-height: 48px;
 	letter-spacing: 2px;
@@ -44,7 +44,7 @@ button.add-to-cart.size {
 	width: 48px;
 	left: 108px;
 	font-size: 0;
-	color: #d218e2;
+	color: #db1702;
 	letter-spacing: 0;
 	-webkit-transition: .3s linear;
 	-moz-transition: .3s linear;
@@ -114,7 +114,7 @@ a.cart > span {
 	bottom: 0;
 	left: 0;
 	margin: auto;
-	background: #d218e2;
+	background: #db1702;
 	box-shadow: 0 3px 6px rgba(210, 24, 226, 0.50);
 	-moz-box-shadow: 0 3px 6px rgba(210, 24, 226, 0.50);
 	-webkit-box-shadow: 0 3px 6px rgba(210, 24, 226, 0.50);

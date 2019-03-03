@@ -32,22 +32,6 @@ include '../controllers/controller-quicknav.php';
     <p class="cart-price">Price</p>
   </div>
     <?php
-    // $cart = array();
-    // foreach($_SESSION['cart'] as $d) {
-    //   array_push($cart, $d);
-    // }
-    // $recap = array();
-    // for($i = 0; $i < count($cart); $i++) {
-    //   $recap += [
-    //     'Reference' . $i => $cart[$i]['ref'],
-    //     'Size' . $i => $cart[$i]['size'],
-    //     'Type' . $i => $cart[$i]['color'],
-    //     'Qty' . $i => $cart[$i]['qty'],
-    //     'Unit price' . $i => $cart[$i]['u_price'],
-    //   ];
-    // };
-    ?>
-    <?php
     if(!empty($_SESSION['cart'])) : 
         foreach ($itemsCart as $item) :
     ?>
@@ -92,6 +76,12 @@ include '../controllers/controller-quicknav.php';
     <?php 
     endif; 
     ?>
+    
+
+
+    <?php
+    if (!empty($_SESSION['cart'])) :
+    ?>
     <br>
     <form class="change-shipping-form" action="../actions/action-shipping.php" method="POST">
       <h2>Shipping :</h2>
@@ -99,46 +89,35 @@ include '../controllers/controller-quicknav.php';
       <strong>Europe (10€) :</strong><input id="europe" value="europe" name="shipping" type="radio" class="change-shipping-input"><br>
       <strong>International (15€) :</strong> <input id="international" value="international" name="shipping" type="radio" class="change-shipping-input"><br>
     </form>
-    
-
-
-    <?php
-    if (!empty($_SESSION['cart'])) :
-    ?>
     <form action="../actions/action-payment.php" method="post" id="payment-form">
         <div class="form-part">
             <div class="form-shipping">
                 <h2>Shipping Information</h2>
-                <label for="name">Your name</label>
-                <label for="email">Your email</label><br>
-                <input value="test@test.test" type="text" name="name" required placeholder="Your name">
-                <input value="test@test.test" type="email" name="email" required placeholder="Your@mail.com"><br>
-                <label for="name">Adress</label>
-                <label for="email">Adress (optional)</label><br>
-                <input value="test@test.test" type="text" name="address_1" required placeholder="Your address">
-                <input value="test@test.test" type="text" name="address_2" placeholder="Your address(Optional)"><br>
-                <label for="name">City</label>
-                <label for="email">Zipcode</label><br>
-                <input value="test@test.test" type="text" name="address_city" required placeholder="Your city">
-                <input value="test@test.test" type="text" name="address_zip" required placeholder="Your zip code"><br>
-                <label for="name">State</label>
-                <label for="email">Country</label><br>
-                <input value="test@test.test" type="text" name="address_state" placeholder="Your state">
-                <input value="test@test.test" type="text" name="address_country" required placeholder="Your country"><br>
-
-                <!-- CART -->
+                <?php if(isset($_SESSION['form-payement']['error'])) : ?>
+                    <div class="error-payement">
+                        <?= $_SESSION['form-payement']['error']; ?>
+                    </div>
                 <?php
-                if (isset($_SESSION['cart'])) :
-                  foreach ($_SESSION['cart'] as $item) :
-                ?>
-                <input type="hidden" name="<?= $item['ref'] ?>_ref" value="<?= $item['ref']?>">
-                <input type="hidden" name="<?= $item['ref'] ?>_size" value="<?= $item['size']?>">
-                <input type="hidden" name="<?= $item['ref'] ?>_color" value="<?= $item['color']?>">
-                <input type="hidden" name="<?= $item['ref'] ?>_qty" value="<?= $item['qty']?>">
-                <?php
-                  endforeach;
+                unset($_SESSION['form-payement']['error']);
                 endif;
                 ?>
+                <label for="name">Your name</label>
+                <label for="email">Your email</label><br>
+                <input value="Dupont" type="text" name="name" required placeholder="Your name">
+                <input value="Jean" type="email" name="email" required placeholder="Your@mail.com"><br>
+                <label for="name">Adress</label>
+                <label for="email">Adress (optional)</label><br>
+                <input value="123 rue des coquelicots" type="text" name="address_1" required placeholder="Your address">
+                <input value="" type="text" name="address_2" placeholder="Your address(Optional)"><br>
+                <label for="name">City</label>
+                <label for="email">Zipcode</label><br>
+                <input value="Etaples" type="text" name="address_city" required placeholder="Your city">
+                <input value="62630" type="text" name="address_zip" required placeholder="Your zip code"><br>
+                <label for="name">State</label>
+                <label for="email">Country</label><br>
+                <input value="Haut de France" type="text" name="address_state" placeholder="Your state">
+                <input value="France" type="text" name="address_country" required placeholder="Your country"><br>
+
 
             </div>
             <div class="form-checkout">
@@ -271,3 +250,7 @@ function stripeTokenHandler(token) {
   form.submit();
 }
 </script>
+
+<?php
+include '../components/footer.php';
+?>

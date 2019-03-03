@@ -11,9 +11,9 @@
         <span><a href="../views/collection">COLLECTION</a></span>
         <span><a href="../views/news?page=1">NEWS</a></span>
         <span><a href="../views/store" id="purple">STORE</a></span>
-        <span><a href="../views/about">ABOUT</a></span>
-        <span><a href="https://www.instagram.com/aktjewels/"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.pinterest.fr/AKTjewels/destroyed-weapons-jewelry/"><i class="fab fa-pinterest-p"></i></a></span>
+        <span><a href="../views/contact">CONTACT US</a></span>
+        <span><a href="https://www.instagram.com/akt_jewels/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/AKTJewelsDestroyedWeaponsArt/"><i class="fab fa-facebook-f"></i></a></span>
     <span id="cart">
         
     </span>
@@ -28,7 +28,7 @@
 <div class="resp-nav-sidebar">
     <a href="../views/craft">CRAFTMANSHIP</a>
     <a href="../views/collection">COLLECTION</a>
-    <a href="../views/about">ABOUT</a>
-    <a href="https://www.instagram.com/aktjewels/"><i class="fab fa-instagram"></i>INSTAGRAM</a>
-    <a href="https://www.pinterest.fr/AKTjewels/destroyed-weapons-jewelry/"><i class="fab fa-pinterest-p"></i>PINTEREST</a>
+    <a href="../views/contact">CONTACT US</a>
+    <a href="https://www.instagram.com/akt_jewels/"><i class="fab fa-instagram"></i>INSTAGRAM</a>
+    <a href="https://www.facebook.com/AKTJewelsDestroyedWeaponsArt/"><i class="fab fa-facebook-f"></i>FACEBOOK</a>
 </div>

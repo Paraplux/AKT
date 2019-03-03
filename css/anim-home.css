@@ -13,7 +13,7 @@
     position: fixed;
     overflow: hidden;
 
-    background-color: #202020;
+    background-color: #fefefe;
 }
 
 .nav-fix {
@@ -23,7 +23,7 @@
 
 .defil {
     font-family: 'Raleway';
-    font-weight: 200;
+    font-weight: 700;
     font-size: 1rem;
     line-height: 25px;
     position: absolute;
@@ -35,12 +35,12 @@
     animation-fill-mode: backwards;
     animation-delay: -10s;
     white-space: nowrap;
-    transform: translateX(100vw);
+    transform: translate3D(100vw, 0, 0);
 }
 
 .defil a {
     text-decoration: none; 
-    color: #fff;
+    color: #202020;
 }
 
 @keyframes marquee {

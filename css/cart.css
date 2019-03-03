@@ -5,6 +5,10 @@
 }
 
 /*STRIPE FORM*/
+.error-payement {
+    width: 100%;
+    color: #db1702;
+}
 .form-part {
     display: flex;
     justify-content: space-around;
@@ -94,7 +98,7 @@
 
 .form-shipping h2,
 .form-checkout h2{
-    color: #b515c4;
+    color: #db1702;
 }
 
 .item-cat-navigation a{
@@ -105,7 +109,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    border-bottom: #d218e2 1px solid;
+    border-bottom: #db1702 1px solid;
     align-items: center;
 }
 
@@ -160,7 +164,7 @@
 
 .fa-trash-alt:hover {
     cursor: pointer;
-    color: red;
+    color: #db1702;
 }
 
  /* *{

@@ -1,28 +1,36 @@
 <?php 
 include '../components/header.php';
 include '../components/navbar.php';
+
+if(session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
 ?>
 <link rel="stylesheet" href="../css/about.css">
 
-<div class="about-page">
-  <h2>Contact Us</h2>
+<div class="container">
+  <h2 class="contact-title">Contact Us</h2>
   <div class="presentation">
     Please contact us if you have some feedback! This is not the newsletter form, if you want to subscribe to our newsletter please follow <a href="./newsletter.php">this link</a>.
   </div>
   <div class="formulaire">
-
-    <form action="" method="POST">
-
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-      <input type="submit" value="Submit">
+    
+    <form class="contact-form" action="../actions/action-contact.php" method="POST">
+    <?php include '../components/newsletter-flash.php' ?>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+    <label for="mail">Email*</label>
+    <input required type="mail" id="mail" name="email" placeholder="Your mail adress..">
+    
+    <label for="message">Message*</label>
+    <textarea required id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+    
+    <p class="required-fields">* these fields are required.</p>
+    <input type="submit" value="Submit" name="submit">
     </form>
 
   </div>

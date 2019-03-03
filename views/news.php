@@ -6,19 +6,19 @@ include '../controllers/controller-news.php';
 if(isset($_GET['page'])) {
     $_GET['page'] = intval($_GET['page']);
 } else {
-    header('Location: ../404.php');
+    header('Location: ../404');
 }
 
 if ($_GET['page'] <= 0) {
-    header('Location: ../404.php');
+    header('Location: ../404');
 } else if ($_GET['page'] > 0) {
     $p = $_GET['page'] - 1 ;
 } else {
-    header('Location: ../404.php');
+    header('Location: ../404');
 }
 
 if ($p >= count($blogDatas)) {
-    header('Location: ./news');
+    header('Location: ../404');
 }
 
 ?>
@@ -42,7 +42,7 @@ if ($p >= count($blogDatas)) {
             <!-- Accordion -->
             <?php if(isset($_GET['page']) && $_GET['page'] != 1): ?>
             <br><hr><br><br>
-            <h3 class="press-title">Jetez un oeil à notre dernier article :</h3>
+            <h3 class="press-title">Check our last post :</h3>
             <button class="drop-down"><?= $blogDatas[0]['blog_title']; ?></button>
             <div class="panel">
                 <p><?= substr(strip_tags($blogDatas[0]['blog_corpus']), 0, 500); ?> . . .</p>
@@ -50,7 +50,7 @@ if ($p >= count($blogDatas)) {
             </div>
             <?php endif; ?>
             <br><hr>
-            <h3 class="press-title">Articles précédents :</h3>
+            <h3 class="press-title">Old articles :</h3>
             <?php $articleQty = count($blogDatas);
             if($articleQty < 4) {
                 $k = $articleQty;
@@ -63,7 +63,7 @@ if ($p >= count($blogDatas)) {
             <button class="drop-down"><?= $blogDatas[$i]['blog_title']; ?></button>
             <div class="panel">
                 <p><?= substr(strip_tags($blogDatas[$i]['blog_corpus']), 0, 500); ?></p>
-                <a href="../views/news?page=<?= $i + 1 ?>">Lire la suite . . .</a>
+                <a href="../views/news?page=<?= $i + 1 ?>">Read more . . .</a>
             </div>
             <?php endfor; ?>
 
@@ -85,7 +85,7 @@ if ($p >= count($blogDatas)) {
             <article class="press-article">
                 <h3 class="press-title"><?= $pressData['press_title']; ?></h3>
                 <p class="press-content"><?= $pressData['press_corpus']; ?></p>
-                <p class="press-link"><a target="_blank" href="<?= $pressData['press_link']; ?>">En savoir plus. . .</a></p>
+                <p class="press-link"><a target="_blank" href="<?= $pressData['press_link']; ?>">Read more. . .</a></p>
                 <h4 class="press-signature"> - <?= $pressData['press_signature']; ?></h4>
             </article>
             <?php endforeach; ?>

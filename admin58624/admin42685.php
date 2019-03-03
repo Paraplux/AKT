@@ -181,7 +181,7 @@ $heure = date("H:i");
             <button class="admin-button-style"  type="submit">Submit <i class="fas fa-check"></i></button>
         </form><br> <hr>
         <h2 class="admin-subtitle-style">Add a new article to sell :</h2><br><br>
-        <p><i class="fas fa-exclamation-circle"></i> If you encounter problems while creating an item, please lower the thumb resolutionzq.</p>
+        <p><i class="fas fa-exclamation-circle"></i> If you encounter problems while creating an item, please lower the thumb resolution.</p>
         <form action="../actions/action-store.php" method="POST" enctype="multipart/form-data">
             <div class="form-grouped">
                 <div>

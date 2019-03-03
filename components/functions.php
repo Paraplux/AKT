@@ -1,5 +1,12 @@
 <?php 
 
+/**
+ * Remove the special characters of a string
+ *
+ * @param  string $string
+ *
+ * @return string
+ */
 function specialCarRemove($string)
 {
     $utf8 = array(
@@ -24,6 +31,14 @@ function specialCarRemove($string)
     return preg_replace(array_keys($utf8), array_values($utf8), $string);
 }
 
+/**
+ * Clean a string and replace space by underscore
+ *
+ * @param  string $string
+ *
+ * @return string
+ */
+
 function cleanString($string)
 {
     $string = trim($string);
@@ -36,6 +51,13 @@ function cleanString($string)
     return $string;
 }
     
+/**
+ * Capitalize a string aka uppercase
+ *
+ * @param  string $string
+ *
+ * @return string
+ */
 function capitalize($string)
 {
     $string = trim($string);
@@ -48,6 +70,13 @@ function capitalize($string)
     return $string;
 }
 
+/**
+ * Minimize a string aka lowercase
+ *
+ * @param  string $string
+ *
+ * @return string
+ */
 function minimize($string) {
     $string = trim($string);
     $string = specialCarRemove($string);

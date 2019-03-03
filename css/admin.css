@@ -37,7 +37,6 @@ body {
 
 
 /*GLOBAL STYLE*/
-
 .input-title-style {
     width: 100%;
     font-family: 'Montserrat';
@@ -47,7 +46,6 @@ body {
     border: none;
     border-bottom: 1px solid #aaa;
 }
-
 .input-title-style-textarea {
     width: 100%;
     font-family: 'Montserrat';
@@ -56,11 +54,9 @@ body {
     background: none;
     border: 1px solid #aaa;
 }
-
 .stock-input {
     width: 30%;
 }
-
 .admin-title-style,
 .admin-subtitle-style {
     text-transform: uppercase;
@@ -68,17 +64,12 @@ body {
     font-weight: 200;
     font-weight: 500;
 }
-
 .admin-title-style {
     font-size: 2rem;
     text-align: center;
-
-    
 }
-
 .admin-subtitle-style {
     font-size: 1.3rem;
-
 }
 
 .admin-blog {
@@ -307,12 +298,10 @@ body {
     font-size: 1rem;
     font-weight: bold;
 }
-
 .small-error-success li,
 .small-error-fail li {
     font-weight: normal;
 }
-
 .small-error-success,
 .small-error-fail {
     position: fixed;
@@ -326,17 +315,14 @@ body {
     border-radius: 5px;
     border: 1px solid;
 }
-
 .small-error-success {
     background-color: rgba(140, 255, 140, 0.9);
     color: rgba(0, 50, 0, 0.7);
 }
-
 .small-error-fail {
     background-color: rgba(255, 140, 140, 0.9);
     color: rgba(50, 0, 0, 0.7);
 }
-
 .flash-message-dismiss {
     position: absolute;
     right: 10px;

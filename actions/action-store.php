@@ -90,22 +90,35 @@ if (isset($_POST)) {
 
         include '../components/db.php';
 
-        $req = $pdo->prepare("INSERT INTO akt_store SET name = :admin_store_name, prix = :admin_store_prix, item_description = :admin_store_description, color = :admin_store_color, color_format = :color_format, cat = :admin_store_cat, thumb_1 = :admin_store_upload_1, thumb_2 = :admin_store_upload_2, thumb_3 = :admin_store_upload_3, qty = :qty, ref = :ref, cat_format = :cat_format, cat_id = :cat_id, variation = 'false'");
+        $req = $pdo->prepare("INSERT INTO akt_store 
+                            SET `name` = :admin_store_name,
+                             prix = :admin_store_prix, 
+                             item_description = :admin_store_description, 
+                             color = :admin_store_color, 
+                             color_format = :color_format, 
+                             cat = :admin_store_cat, 
+                             thumb_1 = :admin_store_upload_1, 
+                             thumb_2 = :admin_store_upload_2, 
+                             thumb_3 = :admin_store_upload_3, 
+                             qty = :qty, ref = :ref, 
+                             at_format = :cat_format, 
+                             cat_id = :cat_id, 
+                             variation = 'false'");
         $req->execute(array(
-            ':admin_store_name' => $_POST['admin_store_name'],
-            ':admin_store_prix' => $_POST['admin_store_prix'],
-            ':admin_store_description' => $_POST['admin_store_description'],
-            ':admin_store_color' => $_POST['admin_store_color'],
-            ':color_format' => $color_format,
-            ':admin_store_cat' => $cat,
-            ':admin_store_upload_1' => $thumb1link,
-            ':admin_store_upload_2' => $thumb2link,
-            ':admin_store_upload_3' => $thumb3link,
-            ':qty' => $_POST['admin_store_stock'],
-            ':ref' => $ref,
-            ':cat_format' => $cat_format,
-            ':cat_id' => $cat_id,
-        ));
+                            ':admin_store_name' => $_POST['admin_store_name'],
+                            ':admin_store_prix' => $_POST['admin_store_prix'],
+                            ':admin_store_description' => $_POST['admin_store_description'],
+                            ':admin_store_color' => $_POST['admin_store_color'],
+                            ':color_format' => $color_format,
+                            ':admin_store_cat' => $cat,
+                            ':admin_store_upload_1' => $thumb1link,
+                            ':admin_store_upload_2' => $thumb2link,
+                            ':admin_store_upload_3' => $thumb3link,
+                            ':qty' => $_POST['admin_store_stock'],
+                            ':ref' => $ref,
+                            ':cat_format' => $cat_format,
+                            ':cat_id' => $cat_id,
+                        ));
         $req->closeCursor();
         $_SESSION['flash']['success']['admin_store'] = "The article has been added";
         header('Location: ../admin58624/admin42685');

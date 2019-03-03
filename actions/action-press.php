@@ -9,15 +9,12 @@ if (isset($_POST)){
     if (empty($_POST['admin_press_title'])){
         $_SESSION['flash']['fail']['admin_press_title'] = "You didn't type any title";
     }
-
     if (empty($_POST['admin_press_content'])){
         $_SESSION['flash']['fail']['admin_press_content'] = "You didn't type any review";
     }
-
     if (empty($_POST['admin_press_signature'])){
         $$_SESSION['flash']['fail']['admin_press_signature'] = "The signature field is empty";
     }
-
     if (empty($_POST['admin_press_link'])){
         $_SESSION['flash']['fail']['admin_press_link'] = "The link field is empty";
     }

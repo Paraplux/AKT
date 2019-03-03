@@ -5,9 +5,9 @@ $(document).ready(function () {
         //Récupération du scroll à l'instant t
         var scroll = $(window).scrollTop();
         //Création de la variable de position qui va varier de 0 à la
-        // longueur du svg ici de 0 à 1600
-        var pos = scroll * 1600 / maxScroll;
+        // longueur du svg ici
+        var pos = scroll * 1700 / maxScroll;
         // Changement du dashoffset en fonction de la variable pos
-        $('.filling').css('stroke-dashoffset', - (1600 - pos));
+        $('.filling').css('stroke-dashoffset', 1750 + pos);
     });
 });

@@ -1,10 +1,10 @@
 <?php 
 include '../components/header.php';
-include '../components/navbar.php';
+include '../components/navbar-reverse.php';
 include '../components/welcome-popup.php';
 include '../controllers/controller-home.php';
 ?>
-
+<link rel="stylesheet" href="../css/navbar-reverse.css">
 <link rel="stylesheet" href="../css/anim-home.css">
 <link rel="stylesheet" href="../css/home.css">
 
@@ -17,7 +17,7 @@ include '../controllers/controller-home.php';
     <div class="home-page">
         <div class="presentation welcomeHide">  
             <div class="presentation-content">
-                <h1 class="home-h1">Une histoire</h1>
+                <h1 class="home-h1">A story</h1>
                 <div class="home-intro">
                     <p>
                         AKT is an <strong>art editor</strong> based in France near Geneva.

@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="AKT creates art objects from weapons to produce beautiful jewels, made in France" />
         <title>AKT-Jewels</title>
 
         <!-- EXTERNAL SCRIPT -->

@@ -14,7 +14,7 @@
     display: none;
     justify-content: space-around;
 
-    background-color: #202020;
+    background-color: #EFEFEF;
     box-shadow: 0 0 12px black;
 
     z-index: 10000000000000000;
@@ -34,7 +34,7 @@
     position: absolute;
     top: 10px;
     right: 120px;
-    color: #202020;
+    color: #EFEFEF;
 }
 .dismiss:hover {
     cursor: pointer;
@@ -54,7 +54,7 @@
         margin-bottom: 25px;
 
         text-indent: 2rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .rpg-buttons {
@@ -65,12 +65,12 @@
         padding: 5px 15px;
         margin: 10px;
 
-        border: 2px solid #d218e2;
+        border: 2px solid #db1702;
         border-radius: 20px;
     }
 
     .rgpd-button:first-child {
-        background-color: #d218e2;
+        background-color: #db1702;
     }
     .rgpd-button:last-child {
         border: 2px solid #101010;
@@ -78,7 +78,7 @@
     }
 
     .rgpd-button:first-child:hover {
-        background-color: #202020;
+        background-color: #EFEFEF;
     }
 
     .rgpd-button:last-child:hover {
@@ -98,8 +98,8 @@
     align-content: center;
     width: 30%;
 
-    border-left: 5px solid #a223ad;
-    background-color: #fefefe;
+    border-left: 5px solid #db1702;
+    background-color: #202020;
     padding-right: 5%;
 }
 
@@ -108,15 +108,15 @@
         margin: auto;
         margin-bottom: 25px;
 
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: 600;
-        color: #202020;
+        color: #EFEFEF;
     }
 
     .newsletter-flash {
         font-size: 0.8rem;
         font-weight: 600;
-        color: purple;
+        color: #db1702;
     }
 
     .newsletter-side input {
@@ -125,8 +125,8 @@
 
         border: none;
         border-radius: 20px;
-        background-color: #202020;
-        color: white;
+        background-color: #EFEFEF;
+        color: #202020;
     }
 
     .newsletter-side button {
@@ -135,10 +135,14 @@
 
         border: none;
         border-radius: 20px;
-        background-color: #a223ad;
+        background-color: #db1702;
 
-        color: white;
+        color: #efefef;
         font-size: 1rem;
+    }
+
+    .newsletter-side a {
+        color: #db1702;
     }
 
 .newsletter-side-resp {
@@ -188,6 +192,6 @@
     }
 
         .newsletter-side-resp a {
-            color: #d218e2;
+            color: #db1702;
         }
 }

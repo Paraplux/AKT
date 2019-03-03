@@ -34,6 +34,17 @@ body {
   z-index: 10000;
 }
 
+.footer-text {
+  margin-top: 5rem;
+  font-size: 0.8rem;
+  color: #ededed;
+  text-align: center;
+}
+
+.footer-text a {
+   color: #ededed;
+}
+
 @media all and (max-width: 780px) {
   .container {
     width: 90%; 

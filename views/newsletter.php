@@ -25,3 +25,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <a class="unsubscribe" href="./unsubscribe">Unsubscribe</a>
     </div>
 </div>
+
+<?php
+include '../components/footer.php';
+?>

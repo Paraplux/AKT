@@ -101,11 +101,11 @@
     box-shadow: 0 0 5px #909090;
 }
 figure.effect-apollo.blue-apollo p {
-    border-right: 4px solid rgba(0, 0, 255, 1);
+    border-right: 4px solid #db1702;
 }
 
 figure.effect-apollo.blue-apollo {
-    background: rgba(0, 0, 255, 0.2);
+    background: rgba(255, 0, 0, 0.2);
 }
 
 figure.effect-apollo img {

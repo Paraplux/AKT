@@ -96,10 +96,18 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token) 
         
         
     ]);
+    $to = $_POST['email'];
+    $subject = 'Votre commande chez AKT Jewels !';
+    $message = "Votre commande a bien été prise en compte et sera traité d'ici peu";
+
+    $headers = 'From: akt@example.com' . "\r\n" .
+               'Reply-To: akt@example.com' . "\r\n";
+
+    mail($to, $subject, $message, $headers);
     $_SESSION['payed'] = 'true';
-    $headers = $_POST['email'];
     header('Location: ../views/ticket');
     exit();
 } else {
+    $_SESSION['form-payement']['error'] = "Le formulaire n'est pas complet.";
     header('Location: ../views/cart.php');
 }

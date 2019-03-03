@@ -1,13 +1,18 @@
-/*On inverse la couleur du body*/
+/*On inverse la couleur du body et du footer*/
 body {
-    background-color: #fafafa;
+    background-color: #fefefe;
+    color: #202020;
+}
+
+.footer-text {
+    color: #202020;
+}
+
+.footer-text a {
     color: #202020;
 }
 
 /*On inverse les couleurs de la navbar*/
-#navigation {
-    box-shadow: 0 0 10px #808080;
-}
 .right-nav,
 .resp-nav {
     background-color: #202020;

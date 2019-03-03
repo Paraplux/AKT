@@ -3,7 +3,7 @@
 include '../components/db.php';
 
 /* ---BLOG--- */
-$req = $pdo->query('SELECT * FROM akt_blog ORDER BY id DESC');
+$req = $pdo->query('SELECT * FROM akt_blog ORDER BY blog_date DESC');
 $blogDatas = $req->fetchAll();
 $req->closeCursor();
 

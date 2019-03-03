@@ -45,8 +45,9 @@ if(isset($_SESSION['shipping'])) {
     }
 
 } else {
-    $shipping = 0;
+    $shipping = 5;
 }
-
+if(isset($totalPrice)) {
     $totalPrice += $shipping;
+}
 
