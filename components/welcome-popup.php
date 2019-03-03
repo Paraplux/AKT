@@ -11,16 +11,16 @@ if(session_status() == PHP_SESSION_NONE) {
             By clickling the "I understand" button, you're accepting that Akt Jewels will keep some non-personnal informations to make your navigation easier.
         </div>
         <div class="newsletter-side-resp">
-            Don't forget to <a href="../views/newsletter">subscribe.</a>
+            Don't forget to <a href="../newsletter">subscribe.</a>
         </div>
         <div class="rgpd-buttons">
             <a class="rgpd-button">I understand</a>
-            <a href="../views/contact" class="rgpd-button">More informations</a>
+            <a href="../contact" class="rgpd-button">More informations</a>
         </div>
     </div>
     <div class="newsletter-side">
         <div class="newsletter-content">
-            Subscribe to our <a href="../views/newsletter">newsletter</a>.
+            Subscribe to our <a href="../newsletter">newsletter</a>.
         </div>
         <div class="newsletter-flash">
             <?php include '../components/newsletter-flash.php'; ?>

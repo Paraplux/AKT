@@ -11,7 +11,7 @@ if (isset($_POST)) {
         }
     }
 
-    header('Location: ../views/cart.php');
+    header('Location: ../cart.php');
 } else {
-    header('Location: ../views/cart.php');
+    header('Location: ../cart.php');
 }

@@ -105,9 +105,9 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($name) && !empty($token) 
 
     mail($to, $subject, $message, $headers);
     $_SESSION['payed'] = 'true';
-    header('Location: ../views/ticket');
+    header('Location: ../ticket');
     exit();
 } else {
     $_SESSION['form-payement']['error'] = "Le formulaire n'est pas complet.";
-    header('Location: ../views/cart.php');
+    header('Location: ../cart.php');
 }

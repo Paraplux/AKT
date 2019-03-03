@@ -27,13 +27,13 @@ if (!empty($_POST)) {
             ));
             $req->closeCursor();
             $_SESSION['flash']['success']['unsub'] = 'You are not sub to the newsletter anymore';
-            header('Location: ../views/unsubscribe.php');
+            header('Location: ../unsubscribe.php');
             exit();
         } else {
             $_SESSION['flash']['fail']['not_sub'] = "You are not sub";
-            header('Location: ../views/unsubscribe');
+            header('Location: ../unsubscribe');
         }
     } else {
-        header('Location: ../views/unsubscribe');
+        header('Location: ../unsubscribe');
     }
 }

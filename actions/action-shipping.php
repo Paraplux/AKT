@@ -6,7 +6,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 if (isset($_POST)) {
     $_SESSION['shipping'] = $_POST['shipping'];
-    header('Location: ../views/cart');
+    header('Location: ../cart');
 } else {
-    header('Location: ../views/cart');
+    header('Location: ../cart');
 }

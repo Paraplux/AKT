@@ -22,7 +22,7 @@ if (!empty($_POST)) {
 
         if ($data) {
             $_SESSION['flash']['fail']['already_sub'] = 'You are already sub to the newsletter';
-            header('Location: ../views/home');
+            header('Location: ../home');
             exit();
         } else {
             $req = $pdo->prepare('INSERT INTO akt_newsletter SET email = :email');
@@ -31,11 +31,11 @@ if (!empty($_POST)) {
             ));
             $req->closeCursor();
             $_SESSION['flash']['success']['sub'] = 'You are now sub to the newsletter';
-            header('Location: ../views/home');
+            header('Location: ../home');
             exit();
         }
     } else {
-        header('Location: ../views/home');
+        header('Location: ../home');
         exit();
     }
 }

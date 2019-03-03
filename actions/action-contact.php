@@ -20,12 +20,12 @@
             $subject = "Message from AKT Jewels contact page!";
             if (mail($mailTO, $subject, $_POST['message'], $headers)) {
                 $_SESSION['flash']['success']['contact'] = "Thanks for your feedbacks !";
-                header('Location: ../views/contact.php');
+                header('Location: ../contact.php');
             } else {
                 $_SESSION['flash']['fail']['contact'] = "Error! You mail has not been send !";
-                header('Location: ../views/contact.php');
+                header('Location: ../contact.php');
             }
         } else {
-            header('Location: ../views/contact.php');
+            header('Location: ../contact.php');
         }
     }

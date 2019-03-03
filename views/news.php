@@ -46,7 +46,7 @@ if ($p >= count($blogDatas)) {
             <button class="drop-down"><?= $blogDatas[0]['blog_title']; ?></button>
             <div class="panel">
                 <p><?= substr(strip_tags($blogDatas[0]['blog_corpus']), 0, 500); ?> . . .</p>
-                <a href="../views/news?page=1">Lire la suite . . .</a>
+                <a href="../news?page=1">Lire la suite . . .</a>
             </div>
             <?php endif; ?>
             <br><hr>
@@ -63,7 +63,7 @@ if ($p >= count($blogDatas)) {
             <button class="drop-down"><?= $blogDatas[$i]['blog_title']; ?></button>
             <div class="panel">
                 <p><?= substr(strip_tags($blogDatas[$i]['blog_corpus']), 0, 500); ?></p>
-                <a href="../views/news?page=<?= $i + 1 ?>">Read more . . .</a>
+                <a href="../news?page=<?= $i + 1 ?>">Read more . . .</a>
             </div>
             <?php endfor; ?>
 

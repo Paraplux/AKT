@@ -12,7 +12,7 @@ include './components/header.php';
 </div>
 
 <div class="enter">
-    <a href="./views/home">-> VISIT <-</a>
+    <a href="./home">-> VISIT <-</a>
 </div>
 <div id="timer"></div>
 

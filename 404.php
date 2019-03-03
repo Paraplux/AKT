@@ -1,4 +1,4 @@
-<meta http-equiv="refresh" content="4;url=../views/home">
+<meta http-equiv="refresh" content="4;url=../home">
 <link rel="stylesheet" href="../css/404.css">
 <div class="error-wrap">
     <h1><strong>4</strong>04 ERROR</h1>

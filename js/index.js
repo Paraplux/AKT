@@ -4,7 +4,7 @@ $(document).ready(function() {
         if (cpt > 1) {
             cpt--;
         } else {
-            window.location.replace("../views/home");
+            window.location.replace("../home");
         }
         $('#timer').html(cpt);
     }

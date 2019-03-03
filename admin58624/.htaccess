@@ -3,4 +3,4 @@ ErrorDocument 404 /404.php
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ /views/$1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

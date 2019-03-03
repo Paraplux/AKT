@@ -11,7 +11,7 @@ if(isset($_SESSION['cart'])) {
 }
 
 ?>
-<a href="../views/cart" class="cart ">
+<a href="../cart" class="cart ">
     <span class="counter">
         <?php 
         if (!isset($_SESSION['cart'])) {

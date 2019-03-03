@@ -14,7 +14,7 @@
     
     /*If our request is empty, redirection*/
     if(empty($eachCategoryDatas)) {                       
-        header('Location: ../views/store.php');   
+        header('Location: ../store.php');   
     }
 
     /*For the presentation of the current category*/
